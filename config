@@ -152,9 +152,136 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+
+
+
+
+
+
+
+
+
+###########################################################################
+###########################################################################
+###########################################################################
+
+#setting variables for later use
+
+set $i3_path /home/erik/.i3
+
+
+
+#if dualscreen is on
+
+workspace 1 output DVI-I-0
+workspace 2 output DVI-I-0
+workspace 2 output DVI-I-0
+workspace 4 output DVI-I-0
+workspace 5 output DVI-I-0
+workspace 6 output DVI-I-3
+workspace 7 output DVI-I-3
+workspace 8 output DVI-I-3
+workspace 9 output DVI-I-3
+workspace 10 output DVI-I-3
+
+## Assign section
+
+assign [class="sublime_text"]     → 2
+assign [class="Geary"]            → 9
+assign [class="Spotify"]          → 10
+
+
+
+
+
+#startup applications you always use
+
+#background applications
+
+exec --no-startup-id nitrogen --restore
+
+
+#start tray applications
+
+exec --no-startup-id nm-applet
+exec dropbox start
+
+
+
+#workspace related applications
+
+exec --no-startup-id firefox workspace 1
+exec --no-startup-id sublime-text workspace 2
+exec --no-startup-id geary workspace 9
+exec --no-startup-id spotify workspace 10
+
+
+
+#personal app launchers
+
+bindsym $mod+Shift+Return exec thunar
+
+#F1-F12
+bindsym F1 exec firefox
+
+
+
+# Screen Shots
+
+bindsym Print exec scrot -e ~/Pictures/capt-$(date '+%Y-%m-%d-%H%M%S').png
+
+
+
+
+
+# next/previous workspace
+
+bindsym Mod1+Tab workspace next
+bindsym Mod1+Shift+Tab workspace prev
+bindsym $mod+Tab workspace back_and_forth
+
+
+
+
+# audio - Spotify
+
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master '5%+'"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master '5%-'"
+bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioStop exec playerctl stop
+
+
+
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+
+# bar toggle, hide or show 
+bindsym $mod+b bar mode toggle
+
 bar {
-       status_command i3status
+  status_command i3blocks
+
+
 }
+
+
+
+# Original windows decoration colors
+# class                 border  backgr. text    indicator
+client.focused          #4c7899 #285577 #ffffff #2e9ef4
+client.focused          #4c7899 #285577 #ffffff #2e9ef4
+client.focused_inactive #333333 #5f676a #ffffff #484e50
+client.unfocused        #333333 #222222 #888888 #292d2e
+client.urgent           #2f343a #900000 #ffffff #900000
+client.unfocused        #4c7899 #24364F #aaaaaa #2e9ef4
+client.focused          #c10101 #880404 #ffffff #00AA00
+
+# Border control
+hide_edge_borders both
+#bindsym $mod+b exec i3-msg border toggle
+
 
