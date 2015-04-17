@@ -1,1 +1,4 @@
 ln -s ~/.i3/.i3blocks.conf ~/.i3blocks.conf
+
+PATH=$PATH:/usr/bin/sublime-text
+export PATH
