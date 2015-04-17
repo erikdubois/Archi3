@@ -14,6 +14,9 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 12
+#font pango:UbuntuMono-regular 12
+#font pango:DroidSansMono 11
+
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -96,17 +99,7 @@ bindsym $mod+q focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# switch to workspace
-bindsym $mod+ampersand workspace 1
-bindsym $mod+eacute workspace 2
-bindsym $mod+quotedbl workspace 3
-bindsym $mod+apostrophe workspace 4
-bindsym $mod+parenleft workspace 5
-bindsym $mod+section workspace 6
-bindsym $mod+egrave workspace 7
-bindsym $mod+exclam workspace 8
-bindsym $mod+ccedilla workspace 9
-bindsym $mod+agrave workspace 10
+
 
 # move focused container to workspace
 bindsym $mod+Shift+ampersand move container to workspace 1
@@ -163,28 +156,48 @@ bindsym $mod+r mode "resize"
 ###########################################################################
 ###########################################################################
 
+
+#Dual screen setting
+
+exec $HOME/.i3/scripts/dualscreen.sh
+
+
+
+
+
 #setting variables for later use
 
 
+# switch to workspace
+bindsym $mod+ampersand workspace 1
+bindsym $mod+eacute workspace 2
+bindsym $mod+quotedbl workspace 3
+bindsym $mod+apostrophe workspace 4
+bindsym $mod+parenleft workspace 5
+bindsym $mod+section workspace 6
+bindsym $mod+egrave workspace 7
+bindsym $mod+exclam workspace 8
+bindsym $mod+ccedilla workspace 9
+bindsym $mod+agrave workspace 10
 
 
 
 #if dualscreen is on
 
-workspace 1 output DVI-I-0
-workspace 2 output DVI-I-0
-workspace 3 output DVI-I-0
-workspace 4 output DVI-I-0
-workspace 5 output DVI-I-0
-workspace 6 output DVI-I-3
-workspace 7 output DVI-I-3
-workspace 8 output DVI-I-3
-workspace 9 output DVI-I-3
-workspace 10 output DVI-I-3
+workspace 1 output DVI-I-1
+workspace 2 output DVI-I-1
+workspace 3 output DVI-I-1
+workspace 4 output DVI-I-1
+workspace 5 output DVI-I-1
+workspace 6 output DVI-I-2
+workspace 7 output DVI-I-2
+workspace 8 output DVI-I-2
+workspace 9 output DVI-I-2
+workspace 10 output DVI-I-2
 
 ## Assign section
 assign [class="firefox"]          → 1
-assign [class="sublime_text"]     → 2
+#assign [class="Sublime_text"]     → 2
 assign [class="Geary"]            → 9
 assign [class="Spotify"]          → 10
 
@@ -197,6 +210,18 @@ exec nitrogen --restore
 exec numlockx on
 
 
+
+#floating enabled from some programs
+for_window [class="Gnome-disks"] floating enable
+for_window [class="^Skype$"] floating enable
+for_window [class="^Gnome-font-viewer$"] floating enable
+#for_window [class="^Thunar$"] floating enable
+for_window [class="^Gpick$"] floating enable
+for_window [class="^Vlc$"] floating enable
+for_window [class="^Spotify$"] floating enable workspace 10
+
+
+
 #start tray applications
 
 exec --no-startup-id nm-applet
@@ -204,10 +229,10 @@ exec dropbox start
 
 
 
-#workspace related applications
+#workspace related applications (--no-startup-id)
 
 exec  firefox
-exec  --no-startup-id sublime-text 
+#exec  --no-startup-id sublime-text
 exec  geary
 exec  spotify
 
@@ -215,12 +240,17 @@ exec  spotify
 
 #personal app launchers
 
+#Filemanagers
 bindsym $mod+Shift+Return exec thunar
+#bindsym $mod+Shift+Return exec --no-desktop nemo
+
 
 #F1-F12
-bindsym ctrl+f exec firefox 
-
-
+#mod1 = ALT
+bindsym control+mod1+f exec firefox 
+bindsym control+mod1+g exec geary
+bindsym control+mod1+s exec spotify
+bindsym control+mod1+t exec sublime-text
 
 # Screen Shots
 
@@ -275,21 +305,19 @@ bar {
 
 
 
-# Original windows decoration colors
+# Windows decoration colors
 # class                 border  backgr. text    indicator
-client.focused          #4c7899 #285577 #ffffff #2e9ef4
-client.focused          #4c7899 #285577 #ffffff #2e9ef4
-client.focused_inactive #333333 #5f676a #ffffff #484e50
-client.unfocused        #333333 #222222 #888888 #292d2e
-client.urgent           #2f343a #900000 #ffffff #900000
-client.unfocused        #4c7899 #24364F #aaaaaa #2e9ef4
 client.focused          #c10101 #880404 #ffffff #00AA00
+client.unfocused        #4c7899 #24364F #aaaaaa #2e9ef4
+client.focused_inactive #333333 #5f676a #ffffff #484e50
+client.urgent           #2f343a #900000 #ffffff #900000
+
+
 
 # Border control
 hide_edge_borders both
 bindsym $mod+shift+b exec i3-msg border toggle
 
-#floating enabled from some programs
-for_window [class="Gnome-disks"] floating enable
-for_window [class="^Skype$"] floating enable
-for_window [class="^Gnome-system-monitor$"] floating enable
+
+
+

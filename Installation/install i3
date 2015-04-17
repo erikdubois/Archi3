@@ -1,11 +1,13 @@
 sudo pacman -S i3-wm i3lock i3status dmenu 
-sudo pacman -S rxvt-unicode gtk2-perl scrot xdotool xclip feh screenfetch git dropbox geary
+sudo pacman -S rxvt-unicode gtk2-perl scrot xdotool xclip feh screenfetch git dropbox geary htop
 sudo pacman -S vlc clementine terminator nitrogen zsh lm_sensors sysstat numlockx
 
 numlockx on 
 
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
-chsh erik /bin/zsh
+
+echo "chsh erik -s /bin/zsh"
+echo "Do this later again if necessary!!"
 
 yaourt packer
 
@@ -21,4 +23,5 @@ packer systemd-numlockontty
 sudo systemctl enable numLockOnTty
 sudo systemctl start numLockOnTty
 
-#interesting : https://github.com/ashinkarov/i3-extras i3blocks
+#Dualscreen
+xrandr --output DVI-I-1 --auto --left-of DVI-I-2

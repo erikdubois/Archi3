@@ -99,17 +99,7 @@ bindsym $mod+q focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# switch to workspace
-bindsym $mod+ampersand workspace 1
-bindsym $mod+eacute workspace 2
-bindsym $mod+quotedbl workspace 3
-bindsym $mod+apostrophe workspace 4
-bindsym $mod+parenleft workspace 5
-bindsym $mod+section workspace 6
-bindsym $mod+egrave workspace 7
-bindsym $mod+exclam workspace 8
-bindsym $mod+ccedilla workspace 9
-bindsym $mod+agrave workspace 10
+
 
 # move focused container to workspace
 bindsym $mod+Shift+ampersand move container to workspace 1
@@ -166,26 +156,48 @@ bindsym $mod+r mode "resize"
 ###########################################################################
 ###########################################################################
 
+
+#Dual screen setting
+
+exec $HOME/.i3/scripts/dualscreen.sh
+
+
+
+
+
 #setting variables for later use
+
+
+# switch to workspace
+bindsym $mod+ampersand workspace 1
+bindsym $mod+eacute workspace 2
+bindsym $mod+quotedbl workspace 3
+bindsym $mod+apostrophe workspace 4
+bindsym $mod+parenleft workspace 5
+bindsym $mod+section workspace 6
+bindsym $mod+egrave workspace 7
+bindsym $mod+exclam workspace 8
+bindsym $mod+ccedilla workspace 9
+bindsym $mod+agrave workspace 10
 
 
 
 #if dualscreen is on
 
-workspace 1 output DVI-I-0
-workspace 2 output DVI-I-0
-workspace 3 output DVI-I-0
-workspace 4 output DVI-I-0
-workspace 5 output DVI-I-0
-workspace 6 output DVI-I-3
-workspace 7 output DVI-I-3
-workspace 8 output DVI-I-3
-workspace 9 output DVI-I-3
-workspace 10 output DVI-I-3
+workspace 1 output DVI-I-1
+workspace 2 output DVI-I-1
+workspace 3 output DVI-I-1
+workspace 4 output DVI-I-1
+workspace 5 output DVI-I-1
+workspace 6 output DVI-I-2
+workspace 7 output DVI-I-2
+workspace 8 output DVI-I-2
+workspace 9 output DVI-I-2
+workspace 10 output DVI-I-2
 
 ## Assign section
 assign [class="firefox"]          → 1
-assign [class="sublime_text"]     → 2
+#assign [class="Sublime_text"]     → 2
 assign [class="Geary"]            → 9
 assign [class="Spotify"]          → 10
 
@@ -198,6 +210,18 @@ exec nitrogen --restore
 exec numlockx on
 
 
+
+#floating enabled from some programs
+for_window [class="Gnome-disks"] floating enable
+for_window [class="^Skype$"] floating enable
+for_window [class="^Gnome-font-viewer$"] floating enable
+#for_window [class="^Thunar$"] floating enable
+for_window [class="^Gpick$"] floating enable
+for_window [class="^Vlc$"] floating enable
+for_window [class="^Spotify$"] floating enable workspace 10
+
+
+
 #start tray applications
 
 exec --no-startup-id nm-applet
@@ -208,7 +232,7 @@ exec dropbox start
 #workspace related applications (--no-startup-id)
 
 exec  firefox
-exec  sublime-text
+#exec  --no-startup-id sublime-text
 exec  geary
 exec  spotify
 
@@ -216,7 +240,10 @@ exec  spotify
 
 #personal app launchers
 
+#Filemanagers
 bindsym $mod+Shift+Return exec thunar
+#bindsym $mod+Shift+Return exec --no-desktop nemo
+
 
 #F1-F12
 #mod1 = ALT
@@ -292,13 +319,5 @@ hide_edge_borders both
 bindsym $mod+shift+b exec i3-msg border toggle
 
 
-
-#floating enabled from some programs
-for_window [class="Gnome-disks"] floating enable
-for_window [class="^Skype$"] floating enable
-for_window [class="^Gnome-font-viewer$"] floating enable
-#for_window [class="^Thunar$"] floating enable
-for_window [class="^Gpick$"] floating enable
-for_window [class="^Vlc$"] floating enable
 
 

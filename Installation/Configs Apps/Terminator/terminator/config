@@ -1,0 +1,22 @@
+[global_config]
+  title_transmit_bg_color = "#414141"
+  title_inactive_fg_color = "#a8a6a6"
+  title_inactive_bg_color = "#424242"
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.58
+    background_type = transparent
+    scroll_on_output = False
+    icon_bell = False
+    show_titlebar = False
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
