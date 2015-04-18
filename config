@@ -207,7 +207,7 @@ assign [class="Spotify"]          → 10
 
 #variety is taking care of rotating wallpapers
 #exec nitrogen --restore
-exec numlockx on
+exec_always --no-startup-id numlockx on
 
 
 
@@ -259,6 +259,7 @@ bindsym control+mod1+g exec geary
 bindsym control+mod1+s exec spotify
 bindsym control+mod1+t exec subl
 bindsym control+mod1+a exec xfce4-appfinder
+bindsym control+mod1+b exec thunar
 
 # Screen Shots
 
