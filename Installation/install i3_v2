@@ -1,0 +1,30 @@
+#Cleanup of all the unnessary stuff
+
+#Core stuff
+sudo pacman -S i3-wm i3lock i3status dmenu 
+
+
+sudo pacman -S scrot screenfetch git geary htop
+sudo pacman -S vlc clementine terminator zsh lm_sensors sysstat numlockx
+
+numlockx on 
+
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+
+echo "chsh erik -s /bin/zsh"
+echo "Do this later again if necessary!!"
+
+yaourt packer
+
+packer j4-dmenu-desktop   --noedit
+packer spotify  --noedit
+packer sublime-edit --noedit
+packer google chrome --noedit
+packer playerctl --noedit
+packer i3blocks --noedit
+
+#Dualscreen - this changes just type xrandr and change the numbers
+xrandr --output DVI-I-1 --auto --left-of DVI-I-2
+
+#if keyboard not azerty put in config file
+exec setxkbmap be 
