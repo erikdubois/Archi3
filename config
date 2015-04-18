@@ -219,6 +219,7 @@ for_window [class="^Gnome-font-viewer$"] floating enable
 for_window [class="^Gpick$"] floating enable
 for_window [class="^Vlc$"] floating enable
 for_window [class="^Spotify$"] floating enable workspace 10
+for_window [class="^Spotify$"] move right
 for_window [class="^Eog$"] floating enable
 for_window [instance="gimp"] floating enable
 for_window [instance="variety"] floating enable
@@ -237,6 +238,7 @@ exec subl
 exec geary
 exec spotify
 exec thunar
+exec variety -q
 
 
 
@@ -309,6 +311,7 @@ bar {
 
 # Windows decoration colors
 # class                 border  backgr. text    indicator
+client.background color         #222222
 client.focused          #1793D1 #1793D1 #ffffff #00AA00
 client.unfocused        #222222 #222222 #aaaaaa #2e9ef4
 client.focused_inactive #333333 #5f676a #ffffff #484e50

@@ -7,6 +7,7 @@ ln -s ~/.i3/.i3blocks.conf ~/.i3blocks.conf
 
 
 Layout of Thunar and more themes
+lxappearance to set specific wallpapers
 
 
 ln -s ~/.i3/.gtkrc-2.0 ~/.gtkrc-2.0 
