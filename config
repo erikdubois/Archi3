@@ -163,8 +163,6 @@ exec $HOME/.i3/scripts/dualscreen.sh
 
 
 
-
-
 #setting variables for later use
 
 
@@ -219,7 +217,7 @@ for_window [class="^Gnome-font-viewer$"] floating enable
 for_window [class="^Gpick$"] floating enable
 for_window [class="^Vlc$"] floating enable
 for_window [class="^Spotify$"] floating enable workspace 10
-
+for_window [class="^Eog$"] floating enable
 
 
 #start tray applications
@@ -232,7 +230,7 @@ exec dropbox start
 #workspace related applications (--no-startup-id)
 
 exec  firefox
-#exec  --no-startup-id sublime-text
+exec  subl
 exec  geary
 exec  spotify
 
@@ -250,7 +248,7 @@ bindsym $mod+Shift+Return exec thunar
 bindsym control+mod1+f exec firefox 
 bindsym control+mod1+g exec geary
 bindsym control+mod1+s exec spotify
-bindsym control+mod1+t exec sublime-text
+bindsym control+mod1+t exec subl
 
 # Screen Shots
 
