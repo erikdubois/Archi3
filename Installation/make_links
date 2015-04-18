@@ -1,4 +1,14 @@
+#this file is an attempt to keep all necessary information to have all information necessary on github
+#for easy installation on an other computer
+
+#use of i3blocks for bar 
+
 ln -s ~/.i3/.i3blocks.conf ~/.i3blocks.conf
 
-PATH=$PATH:/usr/bin/sublime-text
-export PATH
+
+Layout of Thunar and more themes
+
+
+ln -s ~/.i3/.gtkrc-2.0 ~/.gtkrc-2.0 
+
+ln -s ~/.i3/settings.ini ~/.config/gtk-3.0/settings.ini

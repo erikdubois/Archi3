@@ -1,0 +1,11 @@
+Go to /home/erik/.config/variety/scripts/set_wallpaper
+
+change the codes
+
+# Feh - commented, as it may cause problems with Nautilus, (see bug https://bugs.launchpad.net/variety/+bug/1047083)
+feh --bg-scale "$WP" 2> /dev/null
+
+
+Line 6 must work install feh!
+
+you can change get_wallpaper same way
