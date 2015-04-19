@@ -183,16 +183,16 @@ bindsym $mod+agrave workspace 10
 
 #if dualscreen is on
 
-workspace 1 output DVI-I-1
-workspace 2 output DVI-I-1
-workspace 3 output DVI-I-1
-workspace 4 output DVI-I-1
-workspace 5 output DVI-I-1
-workspace 6 output DVI-I-2
-workspace 7 output DVI-I-2
-workspace 8 output DVI-I-2
-workspace 9 output DVI-I-2
-workspace 10 output DVI-I-2
+workspace 1 output DVI-I-0
+workspace 2 output DVI-I-0
+workspace 3 output DVI-I-0
+workspace 4 output DVI-I-0
+workspace 5 output DVI-I-0
+workspace 6 output DVI-I-3
+workspace 7 output DVI-I-3
+workspace 8 output DVI-I-3
+workspace 9 output DVI-I-3
+workspace 10 output DVI-I-3
 
 ## Assign section
 assign [class="firefox"]          → 1
