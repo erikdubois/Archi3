@@ -225,6 +225,7 @@ for_window [instance="variety"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Brasero"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
+for_window [class="Wine"] floating enable
 
 #start tray applications
 
@@ -259,6 +260,7 @@ bindsym control+mod1+s exec spotify
 bindsym control+mod1+t exec subl
 bindsym control+mod1+a exec xfce4-appfinder
 bindsym control+mod1+b exec thunar
+bindsym control+mod1+0 exec systemctl suspend
 
 # Screen Shots
 
