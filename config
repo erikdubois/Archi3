@@ -230,7 +230,7 @@ for_window [class="Xfce4-appfinder"] floating enable
 
 exec --no-startup-id nm-applet
 exec dropbox start
-exec CopyAgent
+exec_always /opt/copy/CopyAgent &
 
 
 #workspace related applications (--no-startup-id)
