@@ -51,6 +51,13 @@ sudo pacman -S feh
 #Installation for sound
 sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
 
+#if you want to autologin - aka at home no danger
+# https://github.com/Arakis/autologin-on-boot
+
+packer autologin-on boot --noedit
+/bin/autologin-on-boot
+
+
 
 
 

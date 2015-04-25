@@ -240,6 +240,7 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="CopyAgent"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="Preferences"] floating enable
+for_window [window_role="setup"] floating enable
 
 
 
@@ -279,6 +280,8 @@ bindsym control+mod1+t exec subl
 #bindsym control+mod1+a exec xfce4-appfinder
 bindsym control+mod1+b exec thunar
 bindsym control+mod1+0 exec systemctl suspend
+bindsym $mod+ctrl+shift+s exec --no-startup-id "i3-nagbar -m 'Shutdown?' -b 'Yes, shutdown.' 'sudo poweroff'"
+
 
 # Screen Shots
 
