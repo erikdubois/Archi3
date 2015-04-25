@@ -1,0 +1,53 @@
+#Cleanup of all the unnessary stuff
+
+#Core stuff
+sudo pacman -S i3-wm i3lock i3status dmenu 
+
+#Installation of System Tools 
+sudo pacman -S scrot screenfetch git htop alsi wget lm_sensors sysstat numlockx inxi dmidecode hddtemp mesa-demos net-tools
+numlockx on 
+
+#Installation of apps
+sudo pacman -S vlc clementine geary terminator zsh lxappearance firefox thunar file-roller ristretto ttf-ubuntu-font-family
+
+
+#Installation of zsh from the github (best way to install!!)
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+
+#You have to type this again
+echo "chsh erik -s /bin/zsh"
+echo "Do this later again if necessary!!"
+
+#downloading yaourt to get packer (comes from archlinux.fr)
+sudo pacman -S yaourt
+
+yaourt packer
+
+# All packer apps
+packer j4-dmenu-desktop   --noedit
+packer spotify  --noedit
+packer sublime-edit --noedit
+packer google chrome --noedit
+packer playerctl --noedit
+packer i3blocks --noedit
+packer ultra-flat-icons --noedit
+packer dropbox --noedit
+packer copy-agent --noedit
+packer variety --noedit
+packer focuswriter --noedit
+
+#variety uses this wallpaper changer
+sudo pacman -S feh 
+
+#Dualscreen - this changes just type xrandr and change the numbers
+# xrandr --output DVI-I-1 --auto --left-of DVI-I-2
+
+#if keyboard not azerty put in config file
+# exec setxkbmap be 
+
+#with xprop you can find out what the class name is of a program
+#to set it floating for example
+
+#Installation for sound
+sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
+ 

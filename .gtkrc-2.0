@@ -3,7 +3,7 @@
 
 include "/home/erik/.gtkrc-2.0.mine"
 gtk-theme-name="Just-Dark"
-gtk-icon-theme-name="Ultra-Flat-Orange"
+gtk-icon-theme-name="Numix-Circle-Arch-Blue"
 gtk-font-name="Monospace 12"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
