@@ -8,7 +8,7 @@ sudo pacman -S scrot screenfetch git htop alsi wget lm_sensors sysstat numlockx 
 numlockx on 
 
 #Installation of apps
-sudo pacman -S vlc clementine geary terminator zsh lxappearance firefox thunar file-roller ristretto ttf-ubuntu-font-family
+sudo pacman -S vlc clementine geary terminator zsh lxappearance firefox thunar file-roller ristretto ttf-ubuntu-font-family tumbler
 
 
 #Installation of zsh from the github (best way to install!!)
@@ -40,7 +40,7 @@ packer focuswriter --noedit
 sudo pacman -S feh 
 
 #Dualscreen - this changes just type xrandr and change the numbers
-# xrandr --output DVI-I-1 --auto --left-of DVI-I-2
+# xrandr --output DVI-I-0 --auto --left-of DVI-I-3
 
 #if keyboard not azerty put in config file
 # exec setxkbmap be 
@@ -50,4 +50,11 @@ sudo pacman -S feh
 
 #Installation for sound
 sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
+
+
+
+
+#install extra's
+
+sudo pacman -S gimp inkscape
  
