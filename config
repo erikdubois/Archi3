@@ -40,7 +40,7 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono 8
 
 
-font pango:monospace 12
+font pango:hermit 12
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -239,9 +239,11 @@ for_window [class="Wine"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="CopyAgent"] floating enable
 for_window [window_role="pop-up"] floating enable
-for_window [window_role="Preferences"] floating enable
+for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
-
+for_window [title="^Terminator Preferences$"] floating enable
+for_window [class="Font-manager"] floating enable
+for_window [class="System-config-printer.py"] floating enable
 
 
 #start tray applications
@@ -279,8 +281,27 @@ bindsym control+mod1+s exec spotify
 bindsym control+mod1+t exec subl
 #bindsym control+mod1+a exec xfce4-appfinder
 bindsym control+mod1+b exec thunar
-bindsym control+mod1+0 exec systemctl suspend
-bindsym $mod+ctrl+shift+s exec --no-startup-id "i3-nagbar -m 'Shutdown?' -b 'Yes, shutdown.' 'sudo poweroff'"
+
+
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id ~/.i3/scripts/i3exit.sh lock, mode "default"
+    bindsym e exec --no-startup-id ~/.i3/scripts/i3exit.sh logout, mode "default"
+    bindsym s exec --no-startup-id ~/.i3/scripts/i3exit.sh suspend, mode "default"
+    bindsym h exec --no-startup-id ~/.i3/scripts/i3exit.sh hibernate, mode "default"
+    bindsym r exec --no-startup-id ~/.i3/scripts/i3exit.sh reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id ~/.i3/scripts/i3exit.sh shutdown, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Pause mode "$mode_system"
+
+#old controls
+#bindsym control+mod1+0 exec systemctl suspend
+#bindsym $mod+ctrl+shift+s exec --no-startup-id "i3-nagbar -m 'Shutdown?' -b 'Yes, shutdown.' 'sudo poweroff'"
+
 
 
 # Screen Shots
@@ -322,7 +343,7 @@ bar {
   
     status_command i3blocks
     #status_command i3status
-    font pango:monospace 12
+    #font pango:monospace 12
     colors {
             background #222222
             statusline #eeeeee
