@@ -51,7 +51,7 @@ sudo pacman -S feh
 
 #Installation for sound
 sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
-sudo pacman -S gst-plugins-bad gst-plugins-base gst-plugins-ugly libsrtp
+sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly libsrtp  #for kazam
 
 #if you want to autologin - aka at home no danger
 # https://github.com/Arakis/autologin-on-boot
