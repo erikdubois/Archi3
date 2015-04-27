@@ -206,6 +206,7 @@ workspace 10 output DVI-I-3
 ## Assign section
 assign [class="Firefox"]          → 1
 assign [class="sublime-text"]     → 2
+assign [class="sublime_text"]     → 2
 assign [class="Thunar"]           → 8
 assign [class="Geary"]            → 9
 assign [class="Spotify"]          → 10
