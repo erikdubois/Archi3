@@ -68,6 +68,7 @@ sudo pacman -S gimp inkscape transmission-gtk popcorntime  vnstat skype
 systemctl enable vnstat
 systemctl start vnstat
 packer google-chrome --noedit
+#packer archlinux-artwork --noedit
 
 packer kazam --noedit
 

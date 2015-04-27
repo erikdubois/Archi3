@@ -38,9 +38,10 @@ set $mod Mod4
 #font pango:UbuntuMono-regular 12
 #font pango:DroidSansMono 11
 #font pango:DejaVu Sans Mono 8
+#font pango:monospace 12
+#font pango:hermit
+font pango:Droid Sans Mono Dotted 12
 
-
-font pango:hermit 12
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
