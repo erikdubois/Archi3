@@ -246,7 +246,7 @@ for_window [window_role="setup"] floating enable
 for_window [title="^Terminator Preferences$"] floating enable
 for_window [class="Font-manager"] floating enable
 for_window [class="System-config-printer.py"] floating enable
-
+for_window [class="Nitrogen"] floating enable
 
 #start tray applications
 
