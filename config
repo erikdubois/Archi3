@@ -58,8 +58,8 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'Inconsolata:bold:pixelsize=15' 
-bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Inconsolata:bold:pixelsize=15'"
+bindsym $mod+d exec dmenu_run -fn 'Inconsolata:bold:pixelsize=20' 
+bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Inconsolata:bold:pixelsize=20'"
 #bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'monospace:bold:pixelsize=15'"
 
 
