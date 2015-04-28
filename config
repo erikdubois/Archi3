@@ -40,8 +40,8 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono 8
 #font pango:monospace 12
 #font pango:hermit
-font pango:Droid Sans Mono Dotted 12
-
+#font pango:Droid Sans Mono Dotted 12
+font pango:Inconsolata 15
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -58,8 +58,8 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'monospace:bold:pixelsize=15' 
-bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'monospace:bold:pixelsize=15'"
+bindsym $mod+d exec dmenu_run -fn 'Inconsolata:bold:pixelsize=15' 
+bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Inconsolata:bold:pixelsize=15'"
 #bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'monospace:bold:pixelsize=15'"
 
 
@@ -232,7 +232,7 @@ for_window [class="^Gnome-font-viewer$"] floating enable
 for_window [class="^Gpick$"] floating enable
 for_window [class="^Vlc$"] floating enable
 #for_window [class="^Spotify$"] floating enable workspace 10
-for_window [instance="gimp"] floating enable
+#for_window [instance="gimp"] floating enable
 for_window [instance="variety"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Brasero"] floating enable
