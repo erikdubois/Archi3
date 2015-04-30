@@ -59,7 +59,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -fn 'Inconsolata:bold:pixelsize=20' 
-bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Inconsolata:bold:pixelsize=20'"
+bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Inconsolata:bold:pixelsize=20S'"
 #bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'monospace:bold:pixelsize=15'"
 
 
@@ -192,16 +192,34 @@ bindsym $mod+agrave workspace 10
 
 #if dualscreen is on
 
-workspace 1 output DVI-I-0
-workspace 2 output DVI-I-0
-workspace 3 output DVI-I-0
-workspace 4 output DVI-I-0
-workspace 5 output DVI-I-0
-workspace 6 output DVI-I-3
-workspace 7 output DVI-I-3
-workspace 8 output DVI-I-3
-workspace 9 output DVI-I-3
-workspace 10 output DVI-I-3
+#xrandr DVI-0 and 3
+#workspace 1 output DVI-I-0
+#workspace 2 output DVI-I-0
+#workspace 3 output DVI-I-0
+#workspace 4 output DVI-I-0
+#workspace 5 output DVI-I-0
+#workspace 6 output DVI-I-3
+#workspace 7 output DVI-I-3
+#workspace 8 output DVI-I-3
+#workspace 9 output DVI-I-3
+#workspace 10 output DVI-I-3
+
+#xrandr DVI-1 and 2
+workspace 1 output DVI-I-1
+workspace 2 output DVI-I-1
+workspace 3 output DVI-I-1
+workspace 4 output DVI-I-1
+workspace 5 output DVI-I-1
+workspace 6 output DVI-I-2
+workspace 7 output DVI-I-2
+workspace 8 output DVI-I-2
+workspace 9 output DVI-I-2
+workspace 10 output DVI-I-2
+
+
+
+
+
 
 ## Assign section
 assign [class="Firefox"]          → 1
