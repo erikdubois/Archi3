@@ -370,19 +370,21 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioStop exec playerctl stop
 
 
-
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-
 # bar toggle, hide or show 
 bindsym $mod+b bar mode toggle
+
+# Border control
+hide_edge_borders both
+bindsym $mod+shift+b exec i3-msg border toggle
+
+#####COLORS#####
 
 bar {
     workspace_buttons yes
     status_command i3blocks
     #status_command i3status
     #font pango:monospace 12
+    
     colors {
             background #222222
             statusline #eeeeee
@@ -391,9 +393,8 @@ bar {
             active_workspace   #333333 #5f676a #ffffff
             inactive_workspace #333333 #222222 #888888
             urgent_workspace   #2f343a #900000 #ffffff
-        }
-
-}
+            }
+    }
 
 
 
@@ -407,9 +408,22 @@ client.urgent           #2f343a #900000 #ffffff #900000
 
 
 
+# Alternatives
+# BLue and grey Colors
+# https://github.com/Gravemind/ArchLinux/blob/master/.i3/config
+# class                 border  backgr. text    indicator
+# client.focused          #000000 #285577 #dddddd #0099ff
+# client.focused_inactive #000000 #333333 #888888 #484e50
+# client.unfocused        #000000 #000000 #555555 #292d2e
+# client.urgent           #2f343a #900000 #ffffff #900000
 
-# Border control
-hide_edge_borders both
-bindsym $mod+shift+b exec i3-msg border toggle
+# Def
+# client.focused          #4c7899 #285577 #ffffff #2e9ef4
+# client.focused_inactive #333333 #5f676a #ffffff #484e50
+# client.unfocused        #333333 #222222 #888888 #292d2e
+# client.urgent           #2f343a #900000 #ffffff #900000
+
+
+
 
 
