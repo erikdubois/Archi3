@@ -1,0 +1,8 @@
+#do the following stuff
+#https://aur.archlinux.org/packages/copy-agent/?comments=all
+
+sudo touch /etc/sysctl.d/60-copy.conf
+
+sudo subl /etc/sysctl.d/60-copy.conf
+
+sudo sysctl -p /etc/sysctl.d/copy.conf 

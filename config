@@ -58,7 +58,7 @@ set $mod Mod4
 #font -xos4-terminus-*-*-*-*-14-*-*-*-*-*-iso10646-1
 #font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 9
 # ttf-chromeos-fonts
-font pango:Cousine 11
+font pango:Cousine 12
 #font pango:Arimo 11  
 
 # Use Mouse+$mod to drag floating windows to their wanted position
