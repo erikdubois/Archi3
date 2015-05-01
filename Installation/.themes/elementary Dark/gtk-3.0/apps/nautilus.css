@@ -1,0 +1,48 @@
+NautilusWindow * {
+    -GtkPaned-handle-size: 0;
+}
+
+.nautilus-canvas-item {
+    border-radius: 3px;
+}
+
+/* desktop mode */
+.nautilus-desktop.nautilus-canvas-item {
+    color: #ffffff;
+    text-shadow: 1 1 alpha (#000000, 0.8);
+}
+
+.nautilus-desktop.nautilus-canvas-item:active {
+    background-image: none;
+    background-color: alpha (@theme_bg_color, 0.84);
+
+    color: @theme_fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:selected {
+    background-image: none;
+    background-color: alpha (@theme_selected_bg_color, 0.84);
+
+    color: @theme_selected_fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:selected {
+    text-shadow: none;
+}
+
+/* browser window */
+NautilusFloatingBar {
+    background-color: @theme_bg_color;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: shade (@theme_bg_color, 0.8);
+    color: @theme_fg_color;
+}
+
+NautilusFloatingBar .button {
+    -GtkButton-image-spacing: 0px;
+    -GtkButton-inner-border: 0px;
+}

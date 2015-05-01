@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Ambiance Dark Blue
+Comment=Dark version theme v.1.05
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Ambiance Dark Blue
+MetacityTheme=Ambiance Dark Blue
+IconTheme=Fog
+CursorTheme=DMZ-White
+ButtonLayout=close,minimize,maximize:
+

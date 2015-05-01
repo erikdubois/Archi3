@@ -1,0 +1,43 @@
+/***********
+ * sidebar *
+ ***********/
+.sidebar,
+.sidebar.view,
+.sidebar .view,
+.sidebar GtkScrolledWindow {
+    background-color: @base_color;
+    background-image: linear-gradient(to bottom,@base_color,@base_color);
+    color: @text_color; 
+}
+
+.sidebar GtkScrolledWindow,
+.sidebar {
+    border-width: 0;
+}
+
+.sidebar .image:selected:focus,
+.sidebar .image:selected:hover {
+    background-color: shade(@selected_bg_color,0.9);
+    color: @selected_fg_color;
+}
+
+.sidebar  .list-row {
+    background-color: @base_color;
+    color: @text_color;
+}
+
+.sidebar .cell:selected,
+.sidebar .cell:selected:focus {
+    background-color: shade(@selected_bg_color,0.9);
+    background-image: none;
+    color: @selected_fg_color;
+}
+
+.sidebar GtkScrolledWindow .list-row {
+    background-color: transparent;
+    color: @text_color;
+}
+
+.sidebar .frame {
+    border-width: 0;
+}

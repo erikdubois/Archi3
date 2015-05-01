@@ -1,0 +1,96 @@
+/* Fallback Mode Panel */
+PanelWidget:backdrop,
+PanelApplet:backdrop,
+PanelToplevel:backdrop,
+PanelWidget,
+PanelApplet,
+PanelToplevel {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 1.2)),
+                                     to (shade (@theme_bg_color, 0.85)));
+
+    border-width: 0;
+
+    color: @theme_fg_color;
+}
+
+PanelSeparator:backdrop,
+PanelSeparator {
+    border-width: 0;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 1.2)),
+                                     to (shade (@theme_bg_color, 0.85)));
+}
+
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem {
+    -PanelMenuBar-icon-visible: true;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 1.2)),
+                                     to (shade (@theme_bg_color, 0.85)));
+
+    border-width: 0;
+}
+
+PanelAppletFrame {
+    background-color: @theme_bg_color;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 1.2)),
+                                     to (shade (@theme_bg_color, 0.85)));
+
+    border-width: 0;
+}
+
+PanelApplet .button:backdrop,
+PanelApplet .button {
+    -GtkButton-inner-border: 2;
+
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 1.2)),
+                                     to (shade (@theme_bg_color, 0.85)));
+
+    border-color: shade (@theme_bg_color, 0.9);
+    border-radius: 0;
+    border-width: 0 1px 0 1px;
+
+    -unico-border-gradient: none;
+    -unico-glow-radius: 0;
+    -unico-inner-stroke-width: 0px;
+    -unico-outer-stroke-width: 0px;
+}
+
+PanelApplet .button:prelight:active:backdrop,
+PanelApplet .button:active:backdrop,
+PanelApplet .button:prelight:active,
+PanelApplet .button:active {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 0.7)),
+                                     to (shade (@theme_bg_color, 0.8)));
+
+    border-color: shade (@theme_bg_color, 0.9);
+    border-radius: 0;
+    border-width: 0 1px 0 1px;
+
+    -unico-border-gradient: none;
+    -unico-glow-radius: 0;
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-width: 0;
+}
+
+PanelApplet .button:prelight {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_bg_color, 1.2)),
+                                     to (shade (@theme_bg_color, 1.0)));
+
+    border-color: shade (@theme_bg_color, 0.9);
+    border-radius: 0;
+    border-width: 0 1px 0 1px;
+
+    -unico-border-gradient: none;
+    -unico-glow-radius: 0;
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-width: 0;
+}

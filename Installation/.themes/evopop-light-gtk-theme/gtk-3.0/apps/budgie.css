@@ -1,0 +1,22 @@
+.budgie-panel *:active {
+    background-color: transparent;
+}
+
+.max-budgie-panel {
+    border: 1px solid alpha(black, 0.7);
+    background-color: alpha(black, 0.8);
+}
+
+.budgie-panel .message-area {
+    border-radius: 3px;
+    border: 1px solid alpha(white, 0.1);
+    background-color: alpha(black, 0.8);
+}
+
+PanelToplevel {
+    padding: 0px;
+    border-top: 1px solid mix(@panel_bg_color,white,0.1);
+    background-color: @panel_bg_color;
+    background-image: none;
+    color: @panel_fg_color;
+}

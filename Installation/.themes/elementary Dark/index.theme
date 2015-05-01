@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=elementary Dark
+Comment=a soft and subtle dark theme based on elementary
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=elementary Dark
+MetacityTheme=elementary Dark
+IconTheme=elementary
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize:

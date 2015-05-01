@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=zni3
+Type=X-GNOME-Metatheme
+Comment=Murrine black n grey theme\nzniavre2048@gmail.com
+
+[X-GNOME-Metatheme]
+GtkTheme=zni3
+MetacityTheme=zni3
+IconTheme=Humanity-Dark
+GtkColorScheme=fg_color:#363636,bg_color:#DBDBDB,base_color:#f5f4f1,text_color:#363636,selected_bg_color:#535353,selected_fg_color:#f5f4f1,tooltip_bg_color:#363636,tooltip_fg_color:#dbdbdb,metacity_last_color:#4c4c4c
+CursorTheme=cursor-theme
+CursorSize=18
+NotificationTheme=ubuntu

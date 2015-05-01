@@ -1,0 +1,43 @@
+UnityPanelWidget,
+.unity-panel {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (rgba(0,0,0,0.7)),
+                                     to (rgba(0,0,0,0.75)));
+
+    border-width: 0px;
+
+    -unico-border-gradient: none;
+}
+
+.unity-panel.menubar,
+.unity-panel .menubar {
+    text-shadow: none;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (rgba(0,0,0,0.0)),
+                                     to (rgba(0,0,0,0.0)));
+}
+
+.unity-panel.menuitem,
+.unity-panel .menuitem {
+    border-width: 0 1px;
+
+    icon-shadow: none;
+}
+
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_selected_bg_color, 1.2)),
+                                     to (shade (@theme_selected_bg_color, 1.0)));
+
+    color: @theme_fg_color;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                           from (shade (@theme_selected_bg_color, 0.88)),
+                                           to (shade (@theme_selected_bg_color, 0.9)));
+    -unico-glow-radius: 0;
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (shade (@theme_selected_bg_color, 1.14)),
+                                                 to (shade (@theme_selected_bg_color, 1.0)));
+    -unico-inner-stroke-width: 1;
+}
