@@ -5,4 +5,10 @@ sudo touch /etc/sysctl.d/60-copy.conf
 
 sudo subl /etc/sysctl.d/60-copy.conf
 
-sudo sysctl -p /etc/sysctl.d/copy.conf 
+
+fs.inotify.max_user_watches = 20000
+fs.file-max = 800000
+
+
+
+sudo sysctl -p /etc/sysctl.d/60-copy.conf 
