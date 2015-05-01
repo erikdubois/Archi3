@@ -44,19 +44,16 @@ set $mod Mod4
 #font -misc-fixed-bold-r-normal-*-15-140-75-75-c-90-iso10646-1
 #font pango:DejaVu Sans Mono 12
 #font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
-#font pango:Terminus 14px
-#font pango:SourceCodePro-SemiBold 11
-#font pango:terminus 12
-font xft:Terminus 13
-#font pango:UbuntuMono-regular 12
-#font pango:DroidSansMono 11
-#font pango:DejaVu Sans Mono 8
-#font pango:monospace 12
-#font pango:hermit
 #font pango:Droid Sans Mono Dotted 12
+font pango:DroidSansMono 12
+#font pango:hermit 12
 #font pango:Inconsolata 15
-#font -xos4-terminus-*-*-*-*-14-*-*-*-*-*-iso10646-1
+#font pango:monospace 12
+#font pango:SourceCodePro-SemiBold 11
 #font pango:Source Code Pro for Powerline, FontAwesome Regular, Icons 9
+#font pango:Terminus 14px
+#font pango:UbuntuMono-regular 12
+
 # ttf-chromeos-fonts
 #font pango:Cousine 13
 #font pango:Arimo 11  
