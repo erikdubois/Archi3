@@ -93,6 +93,7 @@ packer zukitwo-themes  --noedit
 packer omg-suite --noedit
 packer vertex-themes-git --noedit
 packer ceti-3.14-theme --noedit
+git clone https://github.com/KotusWorks/Ardis-icon-theme.git
 
 
 #install printers
