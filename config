@@ -329,6 +329,8 @@ for_window [title="Deleting"] floating enable
 for_window [title="Moving"] floating enable
 for_window [class="Unetbootin.elf"] floating enable
 
+for_window [class="Hexchat"] floating disable
+
 #start tray applications
 
 #exec --no-startup-id nm-applet

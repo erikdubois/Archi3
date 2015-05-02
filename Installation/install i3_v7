@@ -9,7 +9,7 @@ numlockx on
 
 #Installation of apps
 sudo pacman -S vlc clementine geary terminator zsh lxappearance firefox thunar file-roller ristretto ttf-ubuntu-font-family tumbler flashplugin 
-sudo pacman -S thunar-archive-plugin unclutter thunar-volman thunar-extended thunar-vcs-plugin
+sudo pacman -S thunar-archive-plugin unclutter thunar-volman thunar-extended thunar-vcs-plugin thunar-shares-plugin
 sudo pacman -S gnome-disk-utility
 
 #Installation of zsh from the github (best way to install!!)
@@ -67,7 +67,7 @@ packer autologin-on boot --noedit
 
 #install extra's
 
-sudo pacman -S gimp inkscape transmission-gtk popcorntime  vnstat skype
+sudo pacman -S gimp inkscape transmission-gtk popcorntime  vnstat skype hexchat
 systemctl enable vnstat
 systemctl start vnstat
 packer google-chrome --noedit
@@ -100,3 +100,7 @@ git clone https://github.com/KotusWorks/Ardis-icon-theme.git
 sudo pacman -S cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer
 systemctl enable org.cups.cupsd.service
 systemctl start org.cups.cupsd.service
+
+#gtk configuration via lxappearance but Spotify and others use in their menu qt so... you can make the grey background dark
+packer qtcurve-gtk2 --noedit
+# run qtconfig-qt4
