@@ -104,3 +104,13 @@ systemctl start org.cups.cupsd.service
 #gtk configuration via lxappearance but Spotify and others use in their menu qt so... you can make the grey background dark
 packer qtcurve-gtk2 --noedit
 # run qtconfig-qt4
+
+
+# scanner
+# http://www.linuxveda.com/2013/04/02/how-to-install-and-configure-hp-printer-in-arch-linux/
+packer sane simple-scan
+
+#edit following file and uncomment line with #hpaio
+#network printer hp aio photosmart 7520
+
+sudo nano /etc/sane.d/dll.conf 

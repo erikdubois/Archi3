@@ -1,0 +1,17 @@
+http://www.linuxveda.com/2015/04/02/enable-mse-native-html5-support-firefox-linux/
+
+
+Open Firefox and go to about:config page. Then press the button which says “i’ll be careful, I promise”.
+
+Then in the search box type 
+
+media.media 
+
+and hit enter. From the long list, look for the following and toggle them all to ‘true':
+
+media.fragmented.mp4.*
+media.mediasource.enabled
+media.mediasource.mp4.enabled
+
+Be sure to leave the following set to false:
+media.fragmented-mp4.use-blank-decoder
