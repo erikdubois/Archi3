@@ -7,8 +7,6 @@
 ###################  Start Personal Startup Settings   ####################
 ###########################################################################
 
-
-
 # Change this if you use qwerty
 exec setxkbmap be
 
@@ -16,8 +14,8 @@ exec setxkbmap be
 exec $HOME/.i3/scripts/dualscreen_autoset.sh
 
 #if you want transparency on non-focused windows
-#exec_always compton --config ~/.i3/compton.conf
-#new_window pixel
+exec_always compton --config ~/.i3/compton.conf
+new_window pixel
 
 #get the mouse out of the way with unclutter
 exec unclutter 
@@ -45,7 +43,9 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono 12
 #font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
 #font pango:Droid Sans Mono Dotted 12
+
 font pango:DroidSansMono 13
+
 #font pango:hermit 12
 #font pango:Inconsolata 15
 #font pango:monospace 12
@@ -72,7 +72,7 @@ bindsym $mod+Return exec terminator
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'Inconsolata:bold:pixelsize=20' 
+bindsym $mod+d exec dmenu_run -fn 'DroidSansMono:bold:pixelsize=20' 
 #bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -fn 'Inconsolata:bold:pixelsize=20S'"
 #bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'monospace:bold:pixelsize=15'"
 bindsym $mod+shift+d exec j4-dmenu-desktop --dmenu="dmenu -fn 'S:bold:pixelsize=12' -nb '#fdf6e3' -nf '#586c75' -sf '#fdf6e3' -sb '#FFAF00'"
@@ -147,9 +147,12 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
+
 
 # resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
+
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -173,7 +176,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+
 
 
 
@@ -309,6 +312,7 @@ for_window [class="^Vlc$"] floating enable
 for_window [instance="variety"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Brasero"] floating enable
+for_window [class="Xfburn"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
 for_window [class="Wine"] floating enable
 for_window [class="Pavucontrol"] floating enable
@@ -323,6 +327,7 @@ for_window [class="Nitrogen"] floating enable
 for_window [title="Copying"] floating enable  
 for_window [title="Deleting"] floating enable  
 for_window [title="Moving"] floating enable
+for_window [class="Unetbootin.elf"] floating enable
 
 #start tray applications
 
@@ -330,9 +335,8 @@ for_window [title="Moving"] floating enable
 exec dropbox start
 exec CopyAgent
 #exec --no-startup-id "pulseaudio --start"
-exec variety
 exec volumeicon
-
+exec variety
 
 
 #workspace related applications (--no-startup-id)
@@ -430,7 +434,7 @@ bar {
     #output DVI-I-1
     
     colors {
-            background #222222
+            background #2F2F2F
             statusline #eeeeee
             separator #666666
             #                  border  backgr. text
@@ -443,8 +447,9 @@ bar {
 
 # DarkGrey background with white text - not focus grey background - black text
 # Windows decoration colors
-client.background color #4A4A4A
 # class                 border  backgr. text    indicator
+client.placeholder      #242424 #242424 #242424
+client.background       #242424 #242424 #242424
 client.focused          #4A4A4A #4A4A4A #e5e5e5 #ff0000
 client.unfocused        #222222 #222222 #aaaaaa #ff0000
 client.focused_inactive #222222 #222222 #a9a9a9 #ff0000

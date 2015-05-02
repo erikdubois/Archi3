@@ -9,7 +9,7 @@ numlockx on
 
 #Installation of apps
 sudo pacman -S vlc clementine geary terminator zsh lxappearance firefox thunar file-roller ristretto ttf-ubuntu-font-family tumbler flashplugin 
-sudo pacman -S thunar-archive-plugin unclutter
+sudo pacman -S thunar-archive-plugin unclutter thunar-volman thunar-extended thunar-vcs-plugin
 sudo pacman -S gnome-disk-utility
 
 #Installation of zsh from the github (best way to install!!)
