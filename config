@@ -14,8 +14,8 @@ exec setxkbmap be
 exec $HOME/.i3/scripts/dualscreen_autoset.sh
 
 #if you want transparency on non-focused windows
-exec_always compton --config ~/.i3/compton.conf
-new_window pixel
+#exec_always compton --config ~/.i3/compton.conf
+#new_window pixel
 
 #get the mouse out of the way with unclutter
 exec unclutter 
