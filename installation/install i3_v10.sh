@@ -72,11 +72,11 @@ sudo pacman -S unclutter ristretto
 
 sudo pacman -S zsh
 
-#Installation of OH-MY-ZSH from the github (best way to install!!)
+# Installation of OH-MY-ZSH from the github (best way to install!!)
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
-#You have to type this again - the password prompt is gone too fast
-echo "chsh your_username -s /bin/zsh"
+# You have to type this again - the password prompt is gone too fast
+# echo "chsh your_username -s /bin/zsh"
 
 
 ######## D E V E L O P M E N T #########
@@ -109,6 +109,7 @@ sudo pacman -S geary
 
 # Theme, icons, borders, cursors
 sudo pacman -S lxappearance
+#sudo packer -S lxappearance2-git
 
 # application to choose a wallpaper
 sudo pacman -S nitrogen
@@ -129,7 +130,7 @@ sudo pacman -S qt4
 
         # S Y S T E M  T O O L S # 
 
-sudo pacman -S scrot screenfetch git htop alsi wget lm_sensors sysstat
+sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat
 sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
 numlockx on
 
@@ -146,7 +147,7 @@ sudo pacman -S volumeicon
 
 
         # T H U N A R #
-sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman thunar-extended thunar-vcs-plugin thunar-shares-plugin
+sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman 
 
         # F O N T S #
 sudo pacman -S ttf-ubuntu-font-family
@@ -315,6 +316,9 @@ packer copy-agent --noedit
 
 # steering spotify from the keyboard G15 Logitech - volume and next/previous/stop/pause
 packer playerctl --noedit
+
+# screenart for hardware and software
+packer alsi --noedit
 
         # T H U N A R #
 
