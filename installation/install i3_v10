@@ -285,6 +285,9 @@ packer omg-suite --noedit
 packer vertex-themes-git --noedit
 packer ceti-3.14-theme --noedit
 
+# gtk theme
+# http://gnome-look.org/content/show.php/Just-Dark?content=168025
+
         # I C O N S #
 
 #manjaro cursor theme
@@ -345,7 +348,7 @@ packer sane simple-scan --noedit
 #update notifier
 #packer aarchup --noedit
 
-# choose pamac as notifier
+# I choose pamac as notifier
 # IF you want an update manager to tell you there are updates (icontray)
 # pamac is the most complete one
 # download from https://github.com/manjaro/pamac
@@ -354,6 +357,7 @@ packer sane simple-scan --noedit
 # Type : make install
 # use pamac-tray in combination with notify-osd
 # put pamac-tray in config of i3
+
 sudo pacman -S notify-osd
 
 
@@ -372,6 +376,8 @@ sudo pacman -S notify-osd
 #        EXTRA      EXTRA      EXTRA      EXTRA     EXTRA      
 #
 ###############################################################
+
+        # D U A L  S C R E E N #
 
 #Dualscreen - this changes just type xrandr and change the numbers
 # xrandr --output DVI-I-0 --auto --left-of DVI-I-3
@@ -407,9 +413,9 @@ sudo pacman -S notify-osd
 ##########   A   P   P   L   E    ############
 ##########     MacBookPro 5.4     ############
 ##############################################
-#macbookpro fan control for manjaro 0.8.12 Ascella
-packer macfanctld-git --noedit
-#kernel update possibly missing not sure if I need it
-packer aic94xx --noedit
+# macbookpro fan control for manjaro 0.8.12 Ascella
+# packer macfanctld-git --noedit
+# WHEN kernel update possibly missing not sure if I need it
+# packer aic94xx --noedit
 
 ##############################################
