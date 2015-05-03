@@ -1,0 +1,216 @@
+#======================================================================================
+
+                  -`
+                  .o+`                 
+                 `ooo/                  
+                `+oooo:                MADE ON ARCH
+               `+oooooo:               
+               -+oooooo+:              
+             `/:-:++oooo+:             Shell: zsh 5.0.7
+            `/++++/+++++++:            
+           `/++++++++++++++:           WM: i3
+          `/+++ooooooooooooo/`         GTK Theme: Vertex-Dark [GTK2], Vertex-Dark [GTK3]
+         ./ooosssso++osssssso+`        Icon Theme: Ursa Basic Icon Theme
+        .oossssso-````/ossssss+`       Font: DroidSansMono 12
+       -osssssso.      :ssssssso.      
+      :osssssss/        osssso+++.     
+     /ossssssss/        +ssssooo/-     
+   `/ossssso+/:-        -:/+osssso+-  
+  `+sso+:-`                 `.-/+oso: 
+ `++:.                           `-/+/
+ .`                                 `/
+
+#======================================================================================
+
+#======================================================================================
+#                               I3 IMPROVED TILING
+# 
+# Author  : Erik Dubois at http://www.erikdubois.be
+# License : Distributed under the terms of GNU GPL version 2 or later
+# 
+#
+#======================================================================================
+#                               
+# Interesting Sources : 
+#
+# https://i3wm.org/docs/userguide.html
+# https://github.com/Arakis/autologin-on-boot
+# http://www.linuxveda.com/2013/04/02/how-to-install-and-configure-hp-printer-in-arch-linux/
+#
+#======================================================================================
+
+# Made to be installed on a clean Arch (wiki arch beginners guide part 1)
+# no desktop environment, no display manager - directly on xorg
+# all kinds of programs are being used from different distro's but xfce4 is my preference.
+
+
+#Core stuff i3
+sudo pacman -S i3-wm i3lock i3status dmenu 
+
+#extra stuff i3
+
+
+# Applications for theming
+sudo pacman -S lxappearance
+
+
+
+
+#Installation of System Tools 
+sudo pacman -S scrot screenfetch git htop alsi wget lm_sensors sysstat numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
+numlockx on 
+
+#Installation of apps
+sudo pacman -S vlc clementine geary terminator zsh  firefox thunar file-roller ristretto ttf-ubuntu-font-family tumbler flashplugin 
+sudo pacman -S thunar-archive-plugin unclutter thunar-volman thunar-extended thunar-vcs-plugin thunar-shares-plugin
+sudo pacman -S gnome-disk-utility
+
+#Installation of zsh from the github (best way to install!!)
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+
+#You have to type this again
+echo "chsh erik -s /bin/zsh"
+echo "Do this later again if necessary!!"
+
+#downloading yaourt to get packer (comes from archlinux.fr)
+sudo pacman -S yaourt
+
+yaourt packer
+
+# All packer apps
+packer j4-dmenu-desktop   --noedit
+packer spotify  --noedit
+packer sublime-edit --noedit
+packer google chrome --noedit
+packer playerctl --noedit
+packer i3blocks --noedit
+packer ultra-flat-icons --noedit
+packer dropbox --noedit
+packer copy-agent --noedit
+packer variety --noedit
+packer focuswriter --noedit
+packer ttf-ms-fonts --noedit
+
+#variety uses this wallpaper changer
+sudo pacman -S feh 
+
+#Dualscreen - this changes just type xrandr and change the numbers
+# xrandr --output DVI-I-0 --auto --left-of DVI-I-3
+
+#if keyboard not azerty put in config file
+# exec setxkbmap be 
+
+#with xprop you can find out what the class name is of a program
+#to set it floating for example
+
+#Installation for sound
+sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
+sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly libsrtp  #for kazam
+sudo pacman -S volumeicon
+
+#if you want to autologin - aka at home no danger
+# https://github.com/Arakis/autologin-on-boot
+
+packer autologin-on boot --noedit
+/bin/autologin-on-boot
+
+
+
+
+
+#install extra's
+
+sudo pacman -S gimp inkscape transmission-gtk popcorntime  vnstat skype hexchat
+systemctl enable vnstat
+systemctl start vnstat
+packer google-chrome --noedit
+#packer archlinux-artwork --noedit
+
+packer kazam --noedit
+
+#install fonts
+packer hermit --noedit
+packer terminess-powerline-font --noedit
+packer font-manager  --noedit
+packer teamviewer  --noedit
+
+
+ #update notifier
+ packer aarchup --noedit
+
+ #themes and icons
+packer evopop-gtk-theme  --noedit
+packer evopop-icon-theme-git  --noedit
+packer numix-circle-icon-theme  --noedit
+packer zukitwo-themes  --noedit
+packer omg-suite --noedit
+packer vertex-themes-git --noedit
+packer ceti-3.14-theme --noedit
+git clone https://github.com/KotusWorks/Ardis-icon-theme.git
+
+
+#install printers
+sudo pacman -S cups cups-pdf ghostscript gsfonts libcups hplip system-config-printer
+systemctl enable org.cups.cupsd.service
+systemctl start org.cups.cupsd.service
+
+#gtk configuration via lxappearance but Spotify and others use in their menu qt so... you can make the grey background dark
+packer qtcurve-gtk2 --noedit
+# run qtconfig-qt4
+
+
+# scanner
+# http://www.linuxveda.com/2013/04/02/how-to-install-and-configure-hp-printer-in-arch-linux/
+packer sane simple-scan --noedit
+
+#edit following file and uncomment line with #hpaio
+#network printer hp aio photosmart 7520
+
+sudo nano /etc/sane.d/dll.conf 
+
+#manjaro cursor theme
+packer xcursor-menda-git --noedit
+#packer xcursor-simpleandsoft --noedit
+
+#IF you want an update manager to tell you there are updates (icontray)
+#pamac is the most complete one
+# download from https://github.com/manjaro/pamac
+# go to download folder
+# make
+# make install
+# use pamac-tray in combination with notify-osd
+sudo pacman -S notify-osd
+
+
+#want a networkmanager and applet mostly for laptop/wireless as
+#lan just works 
+sudo pacman -S networkmanager
+# set nm-applet to run at boot in the config file
+
+
+#terminal speedtest
+
+wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest_cli.py
+chmod +x speedtest-cli
+
+./speedtest-cli --share
+
+#https://github.com/sivel/speedtest-cli
+
+#calculator
+packer galculator-gtk2 --noedit
+
+#PDF reader
+packer qpdfview --noedit
+
+
+
+##########   A   P   P   L   E    ############
+##########     MacBookPro 5.4     ############
+##############################################
+#macbookpro fan control for manjaro 0.8.12 Ascella
+packer macfanctld-git --noedit
+#kernel update possibly missing not sure if I need it
+packer aic94xx --noedit
+
+##############################################

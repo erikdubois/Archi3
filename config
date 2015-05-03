@@ -7,6 +7,8 @@
 ###################  Start Personal Startup Settings   ####################
 ###########################################################################
 
+# SETUP INTENDED TO WORK WITH XORG DIRECTLY #
+
 # Change this if you use qwerty
 exec setxkbmap be
 
@@ -306,9 +308,10 @@ for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
 #for_window [class="^Thunar$"] floating enable
 for_window [class="^Gpick$"] floating enable
-for_window [class="^Vlc$"] floating enable
+#for_window [class="^Vlc$"] floating enable
 #for_window [class="^Spotify$"] floating enable workspace 10
 #for_window [instance="gimp"] floating enable
+for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [instance="variety"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Brasero"] floating enable
@@ -328,6 +331,8 @@ for_window [title="Copying"] floating enable
 for_window [title="Deleting"] floating enable  
 for_window [title="Moving"] floating enable
 for_window [class="Unetbootin.elf"] floating enable
+for_window [class="Galculator"] floating enable
+
 
 for_window [class="Hexchat"] floating disable
 
@@ -339,6 +344,7 @@ exec CopyAgent
 #exec --no-startup-id "pulseaudio --start"
 exec volumeicon
 exec variety
+exec pamac-tray
 
 
 #workspace related applications (--no-startup-id)
@@ -366,7 +372,7 @@ bindsym control+mod1+f exec firefox
 bindsym control+mod1+g exec geary
 bindsym control+mod1+s exec spotify
 bindsym control+mod1+t exec subl
-#bindsym control+mod1+a exec xfce4-appfinder
+bindsym control+mod1+a exec xfce4-appfinder
 bindsym control+mod1+b exec thunar
 
 
@@ -430,10 +436,12 @@ bindsym $mod+u border none
 
 bar {
     workspace_buttons yes
+    # you need to make a link from root to the config file in .i3 - see installation folder
     status_command i3blocks 
     #status_command i3status --config ~/.i3/i3status 
     #font pango:monospace 12
-    #output DVI-I-1
+    #you can change the place via xrandr
+    #output DVI-0
     
     colors {
             background #2F2F2F
