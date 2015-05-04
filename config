@@ -448,10 +448,10 @@ bar {
             statusline #eeeeee
             separator #666666
             #                  border  backgr. text
-            focused_workspace  #4A4A4A #4A4A4A #e5e5e5
-            active_workspace   #333333 #5f676a #ffffff
-            inactive_workspace #222222 #222222 #a9a9a9
-            urgent_workspace   #4A4A4A #4A4A4A #f7f7f7
+            focused_workspace  #a9a9a9 #222222 #a9a9a9
+            active_workspace   #a9a9a9 #222222 #a9a9a9
+            inactive_workspace #a9a9a9 #5f676a #a9a9a9
+            urgent_workspace   #4A4A4A #4A4A4A #a9a9a9
             }
     }
 
