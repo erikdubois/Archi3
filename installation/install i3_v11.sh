@@ -52,7 +52,14 @@
 
 
 #Core stuff i3
-sudo pacman -S i3-wm i3lock i3status dmenu 
+sudo pacman -S i3-wm i3lock i3status 
+
+# !!!!! Menu system for i3
+#sudo pacman -S dmenu
+# !!!!!
+# if you want to have dmenu with LARGER fonts as they are relatively
+# small depending on your screen
+# You should install dmenu-xft which I will do later on when we can download from AUR
 
 #extra stuff i3
 # we will download j4-dmenu later when we have yaourt and packer installed 
@@ -226,6 +233,9 @@ yaourt packer
 
 # alternative menu faster and only desktop apps
 packer j4-dmenu-desktop   --noedit
+
+# alternative menu for i3 with larger fonts and font choice 
+packer dmenu-xft --noedit
 
 # alternative bar
 packer i3blocks --noedit
@@ -437,5 +447,10 @@ sudo pacman -S notify-osd
 # packer macfanctld-git --noedit
 # WHEN kernel update possibly missing not sure if I need it
 # packer aic94xx --noedit
-
+#
 ##############################################
+
+
+echo "########################################"
+echo "########    T H E   E N D      #########"
+echo "########################################""
