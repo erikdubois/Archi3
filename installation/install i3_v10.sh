@@ -135,6 +135,8 @@ sudo pacman -S qt4
 sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat
 sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
 numlockx on
+# if not already installed - xrandr - only for dual-screens to know how the screens are named
+sudo pacman -S xorg-xrandr
 
 # download statistics
 sudo pacman -S vnstat 
@@ -357,12 +359,17 @@ packer sane simple-scan --noedit
 # I choose pamac as notifier
 # IF you want an update manager to tell you there are updates (icontray)
 # pamac is the most complete one
-# download from https://github.com/manjaro/pamac
+# download from https://github.com/manjaro/pamac or
+# git clone https://github.com/manjaro/pamac.git
 # go to download folder
 # Type : make
 # Type : make install
 # use pamac-tray in combination with notify-osd
 # put pamac-tray in config of i3
+# updates for repo
+# sudo pacman -Syu
+# updates for aur
+# packer -Syu --noedit
 
 sudo pacman -S notify-osd
 
