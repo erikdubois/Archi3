@@ -139,7 +139,7 @@ sudo pacman -S qt4
 
         # S Y S T E M  T O O L S # 
 
-sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat
+sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glance
 sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
 numlockx on
 # if not already installed - xrandr - only for dual-screens to know how the screens are named
