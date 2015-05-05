@@ -374,7 +374,7 @@ bindsym control+mod1+s exec spotify
 bindsym control+mod1+t exec subl
 bindsym control+mod1+a exec xfce4-appfinder
 bindsym control+mod1+b exec thunar
-
+bindsym control+mod1+c exec catfish
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {

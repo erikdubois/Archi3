@@ -1,0 +1,31 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1429956170253735-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>accessibility</icon>
+	<name>Edit with sudo</name>
+	<unique-id>1430836845151369-3</unique-id>
+	<command>gksudo subl %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
+<action>
+	<icon>aegisub</icon>
+	<name>Set as wallpaper</name>
+	<unique-id>1430837219399414-5</unique-id>
+	<command>feh --bg-fill %f</command>
+	<description></description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+</actions>
