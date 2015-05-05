@@ -146,6 +146,8 @@ numlockx on
 # if not already installed - xrandr - only for dual-screens to know how the screens are named
 # and set them the right way
 sudo pacman -S xorg-xrandr
+# monitor the GB/TB of your harddisk
+# sudo pacman -S baobab
 
 # download statistics
 sudo pacman -S vnstat 
@@ -162,8 +164,12 @@ sudo pacman -S volumeicon
 
 
         # T H U N A R #
-sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman
-# better search in thunar actions
+sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman thunar-volman-settings
+
+# installed via brasero
+# sudo pacman -S gvfs
+
+# better search with catfish and dependancies - in depth string search
 sudo pacman -S catfish findutils mlocate tracker strigi pinot
 
 
