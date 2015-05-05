@@ -356,6 +356,7 @@ packer font-manager  --noedit
         # U T I L I T I E S #
 
 packer teamviewer  --noedit
+packer usb-creator --noedit
 
        
         # S C A N N E R #
