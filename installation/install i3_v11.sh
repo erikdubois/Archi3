@@ -293,6 +293,7 @@ packer ultra-flat-icons --noedit
 packer evopop-icon-theme-git  --noedit
 packer numix-circle-icon-theme  --noedit
 git clone https://github.com/KotusWorks/Ardis-icon-theme.git
+git clone https://github.com/horst3180/Vertex-Icons
 
         # T H E M E S #
 
