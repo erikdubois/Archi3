@@ -140,7 +140,7 @@ sudo pacman -S qt4
 
         # S Y S T E M  T O O L S # 
 
-sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glances
+sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glances 
 sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
 numlockx on
 # if not already installed - xrandr - only for dual-screens to know how the screens are named
@@ -347,6 +347,7 @@ packer playerctl --noedit
 
 # screenart for hardware and software
 packer alsi --noedit
+packer screenfo --noedit
 
         # T H U N A R #
 
@@ -363,6 +364,8 @@ packer font-manager  --noedit
 
 packer teamviewer  --noedit
 packer usb-creator --noedit
+# if using pamac you need some kind of policy kit to grant permission for updating
+#packer xfce-polkit-git --noedit
 
        
         # S C A N N E R #
