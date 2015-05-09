@@ -365,7 +365,8 @@ packer font-manager  --noedit
 packer teamviewer  --noedit
 packer usb-creator --noedit
 # if using pamac you need some kind of policy kit to grant permission for updating
-#packer xfce-polkit-git --noedit
+# sudo pacman -S polkit
+# packer xfce-polkit-git --noedit
 
        
         # S C A N N E R #
