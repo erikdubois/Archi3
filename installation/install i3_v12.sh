@@ -270,6 +270,9 @@ packer qpdfview --noedit
 #calculator
 packer galculator-gtk2 --noedit
 
+#zsh enhancements
+packer zsh-completions --noedit
+
 ######## D E V E L O P M E N T #########
 
 packer sublime-edit --noedit
