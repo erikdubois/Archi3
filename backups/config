@@ -4,24 +4,6 @@
 
 
 ###########################################################################
-###################  I 3  G A P S  N E X T   ##############################
-###########################################################################
-# Settings for I3 next gap git
-# https://github.com/Airblader/i3/tree/gaps-next
-# Archlinux via aur installation
-# http://dotx.me/snippets-i3-gaps/
-# delete or uncomment the following lines if you do not have it or do not
-# want it
-
-for_window [class="^.*"] border pixel 0
-gaps inner 15 
-gaps outer 2
-smart_gaps on
-#smart_borders on
-
-
-
-###########################################################################
 ###################  Start Personal Startup Settings   ####################
 ###########################################################################
 
@@ -450,9 +432,6 @@ bindsym $mod+t border normal
 bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 
-new_window 1pixel
-new_float 1pixel
-
 
 #####COLORS#####
 
@@ -482,10 +461,10 @@ bar {
 # class                 border  backgr. text    indicator
 client.placeholder      #242424 #242424 #242424
 client.background       #242424 #242424 #242424
-client.focused          #4A4A4A #4A4A4A #e5e5e5 #4A4A4A
-client.unfocused        #222222 #222222 #aaaaaa #222222
-client.focused_inactive #222222 #222222 #a9a9a9 #222222
-client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
+client.focused          #4A4A4A #4A4A4A #e5e5e5 #ff0000
+client.unfocused        #222222 #222222 #aaaaaa #ff0000
+client.focused_inactive #222222 #222222 #a9a9a9 #ff0000
+client.urgent           #4A4A4A #4A4A4A #f7f7f7 #ff0000
 
 
 
