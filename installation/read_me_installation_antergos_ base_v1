@@ -137,3 +137,12 @@ https://github.com/Arakis/autologin-on-boot
 packer autologin-on-boot
 sudo systemctl enable autologin-on-boot
 sudo systemclt start autologin-on-boot
+
+Now set your username to login 
+
+sudo nano  /etc/autologin-on-boot.conf
+
+Make sure your login is on the first line and nothing else
+
+Save via CTRl+X and press "y"
+reboot
