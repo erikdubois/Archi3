@@ -351,7 +351,8 @@ exec pamac-tray
 #workspace related applications (--no-startup-id)
 
 exec firefox
-exec subl
+#exec subl      # version 2
+exec subl3      # version 3
 exec geary
 exec spotify
 exec thunar
