@@ -99,3 +99,33 @@ Second part is all software from aur repo's.
 ~/.i3/installation/keep_all_here_vx
 
 # .xinitrc is the most important as it says to start i3 to the xserver.
+
+
+8 Change appearance
+
+windowskey or Mod1 and d opens the menu
+
+type  "lx"  and choose lxappearance
+change to your liking
+
+
+
+9 Font 
+
+move the font to its right directory
+
+mkdir ~/.fonts    #if necessary make directory First
+cp ~/.i3/installation/fonts/fontawesome-webfont.ttf ~/.fonts/
+
+
+10 Config apps
+
+here are my personal preferences or plugins or ... 
+use them or not
+these are not essential to installation
+
+
+you are done!
+
+
+
