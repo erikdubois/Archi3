@@ -13,10 +13,10 @@
 # delete or uncomment the following lines if you do not have it or do not
 # want it
 
-for_window [class="^.*"] border pixel 0
-gaps inner 15 
-gaps outer 2
-smart_gaps on
+#for_window [class="^.*"] border pixel 0
+#gaps inner 15 
+#gaps outer 2
+#smart_gaps on
 #smart_borders on
 
 

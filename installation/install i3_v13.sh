@@ -49,7 +49,7 @@
 ########################################
 # No desktop environment or display manager
 
-# sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
+sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 
 
 
