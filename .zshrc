@@ -46,10 +46,11 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 #  Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
+plugins=(git svn)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -81,3 +82,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0029e706ec90ab7caa768696644a6a966f002d48
