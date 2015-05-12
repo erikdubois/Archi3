@@ -246,16 +246,16 @@ bindsym $mod+agrave workspace 10
 #workspace 10 output DVI-I-3
 
 #xrandr DVI-0 and 1
-workspace 1 output DVI-0
-workspace 2 output DVI-0
-workspace 3 output DVI-0
-workspace 4 output DVI-0
-workspace 5 output DVI-0
-workspace 6 output DVI-1
-workspace 7 output DVI-1
-workspace 8 output DVI-1
-workspace 9 output DVI-1
-workspace 10 output DVI-1
+#workspace 1 output DVI-0
+#workspace 2 output DVI-0
+#workspace 3 output DVI-0
+#workspace 4 output DVI-0
+#workspace 5 output DVI-0
+#workspace 6 output DVI-1
+#workspace 7 output DVI-1
+#workspace 8 output DVI-1
+#workspace 9 output DVI-1
+#workspace 10 output DVI-1
 
 #xrandr DVI-1 and 2
 #workspace 1 output DVI-I-1
@@ -270,16 +270,16 @@ workspace 10 output DVI-1
 #workspace 10 output DVI-I-2
 
 #xrandr DVI-2 and 3
-#workspace 1 output DVI-I-2
-#workspace 2 output DVI-I-2
-#workspace 3 output DVI-I-2
-#workspace 4 output DVI-I-2
-#workspace 5 output DVI-I-2
-#workspace 6 output DVI-I-3
-#workspace 7 output DVI-I-3
-#workspace 8 output DVI-I-3
-#workspace 9 output DVI-I-3
-#workspace 10 output DVI-I-3
+workspace 1 output DVI-I-2
+workspace 2 output DVI-I-2
+workspace 3 output DVI-I-2
+workspace 4 output DVI-I-2
+workspace 5 output DVI-I-2
+workspace 6 output DVI-I-3
+workspace 7 output DVI-I-3
+workspace 8 output DVI-I-3
+workspace 9 output DVI-I-3
+workspace 10 output DVI-I-3
 
 
 

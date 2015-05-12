@@ -125,6 +125,13 @@ use them or not
 these are not essential to the installation
 
 
+11 Change the look for qt4 applications
+
+mod1+d and look for the program "qt4-configqt4"
+programs like spotify will change their submenu's to the qtk theme
+choose same font as rest or a different one.
+
+
 you are done!
 
 
