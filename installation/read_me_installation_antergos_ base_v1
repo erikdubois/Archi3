@@ -128,4 +128,12 @@ these are not essential to the installation
 you are done!
 
 
+EXTRA'S
 
+AUTOLOGIN ON AUTOLOGIN
+
+https://github.com/Arakis/autologin-on-boot
+
+packer autologin-on-boot
+sudo systemctl enable autologin-on-boot
+sudo systemclt start autologin-on-boot
