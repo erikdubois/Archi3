@@ -49,6 +49,11 @@
 # Copy/paste line per line in terminal
 
 
+# depending on how far you are in your installation some of these files
+# will not yet exist - you can not remove what is not there
+# ignore the errors
+
+
 			# I 3  B L O C K S #
 
 #use of i3blocks for bar 

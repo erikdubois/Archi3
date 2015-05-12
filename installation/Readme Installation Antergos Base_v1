@@ -1,0 +1,101 @@
+#!/bin/bash
+#              `.-/::/-``
+#            .-/osssssssso/.               
+#           :osyysssssssyyys+-              
+#        `.+yyyysssssssssyyyyy+.           
+#       `/syyyyyssssssssssyyyyys-`         
+#      `/yhyyyyysss++ssosyyyyhhy/`         
+#     .ohhhyyyyso++/+oso+syy+shhhho.       
+#    .shhhhysoo++//+sss+++yyy+shhhhs.      
+#   -yhhhhs+++++++ossso+++yyys+ohhddy:     
+#  -yddhhyo+++++osyyss++++yyyyooyhdddy-    
+# .yddddhso++osyyyyys+++++yyhhsoshddddy`   
+#`odddddhyosyhyyyyyy++++++yhhhyosddddddo   
+#.dmdddddhhhhhhhyyyo+++++shhhhhohddddmmh.  
+#ddmmdddddhhhhhhhso++++++yhhhhhhdddddmmdy  
+#dmmmdddddddhhhyso++++++shhhhhddddddmmmmh  
+#-dmmmdddddddhhyso++++oshhhhdddddddmmmmd- 
+# .smmmmddddddddhhhhhhhhhdddddddddmmmms. 
+#   `+ydmmmdddddddddddddddddddmmmmdy/.     
+#      `.:+ooyyddddddddddddyyso+:.`
+#======================================================================================
+#                               I3 IMPROVED TILING
+# 
+# Author  : Erik Dubois at http://www.erikdubois.be
+# License : Distributed under the terms of GNU GPL version 2 or later
+# 
+# AS ALLWAYS, KNOW WHAT YOU ARE DOING.
+#======================================================================================
+#                               
+# Interesting Sources : 
+#
+# https://i3wm.org/docs/userguide.html
+# https://github.com/Arakis/autologin-on-boot
+#
+#======================================================================================
+
+# Made to be installed on a BASE ANTERGOS
+# no desktop environment, no display manager - X11 not yet installed
+# all kinds of programs are being used from different distro's but xfce4 is my preference.
+
+1 KEYBOARD
+
+sudo loadkey be-latin1    in order to have azerty KEYBOARD
+
+change also the following file to make in permanent
+
+sudo nano /etc/vconsole.conf
+
+change your keyboard from "be"  to "be-latin1"
+
+
+
+
+2 INTERNET
+
+no internet on lan 
+
+sudo systemctl enable dhcpcd
+sudo systemctl start dhcpcd
+
+
+
+3 GET GIT 
+
+sudo pacman -S git
+
+
+
+
+4 Downloading my settings from github
+
+git clone https://github.com/erikdubois/i3wmarchdark
+
+
+
+
+5 Move this directory to the right place
+
+cp -r ~/i3wmarchdark/ ~/.i3/
+
+
+
+
+6 installation of software
+
+~/.i3/installation/install i3_vxx.sh
+
+First part is all software in normal arch repo's.
+Second part is all software from aur repo's.
+
+
+
+7 Let linux know where the most important documents are
+
+# depending on how far you are in your installation some of these files
+# will not yet exist - you can not remove what is not there
+# ignore the errors
+
+~/.i3/installation/keep_all_here_vx
+
+# .xinitrc is the most important as it says to start i3 to the xserver.

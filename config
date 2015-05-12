@@ -303,6 +303,7 @@ bindsym button8 move right
 assign [class="Firefox"]          → 1
 assign [class="sublime-text"]     → 2
 assign [class="sublime_text"]     → 2
+assign [class="Subl3"]            → 2
 assign [class="Thunar"]           → 8
 assign [class="Geary"]            → 9
 assign [class="Spotify"]          → 10
