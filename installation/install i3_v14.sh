@@ -45,9 +45,9 @@
 # all kinds of programs are being used from different distro's but xfce4 is my preference.
 
 ########################################
-########    AFTER BARE INSTALL #########
+########  AFTER  BARE  INSTALL #########
 ########################################
-# No desktop environment or display manager
+# No desktop environment or display manager  nor is it needed
 
 sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 
@@ -316,9 +316,9 @@ packer focuswriter --noedit
 
         # I C O N S #
 
-packer ultra-flat-icons --noedit
+#packer ultra-flat-icons --noedit
 packer evopop-icon-theme-git  --noedit
-packer numix-circle-icon-theme  --noedit
+#packer numix-circle-icon-theme  --noedit
 git clone https://github.com/KotusWorks/Ardis-icon-theme.git ~/.themes/Ardis-icon-theme
 git clone https://github.com/horst3180/Vertex-Icons ~/.icons/Vertex-Icons
 
