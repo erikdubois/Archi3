@@ -391,7 +391,8 @@ bindsym $mod+Shift+Return exec thunar
 bindsym control+mod1+f exec firefox 
 bindsym control+mod1+g exec geary
 bindsym control+mod1+s exec spotify
-bindsym control+mod1+t exec subl
+#bindsym control+mod1+t exec subl
+bindsym control+mod1+t exec subl3
 bindsym control+mod1+a exec xfce4-appfinder
 bindsym control+mod1+b exec thunar
 bindsym control+mod1+c exec catfish
