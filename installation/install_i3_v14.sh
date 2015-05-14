@@ -90,6 +90,11 @@ sudo pacman -S zsh
 
 sudo pacman -S notify-osd
 
+sudo pacman -S xfce4-screenshooter
+
+# if you need to edit which extension goes with which program
+# sudo pacman -S mime-editor
+
 # Installation of OH-MY-ZSH from the github (best way to install!!)
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
@@ -161,11 +166,16 @@ sudo pacman -S xorg-xrandr
 # monitor the GB/TB of your harddisk
 # sudo pacman -S baobab
 
+#Monitor the partitions and format them
+# sudo pacman -S gparted
+
 # download statistics
 sudo pacman -S vnstat 
 systemctl enable vnstat
 systemctl start vnstat
 
+# taskmanager if htop and glances is not for you
+sudo pacman -S xfce4-taskmanager
 
         # S O U N D #
 sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
@@ -188,9 +198,10 @@ sudo pacman -S catfish findutils mlocate tracker strigi pinot
 
 
         # F O N T S #
-sudo pacman -S ttf-ubuntu-font-family
-sudo pacman -S ttf-droid
+#sudo pacman -S ttf-ubuntu-font-family
+#sudo pacman -S ttf-droid
 #sudo pacman -S ttf-inconsolata
+sudo pacman -S ttf-google-fonts
 
         # U T I L I T I E S #
 sudo pacman -S gnome-disk-utility
@@ -282,6 +293,7 @@ packer i3blocks --noedit
 packer foxitreader --noedit
 
 #calculator
+# sudo pacman -S gnome-calculator
 packer galculator-gtk2 --noedit
 
 #zsh enhancements
@@ -371,7 +383,9 @@ packer screenfo --noedit
 # if you want a program that tells to update
 # or just type sudo pacman -Syu when you feel like it
 # packer pamac --noedit
-# execute pamac-tray in your config
+# execute pamac-tray in your config of i3
+# install also lxsession to be able to update and install in gui
+# sudo pacman -S lxsession
 
         # T H U N A R #
 
@@ -480,7 +494,7 @@ packer sane simple-scan --noedit
         # B U R N   I S O  T O   U S B #
 
 #sudo fdisk -l
-#sudo dd bs=4M if=/path/to/xxxxx.iso of=/dev/sdX && sync
+#sudo dd bs=4M if=/path/to/xxxxx.iso of=/dev/sdc && sync
 
 ##############################################
 ##########   A   P   P   L   E    ############

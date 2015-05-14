@@ -356,12 +356,14 @@ for_window [class="Unetbootin.elf"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Usb-creator-gtk"] floating enable
 for_window [instance="script-fu"] border normal
+for_window [class="Xfce4-taskmanager"] floating enable
 
 for_window [class="Hexchat"] floating disable
 
 #start tray applications
 
-#exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet
+exec network-manager-applet
 exec dropbox start
 exec CopyAgent
 #exec --no-startup-id "pulseaudio --start"
@@ -400,6 +402,9 @@ bindsym control+mod1+t exec subl3
 bindsym control+mod1+a exec xfce4-appfinder
 bindsym control+mod1+b exec thunar
 bindsym control+mod1+c exec catfish
+bindsym control+mod1+Delete exec xfce4-taskmanager
+bindsym control+Shift+Escape exec xfce4-taskmanager
+bindsym control+Print exec xfce4-screenshooter
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
