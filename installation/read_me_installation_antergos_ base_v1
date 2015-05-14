@@ -42,7 +42,7 @@
 
 sudo loadkey be-latin1    in order to have azerty KEYBOARD
 
-change also the following file to make in permanent
+change also the following file to make it permanent
 
 sudo nano /etc/vconsole.conf
 

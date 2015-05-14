@@ -6,4 +6,10 @@ You should put this file as root in the following directory.
 
 Source : 
 
-https://wiki.archlinux.org/index.php/Polkit#Examples
+https://wiki.archlinux.org/index.php/Polkit#Example
+
+if you are not owner of this new harddrive
+
+sudo chown erik /mnt/DATA
+
+I name it always DATA so I do not have to change my scripts

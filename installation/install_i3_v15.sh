@@ -428,7 +428,6 @@ packer sane simple-scan --noedit
         # U P D A T E #
 
 #update notifier
-#packer aarchup --noedit
 
 # I choose pamac as notifier
 # IF you want an update manager to tell you there are updates (icontray)
