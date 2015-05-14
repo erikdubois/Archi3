@@ -65,8 +65,9 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
 #font pango:Droid Sans Mono Dotted 12
 
-#font pango:DroidSansMono 12
-font pango:Sans 12
+#font pango:DroidSansMono 
+
+font pango:Sans 13
 
 
 #font pango:hermit 12
