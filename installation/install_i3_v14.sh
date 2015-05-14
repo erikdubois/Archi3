@@ -111,6 +111,7 @@ wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - 
 ######## G R A P H I C S       #########
 
 sudo pacman -S gimp inkscape
+sudo pacman -S gnome-font-viewer
 
 ######## I N T E R N E T       #########
 
@@ -186,6 +187,8 @@ sudo pacman -S volumeicon
 
 
         # T H U N A R #
+
+# sudo pacman -S spacefm
 sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman
 # if you want  a wastbasket in thunar you better install this
 sudo pacman -S gvfs  # or thunar-vfs
