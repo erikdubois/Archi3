@@ -81,8 +81,3 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 0029e706ec90ab7caa768696644a6a966f002d48

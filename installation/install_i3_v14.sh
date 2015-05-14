@@ -177,6 +177,8 @@ sudo pacman -S volumeicon
 
         # T H U N A R #
 sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman
+# if you want  a wastbasket in thunar you better install this
+sudo pacman -S gvfs  # or thunar-vfs
 
 # installed via brasero
 # sudo pacman -S gvfs
@@ -277,7 +279,7 @@ packer i3blocks --noedit
 ######## A C C E S S O R I E S #########
 
 #PDF reader
-packer qpdfview --noedit
+packer foxitreader --noedit
 
 #calculator
 packer galculator-gtk2 --noedit
@@ -329,6 +331,7 @@ packer evopop-gtk-theme  --noedit
 #packer omg-suite --noedit
 packer vertex-themes-git --noedit
 #packer ceti-3.14-theme --noedit
+#packer zoncolor-themes-pack --no-edit
 
 # gtk theme
 # http://gnome-look.org/content/show.php/Just-Dark?content=168025
@@ -365,6 +368,11 @@ packer playerctl --noedit
 packer alsi --noedit
 packer screenfo --noedit
 
+# if you want a program that tells to update
+# or just type sudo pacman -Syu when you feel like it
+# packer pamac --noedit
+# execute pamac-tray in your config
+
         # T H U N A R #
 
 
@@ -383,6 +391,10 @@ packer usb-creator --noedit
 # if using pamac you need some kind of policy kit to grant permission for updating
 # sudo pacman -S polkit
 # packer xfce-polkit-git --noedit
+# want to add a nice wallpaper to your grub or just change the time or...
+# https://launchpad.net/grub-customizer
+# packer grub-customizer
+
 
        
         # S C A N N E R #
@@ -464,6 +476,11 @@ packer sane simple-scan --noedit
         
 #packer smartgit
 
+
+        # B U R N   I S O  T O   U S B #
+
+#sudo fdisk -l
+#sudo dd bs=4M if=/path/to/xxxxx.iso of=/dev/sdX && sync
 
 ##############################################
 ##########   A   P   P   L   E    ############
