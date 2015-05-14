@@ -44,13 +44,29 @@
 # no desktop environment, no display manager - directly on X11
 # all kinds of programs are being used from different distro's but xfce4 is my preference.
 
+########################################
+########  AFTER  BARE  INSTALL #########
+########################################
+# No desktop environment or display manager  nor is it needed
+
+sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
+
 
 
 ########################################
 ########        C O R E        #########
 ########################################
+
+
 #Core stuff i3
-sudo pacman -S i3-wm i3lock i3status dmenu 
+sudo pacman -S i3-wm i3lock i3status 
+
+# !!!!! Menu system for i3
+#sudo pacman -S dmenu
+# !!!!!
+# if you want to have dmenu with LARGER fonts as they are relatively
+# small depending on your screen
+# You should install dmenu-xft which I will do later on when we can download from AUR
 
 #extra stuff i3
 # we will download j4-dmenu later when we have yaourt and packer installed 
@@ -66,17 +82,24 @@ sudo pacman -S i3-wm i3lock i3status dmenu
 
 ######## A C C E S S O R I E S #########
 
-sudo pacman -S terminator
+sudo pacman -S terminator 
 
 sudo pacman -S unclutter ristretto
 
 sudo pacman -S zsh
 
-#Installation of OH-MY-ZSH from the github (best way to install!!)
+sudo pacman -S notify-osd
+
+sudo pacman -S xfce4-screenshooter
+
+# if you need to edit which extension goes with which program
+# sudo pacman -S mime-editor
+
+# Installation of OH-MY-ZSH from the github (best way to install!!)
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
-#You have to type this again - the password prompt is gone too fast
-echo "chsh your_username -s /bin/zsh"
+# You have to type this again - the password prompt is gone too fast
+# echo "chsh your_username -s /bin/zsh"
 
 
 ######## D E V E L O P M E N T #########
@@ -88,14 +111,19 @@ echo "chsh your_username -s /bin/zsh"
 ######## G R A P H I C S       #########
 
 sudo pacman -S gimp inkscape
+sudo pacman -S gnome-font-viewer
 
 ######## I N T E R N E T       #########
 
 sudo pacman -S firefox flashplugin transmission-gtk skype hexchat
 
+# activate multilib in the pacman.conf
+sudo pacman -S skype
+
 ######## M U L T I M E D I A   #########
 
-sudo pacman -S vlc clementine
+sudo pacman -S vlc 
+#sudo pacman -S clementine
 
 
 ######## O F F I C E           #########
@@ -109,6 +137,7 @@ sudo pacman -S geary
 
 # Theme, icons, borders, cursors
 sudo pacman -S lxappearance
+#sudo packer -S lxappearance2-git
 
 # application to choose a wallpaper
 sudo pacman -S nitrogen
@@ -129,29 +158,53 @@ sudo pacman -S qt4
 
         # S Y S T E M  T O O L S # 
 
-sudo pacman -S scrot screenfetch git htop alsi wget lm_sensors sysstat
+sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glances 
 sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
 numlockx on
+# if not already installed - xrandr - only for dual-screens to know how the screens are named
+# and set them the right way
+sudo pacman -S xorg-xrandr
+# monitor the GB/TB of your harddisk
+# sudo pacman -S baobab
+
+#Monitor the partitions and format them
+# sudo pacman -S gparted
 
 # download statistics
 sudo pacman -S vnstat 
 systemctl enable vnstat
 systemctl start vnstat
 
+# taskmanager if htop and glances is not for you
+sudo pacman -S xfce4-taskmanager
 
         # S O U N D #
 sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
-sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly libsrtp  #for kazam
+sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  gstreamer0.10-ffmpeg
+# for kazam
+sudo pacman -S libsrtp
 sudo pacman -S volumeicon
 
 
         # T H U N A R #
-sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman thunar-extended thunar-vcs-plugin thunar-shares-plugin
+
+# sudo pacman -S spacefm
+sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman
+# if you want  a wastbasket in thunar you better install this
+sudo pacman -S gvfs  # or thunar-vfs
+
+# installed via brasero
+# sudo pacman -S gvfs
+
+# better search with catfish and dependancies - in depth string search
+sudo pacman -S catfish findutils mlocate tracker strigi pinot
+
 
         # F O N T S #
-sudo pacman -S ttf-ubuntu-font-family
-sudo pacman -S ttf-droid
-sudo pacman -S ttf-inconsolata
+#sudo pacman -S ttf-ubuntu-font-family
+#sudo pacman -S ttf-droid
+#sudo pacman -S ttf-inconsolata
+sudo pacman -S ttf-google-fonts
 
         # U T I L I T I E S #
 sudo pacman -S gnome-disk-utility
@@ -220,6 +273,9 @@ yaourt packer
 # alternative menu faster and only desktop apps
 packer j4-dmenu-desktop   --noedit
 
+# alternative menu for i3 with larger fonts and font choice 
+packer dmenu-xft --noedit
+
 # alternative bar
 packer i3blocks --noedit
 
@@ -237,14 +293,19 @@ packer i3blocks --noedit
 ######## A C C E S S O R I E S #########
 
 #PDF reader
-packer qpdfview --noedit
+packer foxitreader --noedit
 
 #calculator
+# sudo pacman -S gnome-calculator
 packer galculator-gtk2 --noedit
+
+#zsh enhancements
+packer zsh-completions --noedit
 
 ######## D E V E L O P M E N T #########
 
-packer sublime-edit --noedit
+#packer sublime-edit --noedit
+packer sublime-text-dev --noedit
 
 ######## E D U C A T I O N     #########
 
@@ -272,18 +333,23 @@ packer focuswriter --noedit
 
         # I C O N S #
 
-packer ultra-flat-icons --noedit
+#packer ultra-flat-icons --noedit
 packer evopop-icon-theme-git  --noedit
-packer numix-circle-icon-theme  --noedit
-git clone https://github.com/KotusWorks/Ardis-icon-theme.git
+#packer numix-circle-icon-theme  --noedit
+git clone https://github.com/KotusWorks/Ardis-icon-theme.git ~/.themes/Ardis-icon-theme
+git clone https://github.com/horst3180/Vertex-Icons ~/.icons/Vertex-Icons
 
         # T H E M E S #
 
 packer evopop-gtk-theme  --noedit
-packer zukitwo-themes  --noedit
-packer omg-suite --noedit
+#packer zukitwo-themes  --noedit
+#packer omg-suite --noedit
 packer vertex-themes-git --noedit
-packer ceti-3.14-theme --noedit
+#packer ceti-3.14-theme --noedit
+#packer zoncolor-themes-pack --no-edit
+
+# gtk theme
+# http://gnome-look.org/content/show.php/Just-Dark?content=168025
 
         # I C O N S #
 
@@ -313,20 +379,39 @@ packer copy-agent --noedit
 # steering spotify from the keyboard G15 Logitech - volume and next/previous/stop/pause
 packer playerctl --noedit
 
+# screenart for hardware and software
+packer alsi --noedit
+packer screenfo --noedit
+
+# if you want a program that tells to update
+# or just type sudo pacman -Syu when you feel like it
+# packer pamac --noedit
+# execute pamac-tray in your config of i3
+# install also lxsession to be able to update and install in gui
+# sudo pacman -S lxsession
+
         # T H U N A R #
 
 
         # F O N T S #
 
 packer ttf-ms-fonts --noedit
-packer hermit --noedit
-packer terminess-powerline-font --noedit
+#packer hermit --noedit
+#packer terminess-powerline-font --noedit
 packer font-manager  --noedit
 
 
         # U T I L I T I E S #
 
 packer teamviewer  --noedit
+packer usb-creator --noedit
+# if using pamac you need some kind of policy kit to grant permission for updating
+# sudo pacman -S polkit
+# packer xfce-polkit-git --noedit
+# want to add a nice wallpaper to your grub or just change the time or...
+# https://launchpad.net/grub-customizer
+# packer grub-customizer
+
 
        
         # S C A N N E R #
@@ -343,23 +428,21 @@ packer sane simple-scan --noedit
         # U P D A T E #
 
 #update notifier
-#packer aarchup --noedit
 
-# choose pamac as notifier
+# I choose pamac as notifier
 # IF you want an update manager to tell you there are updates (icontray)
 # pamac is the most complete one
-# download from https://github.com/manjaro/pamac
+# download from https://github.com/manjaro/pamac or
+# git clone https://github.com/manjaro/pamac.git
 # go to download folder
 # Type : make
 # Type : make install
 # use pamac-tray in combination with notify-osd
 # put pamac-tray in config of i3
-sudo pacman -S notify-osd
-
-
-
-
-
+# updates for repo
+# sudo pacman -Syu
+# updates for aur
+# packer -Syu --noedit
 
 
 
@@ -372,6 +455,8 @@ sudo pacman -S notify-osd
 #        EXTRA      EXTRA      EXTRA      EXTRA     EXTRA      
 #
 ###############################################################
+
+        # D U A L  S C R E E N #
 
 #Dualscreen - this changes just type xrandr and change the numbers
 # xrandr --output DVI-I-0 --auto --left-of DVI-I-3
@@ -402,14 +487,29 @@ sudo pacman -S notify-osd
 # ./speedtest-cli --share
 # https://github.com/sivel/speedtest-cli
 
+        
+        # S M A R T G I T #
+        
+#packer smartgit
+
+
+        # B U R N   I S O  T O   U S B #
+
+#sudo fdisk -l
+#sudo dd bs=4M if=/path/to/xxxxx.iso of=/dev/sdc && sync
 
 ##############################################
 ##########   A   P   P   L   E    ############
 ##########     MacBookPro 5.4     ############
 ##############################################
-#macbookpro fan control for manjaro 0.8.12 Ascella
-packer macfanctld-git --noedit
-#kernel update possibly missing not sure if I need it
-packer aic94xx --noedit
-
+# macbookpro fan control for manjaro 0.8.12 Ascella
+# packer macfanctld-git --noedit
+# WHEN kernel update possibly missing not sure if I need it
+# packer aic94xx --noedit
+#
 ##############################################
+
+
+echo "########################################"
+echo "########    T H E   E N D      #########"
+echo "########################################"

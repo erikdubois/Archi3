@@ -1,0 +1,15 @@
+If you have an ssd for your OS and a harddisk for your data.
+
+You should put this file as root in the following directory.
+
+/etc/polkit-1/rules.d/49-nopasswd_global.rules
+
+Source : 
+
+https://wiki.archlinux.org/index.php/Polkit#Example
+
+if you are not owner of this new harddrive
+
+sudo chown erik /mnt/DATA
+
+I name it always DATA so I do not have to change my scripts
