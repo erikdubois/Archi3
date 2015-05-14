@@ -369,7 +369,7 @@ exec CopyAgent
 #exec --no-startup-id "pulseaudio --start"
 exec volumeicon
 exec variety
-exec pamac-tray
+#exec pamac-tray
 
 
 #workspace related applications (--no-startup-id)
@@ -392,7 +392,6 @@ bindsym $mod+Shift+Return exec thunar
 
 
 
-#F1-F12
 #mod1 = ALT
 bindsym control+mod1+f exec firefox 
 bindsym control+mod1+g exec geary
