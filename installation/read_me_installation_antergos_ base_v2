@@ -180,3 +180,15 @@ Make sure your login is on the first line and nothing else
 
 Save via CTRl+X and press "y"
 reboot
+
+
+
+NVIDIA DRIVERS
+
+sudo pacman -S nvidia   and press a few times on TAB - see on nvidia what number
+of driver you should install
+
+
+DUAL SCREEN
+xrandr will tell you the names of your screens
+change the config in that regard

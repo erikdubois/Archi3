@@ -2,6 +2,12 @@
 ### http://i3wm.org/
 ## Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# SETUP INTENDED TO WORK WITH XORG DIRECTLY #
+
+# no gnome, kde, xfce, openbox, cinnamon, mate, fluxbox, and any others
+# no display managers
+# I borrow from all these distro's to get the applications I feel comfortable with.
+
 
 ###########################################################################
 ###################  I 3  G A P S  N E X T   ##############################
@@ -25,8 +31,6 @@ smart_borders on
 ###########################################################################
 ###################  Start Personal Startup Settings   ####################
 ###########################################################################
-
-# SETUP INTENDED TO WORK WITH XORG DIRECTLY #
 
 # Change this if you use qwerty
 exec setxkbmap be
@@ -237,7 +241,7 @@ bindsym $mod+agrave workspace 10
 
 #if dualscreen is on
 
-#xrandr DVI-0 and 3
+#xrandr DVI-I-0 and 3
 #workspace 1 output DVI-I-0
 #workspace 2 output DVI-I-0
 #workspace 3 output DVI-I-0
@@ -261,29 +265,29 @@ bindsym $mod+agrave workspace 10
 #workspace 9 output DVI-1
 #workspace 10 output DVI-1
 
-#xrandr DVI-1 and 2
-#workspace 1 output DVI-I-1
-#workspace 2 output DVI-I-1
-#workspace 3 output DVI-I-1
-#workspace 4 output DVI-I-1
-#workspace 5 output DVI-I-1
-#workspace 6 output DVI-I-2
-#workspace 7 output DVI-I-2
-#workspace 8 output DVI-I-2
-#workspace 9 output DVI-I-2
-#workspace 10 output DVI-I-2
+#xrandr DVI-I-1 and 2
+workspace 1 output DVI-I-1
+workspace 2 output DVI-I-1
+workspace 3 output DVI-I-1
+workspace 4 output DVI-I-1
+workspace 5 output DVI-I-1
+workspace 6 output DVI-I-2
+workspace 7 output DVI-I-2
+workspace 8 output DVI-I-2
+workspace 9 output DVI-I-2
+workspace 10 output DVI-I-2
 
 #xrandr DVI-2 and 3
-workspace 1 output DVI-I-2
-workspace 2 output DVI-I-2
-workspace 3 output DVI-I-2
-workspace 4 output DVI-I-2
-workspace 5 output DVI-I-2
-workspace 6 output DVI-I-3
-workspace 7 output DVI-I-3
-workspace 8 output DVI-I-3
-workspace 9 output DVI-I-3
-workspace 10 output DVI-I-3
+#workspace 1 output DVI-I-2
+#workspace 2 output DVI-I-2
+#workspace 3 output DVI-I-2
+#workspace 4 output DVI-I-2
+#workspace 5 output DVI-I-2
+#workspace 6 output DVI-I-3
+#workspace 7 output DVI-I-3
+#workspace 8 output DVI-I-3
+#workspace 9 output DVI-I-3
+#workspace 10 output DVI-I-3
 
 
 

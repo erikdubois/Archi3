@@ -3,7 +3,7 @@
 
 sudo touch /etc/sysctl.d/60-copy.conf
 
-sudo subl /etc/sysctl.d/60-copy.conf
+sudo subl3 /etc/sysctl.d/60-copy.conf
 
 
 fs.inotify.max_user_watches = 20000
