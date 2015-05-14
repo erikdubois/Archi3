@@ -92,6 +92,8 @@ sudo pacman -S notify-osd
 
 sudo pacman -S xfce4-screenshooter
 
+sudo pacman -S evince
+
 # if you need to edit which extension goes with which program
 # sudo pacman -S mime-editor
 
@@ -115,10 +117,10 @@ sudo pacman -S gnome-font-viewer
 
 ######## I N T E R N E T       #########
 
-sudo pacman -S firefox flashplugin transmission-gtk skype hexchat
+sudo pacman -S firefox flashplugin transmission-gtk hexchat
 
 # activate multilib in the pacman.conf
-sudo pacman -S skype
+# sudo pacman -S skype
 
 ######## M U L T I M E D I A   #########
 
@@ -279,6 +281,16 @@ packer dmenu-xft --noedit
 # alternative bar
 packer i3blocks --noedit
 
+# i3 with gaps between windows
+# if you decide to install this you will have to uninstall i3 first
+
+sudo pacman -R i3-wm
+
+# and install the replacement
+# you will be asked to remove xcb-util-cursor
+
+packer i3-gaps-next-git
+
 
 
 
@@ -293,7 +305,10 @@ packer i3blocks --noedit
 ######## A C C E S S O R I E S #########
 
 #PDF reader
-packer foxitreader --noedit
+# activate multilib in the /etc/pacman.conf
+# packer foxitreader --noedit
+# packer acroread --noedit
+
 
 #calculator
 # sudo pacman -S gnome-calculator
@@ -403,7 +418,8 @@ packer font-manager  --noedit
 
         # U T I L I T I E S #
 
-packer teamviewer  --noedit
+# activate multilib in the pacman.conf
+# packer teamviewer  --noedit
 packer usb-creator --noedit
 # if using pamac you need some kind of policy kit to grant permission for updating
 # sudo pacman -S polkit
