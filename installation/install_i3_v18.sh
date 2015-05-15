@@ -438,7 +438,8 @@ packer usb-creator --noedit
         # S C A N N E R #
 
 # http://www.linuxveda.com/2013/04/02/how-to-install-and-configure-hp-printer-in-arch-linux/
-packer sane simple-scan --noedit
+packer sane --noedit
+packer simple-scan 
 
 #edit following file dll.conf and uncomment line with #hpaio
 # This is my current network printer hp aio photosmart 7520
@@ -521,8 +522,14 @@ packer sane simple-scan --noedit
 
         # S A M B A #
 
+# mkdir ~/Upload
+# for mac/apple afp
+# public writable map via thunar actions
+# http://askubuntu.com/questions/101350/software-similar-to-nautilus-share-in-thunar
+# net usershare add %n %f "" Everyone:F guest_ok=y && chmod 777 %f
 # sudo pacman -S gvfs-afp
-sudo pacman -S samba
+# sudo pacman -S samba
+# packer thunar-shares-plugin --noedit
 
 
 ##############################################
