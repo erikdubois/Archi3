@@ -15,17 +15,39 @@ https://i3wm.org/
 <img style="max-width:100%;" data-canonical-src="http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png" alt="alt tag" src="http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png">
 </a>
 
-# A R C H L I N U X  
+
+
+
+# A R C H L I N U X 
+----------------------- 
 
 I started using Archlinux as a basis.
 
-	install_i3_vxx.sh 
+After a clean install I would like to be up and running as soon as possible. That's why I have this script. 
 
-After a clean install I would like to be up and running as soon as possible. That's why I have this script. I run it to get all my software after an installation of Arch following this link
+#1. Installation of the base system
+
+I started following the guide of 
 
 https://wiki.archlinux.org/index.php/Beginners%27_guide
 
-You will end up in a black screen (terminal) with no graphical environment what so ever.
+When you understand what you are doing, you will soon have your own installation guide like I do.
+
+After this base installation you will end up in a black screen (terminal) with no graphical environment what so ever. Then it is up to the user to choose a Desktop Environment.
+
+Good options are
+
+	- xfce
+	- cinnamon
+	- gnome
+	- kde
+	- openbox
+
+But we will install i3.
+
+#2. Installation via script
+
+I run an installation script to quickly  get all my software after an installation of Arch. For me this was quite a learning process. Once you know, you can automate it.
 
 The idea is to download (if you have internet connection) the i3 github files :
 
@@ -36,7 +58,7 @@ This folder should be copied to a hidden folder in your home directory with the 
 
 Be sure to copy all the hidden files too!
 
-Then you can start running the above mentioned script
+Then you can start running the above mentioned script to be found in the folder installation.
 
 	install_i3_vxx.sh
 
@@ -49,7 +71,12 @@ The last script is my idea to have all my data in one folder. So I make some sym
 Give it a go because I3 deserves to be more known.
 
 
+
+
+
+
 # A N T E R G O S
+------------------
 
 Lateron I discovered that there are distro's that use the archlinux repositories like evo/lution (more an installer), Antergos and Manjaro, ...
 
@@ -58,6 +85,10 @@ I choose Antergos with their graphical installation guide cnchi to install a bas
 I wrote an installation document "read_me_installation_antergos_ base_vx" to cover the differences.
 
 Please check that out if you want to install i3 on an antergos base installation.
+
+
+
+
 
 
 # L I N U X  M I N T
