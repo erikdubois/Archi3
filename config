@@ -238,11 +238,11 @@ bindsym $mod+agrave workspace 10
 
 #setting variables for later use
 
-set $firstMonitor DVI-I-1
-set $secondMonitor DVI-I-2
+#set $firstMonitor DVI-I-1
+#set $secondMonitor DVI-I-2
 
-#set $firstMonitor DVI-0
-#set $secondMonitor DVI-1
+set $firstMonitor DVI-0
+set $secondMonitor DVI-1
 
 #xrandr DVI-I-1 and 2
 workspace 1 output $firstMonitor
