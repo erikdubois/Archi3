@@ -105,9 +105,15 @@ http://erikdubois.be/linux/install-i3-on-linux-mint-17-1
 # C O N C L U S I O N
 
 
-I know that there are applications that seem 'out-of-place' in i3 but I like my working environment eye-candy and admire the wallpapers creative people share with us. 
+I know that there are applications that seem 'out-of-place' in i3 but I like my working environment eye-candy. I admire for example the wallpapers creative people share with us. Through transparent terminals I will see them.
 
 My background has been a variety of distro's. It is only natural I use a variety of programs from these distro's.
+
+As for I3 you will need to be patient. I remember giving up a few times and somehow it challenged me to keep trying.
+
+I am happy I persisted. 
+
+<b>I3 is efficient.</b>
 
 ------------------------------------
 #But that is the fun in Linux.
