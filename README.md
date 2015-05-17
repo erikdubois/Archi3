@@ -21,9 +21,9 @@ https://i3wm.org/
 # A R C H L I N U X 
 ----------------------- 
 
-I started using Archlinux as a basis.
+I started using Archlinux as learning experience. I have tried installing all kinds of distro's and formatted many times my harddisks. After a while came the urge to have a script of some kind to record the knowledge and to automate the things I already learned and became tedious to do.
 
-After a clean install I would like to be up and running as soon as possible. That's why I have this script. 
+After a clean install I would like to be up and running as soon as possible. That's why I have written a script. 
 
 #1. Installation of the base system
 
