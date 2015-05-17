@@ -51,7 +51,7 @@ Give it a go because I3 deserves to be more known.
 
 # A N T E R G O S
 
-Lateron I discovered that there are distro's that use the archlinux repositories like evo/lution and Antergos.
+Lateron I discovered that there are distro's that use the archlinux repositories like evo/lution (more an installer), Antergos and Manjaro, ...
 
 I choose Antergos with their graphical installation guide cnchi to install a base installation. This is similar as the beginners guide from the archlinux wiki guide but not the same.
 
