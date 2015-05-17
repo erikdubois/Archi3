@@ -122,7 +122,7 @@ Then you take it apart and write your own code.
 ------------------------------------
 #But that is the fun in Linux.
 
-You can do whatever you want.
+You can do whatever <b>Y O U</b> want.
 
 Be free and share the knowledge.
 ------------------------------------
