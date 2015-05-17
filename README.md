@@ -4,6 +4,8 @@ This is my configuration for I3 improved tiling to be used on any archlinux dist
 
 In the installation folder is all the data, explanations and scripts for you to have a great working environment but not directly a desktop environment.
 
+I do not work with a display manager. Xorg and I3 provide all the display you will ever need.
+
 I suggest you read up to better understand what a tiling window manager is but is really great once you have mastered the most important shortcuts.
 
 https://i3wm.org/
@@ -98,3 +100,15 @@ That resulted in the following articles and is of no importance here.
 https://github.com/erikdubois/mintyi3wm
 
 http://erikdubois.be/linux/install-i3-on-linux-mint-17-1
+
+
+# C O N C L U S I O N
+
+I know that there are applications that seem 'out-of-place' in i3 but I like my working environment eye-candy and admire the wallpapers creative people share with us. My background has been a variety of distro's. It is only natural I use a variety of programs from these distro's.
+------------------------------------
+#But that is the fun in Linux.
+------------------------------------
+You can do whatever the hell you want to do.
+------------------------------------
+Be free and share the knowledge.
+------------------------------------
