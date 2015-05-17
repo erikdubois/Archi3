@@ -2,7 +2,7 @@
 
 This is my configuration for I3 improved tiling to be used on any archlinux distribution.
 
-In the installation folder is all the data, explanations and scripts for you to have a great working environment but not directly a dekstop environment.
+In the installation folder is all the data, explanations and scripts for you to have a great working environment but not directly a desktop environment.
 
 I suggest you read up to better understand what a tiling window manager is but is really great once you have mastered the most important shortcuts.
 
@@ -21,17 +21,15 @@ https://i3wm.org/
 # A R C H L I N U X 
 ----------------------- 
 
-I started using Archlinux as learning experience. I have tried installing all kinds of distro's and formatted many times my harddisks. After a while came the urge to have a script of some kind to record the knowledge and to automate the things I already learned and became tedious to do.
+I started using Archlinux as a learning experience. I have tried installing all kinds of distro's and formatted many times my ssd's. After a while it was more practical to have a script of some kind to record the knowledge and to automate the things I already learned and that became repetitive in nature.
 
-After a clean install I would like to be up and running as soon as possible. That's why I have written a script. 
+After a clean install I would like to be up and running as soon as possible. That's why I have written a script to do just that. 
 
 #1. Installation of the base system
 
 I started following the guide of 
 
 https://wiki.archlinux.org/index.php/Beginners%27_guide
-
-When you understand what you are doing, you will soon have your own installation guide like I do.
 
 After this base installation you will end up in a black screen (terminal) with no graphical environment what so ever. Then it is up to the user to choose a Desktop Environment.
 
@@ -43,11 +41,11 @@ Good options are
 	- kde
 	- openbox
 
-But we will install i3.
+But we will install i3 instead.
 
 #2. Installation via script
 
-I run an installation script to quickly  get all my software after an installation of Arch. For me this was quite a learning process. Once you know, you can automate it.
+I run an installation script to quickly  get all my software after the base installation of Arch. For me this was quite a learning process, since I was a Redhat, Ubuntu, Linux Mint kind of guy over the last two decades. 
 
 The idea is to download (if you have internet connection) the i3 github files :
 
