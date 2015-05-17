@@ -115,6 +115,10 @@ I am happy I persisted.
 
 <b>I3 is efficient.</b>
 
+And remember if you start from this github, your learning curve will be much steeper and you will have the system up and running much faster.
+
+Then you take it apart and write your own code.
+
 ------------------------------------
 #But that is the fun in Linux.
 ------------------------------------
