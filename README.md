@@ -121,8 +121,8 @@ Then you take it apart and write your own code.
 
 ------------------------------------
 #But that is the fun in Linux.
-------------------------------------
-You can do whatever the hell you want to do.
-------------------------------------
+
+You can do whatever you want.
+
 Be free and share the knowledge.
 ------------------------------------
