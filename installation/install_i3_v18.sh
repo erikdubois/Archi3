@@ -292,7 +292,7 @@ sudo pacman -R i3-wm
 # and install the replacement
 # you will be asked to remove xcb-util-cursor
 
-packer i3-gaps-next-git
+packer i3-gaps-next-git --noedit
 
 
 
