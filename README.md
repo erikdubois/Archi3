@@ -6,7 +6,9 @@ In the installation folder is all the data, explanations and scripts for you to 
 
 I do not work with a display manager. Xorg and I3 provide all the display you will ever need.
 
-I suggest you read up to better understand what a tiling window manager is but is really great once you have mastered the most important shortcuts.
+I suggest you read up to better understand what a tiling window manager is.
+
+It is really great once you have mastered the most important shortcuts.
 
 https://i3wm.org/
 
@@ -23,9 +25,11 @@ https://i3wm.org/
 # A R C H L I N U X 
 ----------------------- 
 
-I started using Archlinux as a learning experience. I have tried installing all kinds of distro's and formatted many times my ssd's. After a while it was more practical to have a script of some kind to record the knowledge and to automate the things I already learned and that became repetitive in nature.
+I started using Archlinux as a learning experience. I have tried installing all kinds of desktop environments (DE) and formatted many times my ssd's to start from scratch. After a while it was more practical to have a script of some kind to record the knowledge and to automate the things I had already learned. They became repetitive in nature.
 
-After a clean install I would like to be up and running as soon as possible. That's why I have written a script to do just that. 
+The goal is to be quickly up and running after a clean install. 
+
+That's why I have written a script to do just that. 
 
 #1. Installation of the base system
 
