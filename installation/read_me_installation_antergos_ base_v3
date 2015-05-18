@@ -60,7 +60,9 @@ sudo systemctl start dhcpcd
 
 
 
-3 GET GIT 
+3 GET GIT
+
+Git should be installed but if not ...
 
 sudo pacman -S git
 
@@ -88,7 +90,7 @@ cp -r ~/i3wmarchdark/ ~/.i3/
 First part is all software in normal arch repo's.
 Second part is all software from aur repo's.
 
-########
+####################################
 
 A T T E N T I O N !!
 
@@ -99,7 +101,7 @@ That's why we first install i3-wm and uninstall it lateron to get the "gaps" ver
 Evaluate what you think is best.
 
 
-##########
+####################################
 
 7 Let linux know where the most important documents are
 
@@ -111,11 +113,27 @@ Evaluate what you think is best.
 
 # .xinitrc is the most important as it says to start i3 to the xserver.
 
+
+
+My system has been build on the use of zsh.
+It will only boot into i3 if you set zsh as a replacement to Bash.
+To do so.
+
+
+sudo chsh erik -s /bin/zsh
+
+Type in your password and reboot.
+
+
+
 #======================================================================================
 
 THIS IS A GREAT TIME TO REBOOT.
 
 #======================================================================================
+
+After login you should be in i3wm.
+
 
 8 Change appearance
 
