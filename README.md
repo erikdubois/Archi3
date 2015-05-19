@@ -125,7 +125,7 @@ Advantages
     terminal is a WIN+ENTER away
     every program can get its own workspace
     switching between workspaces is easy and very practical
-    have a backup environment to work if somehow linux mint gets broken
+    have a backup environment to work if somehow your "other" desktop environment gets broken
 
  
 
