@@ -146,5 +146,5 @@ Then you take it apart and write your own code.
 
 You can do whatever <b>Y O U</b> want.
 
-Be free and share the knowledge.
+Share the knowledge.
 ------------------------------------
