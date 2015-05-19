@@ -116,6 +116,27 @@ I am happy I persisted.
 
 <b>I3 is efficient.</b>
 
+Advantages
+
+    low memory consumption
+    does not have many dependencies hence stabler
+    keyboard driven
+    software will be tiled automatically into two, three, four regions
+    terminal is a WIN+ENTER away
+    every program can get its own workspace
+    switching between workspaces is easy and very practical
+    have a backup environment to work if somehow linux mint gets broken
+
+ 
+
+Disadvantages
+
+    takes time getting used to
+    shortcuts to be remembered
+    specific software to do things
+    some terminal knowledge required
+
+
 And remember if you start from this github, your learning curve will be much steeper and you will have the system up and running much faster.
 
 Then you take it apart and write your own code.
