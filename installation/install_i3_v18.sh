@@ -523,13 +523,24 @@ packer simple-scan
         # S A M B A #
 
 # mkdir ~/Upload
-# for mac/apple afp
-# public writable map via thunar actions
 # http://askubuntu.com/questions/101350/software-similar-to-nautilus-share-in-thunar
 # net usershare add %n %f "" Everyone:F guest_ok=y && chmod 777 %f
-# sudo pacman -S gvfs-afp
-# sudo pacman -S samba
-# packer thunar-shares-plugin --noedit
+sudo pacman -S samba
+sudo cp  /etc/samba/smb.conf.default /etc/samba/smb.conf
+sudo systemctl enable smbd.service
+sudo systemctl start smbd.service
+sudo systemctl enable nmbd.service
+sudo systemctl start nmbd.service
+sudo smbpasswd -a erik
+
+#access samba share windows
+sudo pacman -S gvfs-smb
+#access samba share mac
+sudo pacman -S gvfs-afp
+
+# sudo systemctl restart ... if you run into trouble
+# testparm will check the conf file for errors
+
 
 
 ##############################################
