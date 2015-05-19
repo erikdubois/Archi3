@@ -1,4 +1,4 @@
-# i3wmarchdark
+# Arch + i3 windows manager
 
 This is my configuration for I3 improved tiling to be used on any archlinux distribution.
 
