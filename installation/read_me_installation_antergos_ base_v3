@@ -117,12 +117,11 @@ Evaluate what you think is best.
 
 My system has been build on the use of zsh.
 It will only boot into i3 if you set zsh as a replacement to Bash.
-To do so.
 
 
 sudo chsh erik -s /bin/zsh
 
-Type in your password and reboot.
+Type in your password.
 
 
 
@@ -131,6 +130,8 @@ Type in your password and reboot.
 THIS IS A GREAT TIME TO REBOOT.
 
 #======================================================================================
+
+
 
 After login you should be in i3wm.
 
@@ -169,6 +170,7 @@ choose same font as rest or a different one.
 12 .config directory is owned by root 
 
 a ticket has been filed at github regarding this matter
+ticket is closed now. will soon be available.
 
 easy fix 
 
