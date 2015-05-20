@@ -45,7 +45,8 @@ echo "################################################################"
 echo "fonts"
 echo "################################################################"
 
-cp fonts/* ~/.fonts
+[ -d "~/.fonts" ] || mkdir -p $HOME/".fonts"
+cp fonts/* ~/.fonts/
 
 
 echo "################################################################"
@@ -70,7 +71,7 @@ echo "################################################################"
 echo "terminator"
 echo "################################################################"
 
-cp terminator/config ~/.config/terminator/
+sudo cp terminator/config ~/.config/terminator/
 cp thunar/configure_custom_actions/uca.xml ~/.config/Thunar/
 
 
@@ -80,7 +81,7 @@ echo "variety"
 echo "################################################################"
 
 cp variety/scripts/* ~/.config/variety/scripts
-
+cp variety/variety.conf ~/.config/variety/variety.conf
 
 
 echo "########################################"
