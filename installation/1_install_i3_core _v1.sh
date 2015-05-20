@@ -136,6 +136,8 @@ packer i3blocks --noedit
 # and install the replacement
 # you will be asked to remove xcb-util-cursor
 
+echo "Choose your Y and N wisely !!!"
+
 packer i3-gaps-next-git --noedit
 
 
