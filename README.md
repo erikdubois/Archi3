@@ -73,13 +73,22 @@ The scripts have been numbered from 1 to 6. Follow the orderering to install all
     cd .i3
     cd installation
 	
+
+    
     ./1_install_i3_core_vx.sh
 
-This will install the actual i3 windows manager.
+This will install the actual i3 windows manager with a few special options like i3 with gaps rather than the standard one.We will also make sure yaourt is installed. Yaourt is used to install packer. Packer will serve as the aur helper from there on.
+
+Beware when you say "Y" or "N" to the questions.
+
+
 
     ./2_install_i3_arch_repo _v1
 
-This will install all programs coming from the "normal" arch repositories and will make sure yaourt is installed. Yaourt is used to install packer. Packer will serve as the aur helper from there on.
+This will install all programs coming from the "normal" arch repositories with the use of pacman.
+
+
+
 
     ./3_install_i3_aur_repo _vx.sh
 
