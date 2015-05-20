@@ -24,15 +24,37 @@
 #======================================================================================
 
 # Installation of zsh and oh-my-zsh
+echo "################################################################"
+echo "installing zsh"
+echo "################################################################"
 
 sudo pacman -S zsh
 
-# Installation of OH-MY-ZSH from the github (best way to install!!)
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
-
-# You have to type this again - the password prompt is gone too fast
-echo "You might need to type this again. Use your own name"
-echo "chsh your_username -s /bin/zsh"
 
 #zsh enhancements
+echo "################################################################"
+echo "installing zsh-completions"
+echo "################################################################"
+
 packer zsh-completions --noedit
+
+
+# Installation of OH-MY-ZSH from the github (best way to install!!)
+echo "################################################################"
+echo "downloading from github"
+echo "################################################################"
+
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+
+
+# You have to type this again - the password prompt is gone too fast
+echo "################################################################"
+echo "installing oh-my-zsh"
+echo "You might need to type this again. Use your own name"
+echo "sudo chsh your_username -s /bin/zsh"
+echo "################################################################"
+
+
+echo "################################################################"
+echo "###################    T H E   E N D      ######################"
+echo "################################################################"
