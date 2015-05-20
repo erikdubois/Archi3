@@ -64,26 +64,46 @@ Be sure to copy all the hidden files too!
     ls -al       reveals hidden files as well
 
 Then you can start running the below mentioned script to be found in the folder installation.
-If you see a program, you do not want. Just press ENTER and no number and it will be skipped.
-    
+
+I decided to split the logical entities in seperate files. Better to debug and better for users to understand.
+
+The scripts have been numbered from 1 to 6. Follow the orderering to install all programs.
+
+
+    cd .i3
     cd installation
-	./install_i3_vxx.sh
+	
+    ./1_install_i3_core_vx.sh
+
+This will install the actual i3 windows manager.
+
+    ./2_install_i3_arch_repo _v1
+
+This will install all programs coming from the "normal" arch repositories and will make sure yaourt is installed. Yaourt is used to install packer. Packer will serve as the aur helper from there on.
+
+    ./3_install_i3_aur_repo _vx.sh
+
+This will install all programs coming from the AUR repositories.
+
+If you see a program, you do not want. Just press ENTER and no number and it will be skipped.
+At the bottom of the screen, I will leave a list of the programs that will be installed so you can follow it. It sometimes unclear what progam to choose.
 
 When that is done you run
 
-	./keep_all_here_vx.sh
+	./4_keep_all_here_vx.sh
 
-The last script is my idea to have all my data in one folder. So I make some symbolic links to them. I did notice that this is not so easy with the gtk files.
-
-
-The smb script is to install samba or the way to share folders and files between computers if you need it.
-
-    ./smb_vx.sh
-
+The last script is my idea to have all my data in one folder. So I make some symbolic links to them. I did notice that this is not so easy with the gtk files. The scripts makes backup files.
 
 The zsh script is an alternative to bash more colourfull (>100 themes) and more plugins then you ever need.
 
-    ./zsh_vx.sh
+    ./5_zsh_vx.sh
+
+The smb script is to install samba or the way to share folders and files between computers if you need it.
+
+    ./6_smb_vx.sh
+
+
+
 
 #Give it a go because <b> I 3 improved tiling </b> deserves to be more known.
 

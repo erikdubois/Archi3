@@ -33,3 +33,6 @@ wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - 
 # You have to type this again - the password prompt is gone too fast
 echo "You might need to type this again. Use your own name"
 echo "chsh your_username -s /bin/zsh"
+
+#zsh enhancements
+packer zsh-completions --noedit
