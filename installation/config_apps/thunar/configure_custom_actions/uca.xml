@@ -26,10 +26,11 @@
 <action>
 	<icon>backup</icon>
 	<name>Make backup to DATA</name>
-	<unique-id>1430843779149394-11</unique-id>
+	<unique-id>1431614411012441-1</unique-id>
 	<command>/home/erik/.i3/scripts/copy_erik.sh %f</command>
 	<description></description>
 	<patterns>*</patterns>
+	<startup-notify/>
 	<directories/>
 	<audio-files/>
 	<image-files/>

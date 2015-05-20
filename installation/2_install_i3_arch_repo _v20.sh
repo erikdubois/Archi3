@@ -47,7 +47,7 @@ sudo pacman -S unclutter ristretto
 
 sudo pacman -S notify-osd
 
-sudo pacman -S xfce4-screenshooter
+sudo pacman -S xfce4-screenshooter xfce4-appfinder
 
 sudo pacman -S evince
 

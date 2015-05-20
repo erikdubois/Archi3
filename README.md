@@ -120,6 +120,8 @@ The smb script is to install samba or the way to share folders and files between
 # Reboot  N  O  W
 
 
+
+
 # A N T E R G O S
 ------------------
 
@@ -145,6 +147,28 @@ That resulted in the following articles and is of no importance here.
 https://github.com/erikdubois/mintyi3wm
 
 http://erikdubois.be/linux/install-i3-on-linux-mint-17-1
+
+
+
+
+# First use and tips
+
+Follow some movies on youtube about i3 wm. That's the fastest way to learn.
+
+Remember some important keyboard shortcuts
+
+win + d = dmenu
+shift + win + d = j4dmenu
+ctrl + alt + a = xfce-appfinder
+ctrl + shift + e = exit i3
+ctrl + shift + r = reload config file
+
+All shortcuts are kept in one file : "config"
+You do well to read this file.
+
+lxappearance is the first program I use to change themes, fonts, icons.
+
+
 
 
 # C O N C L U S I O N

@@ -51,11 +51,18 @@
 #calculator
 # sudo pacman -S gnome-calculator
 
+echo "################################################################"
+echo "galculator-gtk2"
+echo "################################################################"
+
 packer galculator-gtk2 --noedit
 
 
 ######## D E V E L O P M E N T #########
 
+echo "################################################################"
+echo "sublime-text-dev"
+echo "################################################################"
 #packer sublime-edit --noedit
 packer sublime-text-dev --noedit
 
@@ -65,23 +72,45 @@ packer sublime-text-dev --noedit
 
 ######## G R A P H I C S       #########
 
+echo "################################################################"
+echo "archlinux logo's"
+echo "################################################################"
+
 packer archlinux-artwork --noedit
 
 ######## I N T E R N E T       #########
+
 echo "################################################################"
 echo "google chrome"
 echo "################################################################"
+
 packer google chrome --noedit
 
+echo "################################################################"
+echo "lastpass"
+echo "################################################################"
+
+packer lastpass --noedit
+
  ######## M U L T I M E D I A   #########
+
 echo "################################################################"
 echo "spotify"
 echo "################################################################"
 
 packer spotify  --noedit
+
+echo "################################################################"
+echo "kazam"
+echo "################################################################"
+
 packer kazam --noedit
 
 ######## O F F I C E           #########
+
+echo "################################################################"
+echo "focuswriter"
+echo "################################################################"
 
 packer focuswriter --noedit
 
@@ -109,17 +138,27 @@ packer numix-themes-archblue --noedit
 # http://gnome-look.org/content/show.php/Just-Dark?content=168025
 
         # I C O N S #
+echo "################################################################"
+echo "spotify"
+echo "################################################################"
 
 #manjaro cursor theme
+
+echo "################################################################"
+echo "xcursor-menda-git"
+echo "################################################################"
+
 packer xcursor-menda-git --noedit
 #packer xcursor-simpleandsoft --noedit
 
         # W A L L P A P E R #
 
 # wallpaper changer
+
 echo "################################################################"
-echo "variety"
+echo "variety - You have to do one more action to make it work"
 echo "################################################################"
+
 packer variety --noedit
 
 
@@ -128,13 +167,17 @@ packer variety --noedit
 
         
         # C L O U D #
+
 echo "################################################################"
 echo "dropbox"
 echo "################################################################"
+
 packer dropbox --noedit
+
 echo "################################################################"
 echo "copy-agent"
 echo "################################################################"
+
 packer copy-agent --noedit
 
 
@@ -142,10 +185,25 @@ packer copy-agent --noedit
         # S Y S T E M  T O O L S # 
 
 # steering spotify from the keyboard G15 Logitech - volume and next/previous/stop/pause
+
+echo "################################################################"
+echo "playerctl"
+echo "################################################################"
+
 packer playerctl --noedit
 
 # screenart for hardware and software
+
+echo "################################################################"
+echo "alsi"
+echo "################################################################"
+
 packer alsi --noedit
+
+echo "################################################################"
+echo "screenfo"
+echo "################################################################"
+
 packer screenfo --noedit
 
 # if you want a program that tells to update
@@ -162,9 +220,18 @@ packer screenfo --noedit
 
         # F O N T S #
 
+echo "################################################################"
+echo "ttf-ms-fonts"
+echo "################################################################"
+
 packer ttf-ms-fonts --noedit
 #packer hermit --noedit
 #packer terminess-powerline-font --noedit
+
+echo "################################################################"
+echo "font-manager"
+echo "################################################################"
+
 packer font-manager  --noedit
 
 
@@ -186,6 +253,11 @@ packer mintstick-git --noedit
         # S C A N N E R #
 
 # http://www.linuxveda.com/2013/04/02/how-to-install-and-configure-hp-printer-in-arch-linux/
+
+echo "################################################################"
+echo "sane"
+echo "################################################################"
+
 packer sane --noedit
 packer simple-scan 
 

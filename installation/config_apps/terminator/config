@@ -1,15 +1,17 @@
 [global_config]
-  title_transmit_bg_color = "#414141"
-  title_inactive_fg_color = "#a8a6a6"
-  title_inactive_bg_color = "#424242"
+  title_transmit_bg_color = "#000000"
 [keybindings]
 [profiles]
   [[default]]
-    background_darkness = 0.58
+    scrollbar_position = hidden
+    use_system_font = False
+    background_darkness = 0.63
     background_type = transparent
+    background_image = None
     scroll_on_output = False
     icon_bell = False
     show_titlebar = False
+    font = Droid Sans Mono 15
     scrollback_infinite = True
 [layouts]
   [[default]]
