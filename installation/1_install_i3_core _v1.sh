@@ -48,6 +48,9 @@
 ########  AFTER  BARE  INSTALL #########
 ########################################
 # No desktop environment or display manager  nor is it needed
+echo "################################################################"
+echo "installing xorg server"
+echo "################################################################"
 
 sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 
@@ -62,22 +65,21 @@ sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 
 
 #Core stuff i3
+echo "################################################################"
+echo "i 3  improved tiling core files"
+echo "################################################################"
+
 sudo pacman -S i3-wm i3lock i3status 
 
-# !!!!! Menu system for i3
-#sudo pacman -S dmenu
-# !!!!!
+# Standard Menu system for i3
+# sudo pacman -S dmenu
 # if you want to have dmenu with LARGER fonts as they are relatively
 # small depending on your screen
 # You should install dmenu-xft which I will do later on when we can download from AUR
 
-#extra stuff i3
-# we will download j4-dmenu later when we have yaourt and packer installed 
-
-
         # A U R   H E L P E R #
 
-#downloading yaourt to get packer (comes from archlinux.fr)
+# downloading yaourt to get packer (comes from archlinux.fr)
 # add these lines to the end of /etc/pacman.conf and update 
 # https://wiki.archlinux.org/index.php/Pacman
 # once I have yaourt I comment these lines out
@@ -89,9 +91,17 @@ sudo pacman -S i3-wm i3lock i3status
 ########################################
 
 # downloading yaourt to get packer (comes from archlinux.fr)
+echo "################################################################"
+echo "yaourt"
+echo "################################################################"
+
 sudo pacman -S yaourt
 
 # now we are downloading the aur helper I like
+echo "################################################################"
+echo "packer"
+echo "################################################################"
+
 yaourt packer
 
 
@@ -117,31 +127,42 @@ yaourt packer
 
 
 
-########        C O R E        #########
+########        C O R E   i 3   A  U R    #########
+
+echo "################################################################"
+echo "Choose your Y and N wisely !!!"
+echo "################################################################"
 
 # alternative menu faster and only desktop apps
+echo "################################################################"
+echo "j4-dmenu-desktop"   
+echo "################################################################"
 packer j4-dmenu-desktop   --noedit
 
 # alternative menu for i3 with larger fonts and font choice 
+echo "################################################################"
+echo "dmenu-xft - Remove dmenu -- yes"
+echo "################################################################"
 packer dmenu-xft --noedit
 
 # alternative bar
+echo "################################################################"
+echo "i3 blocks"
+echo "################################################################"
+
 packer i3blocks --noedit
 
+
+echo "################################################################"
+echo "i 3 with gaps next git - Remove xcb-util-cursor -- yes"
+echo "i 3 with gaps next git - Remove i3wm -- yes"
+echo "################################################################"
+
 # i3 with gaps between windows
-# if you decide to install this you will have to uninstall i3 first
-
-#sudo pacman -R i3-wm
-
-# and install the replacement
-# you will be asked to remove xcb-util-cursor
-
-echo "Choose your Y and N wisely !!!"
-
 packer i3-gaps-next-git --noedit
 
 
+echo "################################################################"
+echo "###################    T H E   E N D      ######################"
+echo "################################################################"
 
-echo "########################################"
-echo "########    T H E   E N D      #########"
-echo "########################################"
