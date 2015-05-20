@@ -54,3 +54,7 @@ sudo pacman -S gvfs-afp
 
 # sudo systemctl restart ... if you run into trouble
 # testparm will check the conf file for errors
+
+echo "########################################"
+echo "########    T H E   E N D      #########"
+echo "########################################"

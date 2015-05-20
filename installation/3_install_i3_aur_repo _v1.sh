@@ -50,6 +50,7 @@
 
 #calculator
 # sudo pacman -S gnome-calculator
+
 packer galculator-gtk2 --noedit
 
 
@@ -67,10 +68,15 @@ packer sublime-text-dev --noedit
 packer archlinux-artwork --noedit
 
 ######## I N T E R N E T       #########
-
+echo "################################################################"
+echo "google chrome"
+echo "################################################################"
 packer google chrome --noedit
 
  ######## M U L T I M E D I A   #########
+echo "################################################################"
+echo "spotify"
+echo "################################################################"
 
 packer spotify  --noedit
 packer kazam --noedit
@@ -111,6 +117,9 @@ packer xcursor-menda-git --noedit
         # W A L L P A P E R #
 
 # wallpaper changer
+echo "################################################################"
+echo "variety"
+echo "################################################################"
 packer variety --noedit
 
 
@@ -119,8 +128,13 @@ packer variety --noedit
 
         
         # C L O U D #
-
+echo "################################################################"
+echo "dropbox"
+echo "################################################################"
 packer dropbox --noedit
+echo "################################################################"
+echo "copy-agent"
+echo "################################################################"
 packer copy-agent --noedit
 
 
@@ -158,7 +172,8 @@ packer font-manager  --noedit
 
 # activate multilib in the pacman.conf
 # packer teamviewer  --noedit
-packer usb-creator --noedit
+# packer usb-creator --noedit
+packer mintstick-git --noedit
 # if using pamac you need some kind of policy kit to grant permission for updating
 # sudo pacman -S polkit
 # packer xfce-polkit-git --noedit
@@ -174,10 +189,10 @@ packer usb-creator --noedit
 packer sane --noedit
 packer simple-scan 
 
-#edit following file dll.conf and uncomment line with #hpaio
+# edit following file dll.conf and uncomment line with #hpaio
 # This is my current network printer hp aio photosmart 7520
 
-#sudo nano /etc/sane.d/dll.conf
+# sudo nano /etc/sane.d/dll.conf
 
 
 
@@ -234,7 +249,10 @@ packer simple-scan
 
 #update notifier
 
-# I choose pamac as notifier
+# i3blocks has a little script that says how many updates there are
+# just run at your convenience sudo pacman -Syu
+
+# I would choose pamac as notifier
 # IF you want an update manager to tell you there are updates (icontray)
 # pamac is the most complete one
 # download from https://github.com/manjaro/pamac or

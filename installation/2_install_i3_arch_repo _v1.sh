@@ -102,7 +102,6 @@ sudo pacman -S feh
 
 # to configure qt4 X11 (spotify submenu's)
 sudo pacman -S qt4
-#packer qtcurve-gtk2 --noedit   ???
 # start the program qtconfig-qt4 
 #choose gtk+
 
