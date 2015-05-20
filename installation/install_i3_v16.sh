@@ -337,7 +337,6 @@ packer google chrome --noedit
  ######## M U L T I M E D I A   #########
 
 packer spotify  --noedit
-packer popcorntime --noedit
 packer kazam --noedit
 
 ######## O F F I C E           #########

@@ -45,9 +45,9 @@
 # all kinds of programs are being used from different distro's but xfce4 is my preference.
 
 ########################################
-########    AFTER BARE INSTALL #########
+########  AFTER  BARE  INSTALL #########
 ########################################
-# No desktop environment or display manager
+# No desktop environment or display manager  nor is it needed
 
 sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 
@@ -86,15 +86,15 @@ sudo pacman -S terminator
 
 sudo pacman -S unclutter ristretto
 
-sudo pacman -S zsh
-
 sudo pacman -S notify-osd
 
-# Installation of OH-MY-ZSH from the github (best way to install!!)
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+sudo pacman -S xfce4-screenshooter
 
-# You have to type this again - the password prompt is gone too fast
-# echo "chsh your_username -s /bin/zsh"
+sudo pacman -S evince
+
+# if you need to edit which extension goes with which program
+# sudo pacman -S mime-editor
+
 
 
 ######## D E V E L O P M E N T #########
@@ -106,13 +106,14 @@ wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - 
 ######## G R A P H I C S       #########
 
 sudo pacman -S gimp inkscape
+sudo pacman -S gnome-font-viewer
 
 ######## I N T E R N E T       #########
 
-sudo pacman -S firefox flashplugin transmission-gtk skype hexchat
+sudo pacman -S firefox flashplugin transmission-gtk hexchat
 
 # activate multilib in the pacman.conf
-sudo pacman -S skype
+# sudo pacman -S skype
 
 ######## M U L T I M E D I A   #########
 
@@ -161,11 +162,19 @@ sudo pacman -S xorg-xrandr
 # monitor the GB/TB of your harddisk
 # sudo pacman -S baobab
 
+#Monitor the partitions and format them
+# sudo pacman -S gparted
+
 # download statistics
 sudo pacman -S vnstat 
 systemctl enable vnstat
 systemctl start vnstat
 
+# taskmanager if htop and glances is not for you
+sudo pacman -S xfce4-taskmanager
+
+# download and burn iso
+sudo pacman -S unetbootin
 
         # S O U N D #
 sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
@@ -176,7 +185,11 @@ sudo pacman -S volumeicon
 
 
         # T H U N A R #
+
+# sudo pacman -S spacefm
 sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman
+# if you want  a wastbasket in thunar you better install this
+sudo pacman -S gvfs  # or thunar-vfs
 
 # installed via brasero
 # sudo pacman -S gvfs
@@ -186,9 +199,10 @@ sudo pacman -S catfish findutils mlocate tracker strigi pinot
 
 
         # F O N T S #
-sudo pacman -S ttf-ubuntu-font-family
-sudo pacman -S ttf-droid
+#sudo pacman -S ttf-ubuntu-font-family
+#sudo pacman -S ttf-droid
 #sudo pacman -S ttf-inconsolata
+sudo pacman -S ttf-google-fonts
 
         # U T I L I T I E S #
 sudo pacman -S gnome-disk-utility
@@ -263,6 +277,16 @@ packer dmenu-xft --noedit
 # alternative bar
 packer i3blocks --noedit
 
+# i3 with gaps between windows
+# if you decide to install this you will have to uninstall i3 first
+
+#sudo pacman -R i3-wm
+
+# and install the replacement
+# you will be asked to remove xcb-util-cursor
+
+packer i3-gaps-next-git --noedit
+
 
 
 
@@ -277,9 +301,13 @@ packer i3blocks --noedit
 ######## A C C E S S O R I E S #########
 
 #PDF reader
-packer qpdfview --noedit
+# activate multilib in the /etc/pacman.conf
+# packer foxitreader --noedit
+# packer acroread --noedit
+
 
 #calculator
+# sudo pacman -S gnome-calculator
 packer galculator-gtk2 --noedit
 
 #zsh enhancements
@@ -305,7 +333,6 @@ packer google chrome --noedit
  ######## M U L T I M E D I A   #########
 
 packer spotify  --noedit
-packer popcorntime --noedit
 packer kazam --noedit
 
 ######## O F F I C E           #########
@@ -316,9 +343,9 @@ packer focuswriter --noedit
 
         # I C O N S #
 
-packer ultra-flat-icons --noedit
+#packer ultra-flat-icons --noedit
 packer evopop-icon-theme-git  --noedit
-packer numix-circle-icon-theme  --noedit
+#packer numix-circle-icon-theme  --noedit
 git clone https://github.com/KotusWorks/Ardis-icon-theme.git ~/.themes/Ardis-icon-theme
 git clone https://github.com/horst3180/Vertex-Icons ~/.icons/Vertex-Icons
 
@@ -329,6 +356,7 @@ packer evopop-gtk-theme  --noedit
 #packer omg-suite --noedit
 packer vertex-themes-git --noedit
 #packer ceti-3.14-theme --noedit
+#packer zoncolor-themes-pack --no-edit
 
 # gtk theme
 # http://gnome-look.org/content/show.php/Just-Dark?content=168025
@@ -365,6 +393,15 @@ packer playerctl --noedit
 packer alsi --noedit
 packer screenfo --noedit
 
+# if you want a program that tells to update
+# or just type sudo pacman -Syu when you feel like it
+# packer pamac --noedit   # if not on antergos
+# execute pamac-tray in your config of i3
+# install also lxsession to be able to update and install in gui
+# sudo pacman -S lxsession
+
+# sudo pacman -S pamac lxsession
+
         # T H U N A R #
 
 
@@ -378,17 +415,23 @@ packer font-manager  --noedit
 
         # U T I L I T I E S #
 
-packer teamviewer  --noedit
+# activate multilib in the pacman.conf
+# packer teamviewer  --noedit
 packer usb-creator --noedit
 # if using pamac you need some kind of policy kit to grant permission for updating
 # sudo pacman -S polkit
 # packer xfce-polkit-git --noedit
+# want to add a nice wallpaper to your grub or just change the time or...
+# https://launchpad.net/grub-customizer
+# packer grub-customizer
+
 
        
         # S C A N N E R #
 
 # http://www.linuxveda.com/2013/04/02/how-to-install-and-configure-hp-printer-in-arch-linux/
-packer sane simple-scan --noedit
+packer sane --noedit
+packer simple-scan 
 
 #edit following file dll.conf and uncomment line with #hpaio
 # This is my current network printer hp aio photosmart 7520
@@ -399,7 +442,6 @@ packer sane simple-scan --noedit
         # U P D A T E #
 
 #update notifier
-#packer aarchup --noedit
 
 # I choose pamac as notifier
 # IF you want an update manager to tell you there are updates (icontray)
@@ -463,6 +505,15 @@ packer sane simple-scan --noedit
         # S M A R T G I T #
         
 #packer smartgit
+
+
+        # B U R N   I S O  T O   U S B #
+
+#sudo fdisk -l
+#sudo dd bs=4M if=/path/to/xxxxx.iso of=/dev/sdc && sync
+
+
+
 
 
 ##############################################

@@ -53,27 +53,42 @@ I run an installation script to quickly  get all my software after the base inst
 The idea is to download (if you have internet connection) the i3 github files :
 
 	sudo pacman -S git
-	git clone https://github.com/erikdubois/i3wmarchdark.git
+	git clone https://github.com/erikdubois/Archi3.git
 
 This folder should be copied to a hidden folder in your home directory with the name  ~/.i3
 
+    cp -r Archi3/ ~/.i3
+
 Be sure to copy all the hidden files too!
 
-Then you can start running the above mentioned script to be found in the folder installation.
+    ls -al       reveals hidden files as well
 
-	install_i3_vxx.sh
+Then you can start running the below mentioned script to be found in the folder installation.
+If you see a program, you do not want. Just press ENTER and no number and it will be skipped.
+    
+    cd installation
+	./install_i3_vxx.sh
 
 When that is done you run
 
-	keep_all_here_vx.sh
+	./keep_all_here_vx.sh
 
 The last script is my idea to have all my data in one folder. So I make some symbolic links to them. I did notice that this is not so easy with the gtk files.
 
-Give it a go because I3 deserves to be more known.
+
+The smb script is to install samba or the way to share folders and files between computers if you need it.
+
+    ./smb_vx.sh
 
 
+The zsh script is an alternative to bash more colourfull (>100 themes) and more plugins then you ever need.
+
+    ./zsh_vx.sh
+
+#Give it a go because <b> I 3 improved tiling </b> deserves to be more known.
 
 
+# Reboot  N  O  W
 
 
 # A N T E R G O S
