@@ -137,6 +137,8 @@ I wrote an installation document "read_me_installation_antergos_ base_vx" to cov
 Please check that out if you want to install i3 on an antergos base installation.
 
 
+![Screenshots](https://drive.google.com/drive/folders/18vC8voHYop0N7hJsnJa2lweuC7MJRZLIG8SlRq3sd2Q/0B0R9dPe6spPCflJkamVFZVJkRzQ4ZGF4U00tRmtfeW1hc0x2dTRlLTE3dWhLaERyMEJURDg)
+
 
 
 
@@ -151,6 +153,9 @@ https://github.com/erikdubois/mintyi3wm
 
 http://erikdubois.be/linux/install-i3-on-linux-mint-17-1
 
+
+
+![Screenshots](https://drive.google.com/drive/folders/18vC8voHYop0N7hJsnJa2lweuC7MJRZLIG8SlRq3sd2Q/0B0R9dPe6spPCfmp0eThGeW9HcGVnam5kRVRZU1BpRWx2dUwwV21ST3hydm11UzJHQzFBZVk)
 
 
 
