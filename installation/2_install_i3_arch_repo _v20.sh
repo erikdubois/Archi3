@@ -70,6 +70,7 @@ sudo pacman -S gnome-font-viewer
 ######## I N T E R N E T       #########
 
 sudo pacman -S firefox flashplugin transmission-gtk hexchat
+sudo pacman -S filezilla
 
 # activate multilib in the pacman.conf
 # sudo pacman -S skype

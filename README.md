@@ -117,13 +117,13 @@ The smb script is to install samba or the way to share folders and files between
 <h2>Give it a go because <b> I 3 improved tiling </b> deserves to be more known.</h2>
 
 
+
+
+
 # Reboot  N  O  W
 
 
-<a target="_blank" href="http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png">
-<img style="max-width:100%;" data-canonical-src="http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png" alt="alt tag" src="http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png">
-</a>
-![Screenshots](https://drive.google.com/drive/folders/18vC8voHYop0N7hJsnJa2lweuC7MJRZLIG8SlRq3sd2Q/0B0R9dPe6spPCfmp0eThGeW9HcGVnam5kRVRZU1BpRWx2dUwwV21ST3hydm11UzJHQzFBZVk)
+
 
 
 
@@ -139,11 +139,6 @@ I wrote an installation document "read_me_installation_antergos_ base_vx" to cov
 Please check that out if you want to install i3 on an antergos base installation.
 
 
-<a target="_blank" href="https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing">
-<img style="max-width:100%;" data-canonical-src="https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing" alt="alt tag" src="https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing">
-</a>
-
-![Screenshots](https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing)
 
 
 
@@ -159,9 +154,8 @@ https://github.com/erikdubois/mintyi3wm
 
 http://erikdubois.be/linux/install-i3-on-linux-mint-17-1
 
+![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/2015-05-10-080202_3360x1050_scrot.png)
 
-
-![Screenshots](https://drive.google.com/open?id=1gRRmhCg1tYAdJHcQcwBhbhAugQkhlE0WtQ&authuser=0)
 
 
 
