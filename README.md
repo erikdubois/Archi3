@@ -114,7 +114,7 @@ The smb script is to install samba or the way to share folders and files between
 
 
 
-<h1>Give it a go because <b> I 3 improved tiling </b> deserves to be more known.</h1>
+<h2>Give it a go because <b> I 3 improved tiling </b> deserves to be more known.</h2>
 
 
 # Reboot  N  O  W
