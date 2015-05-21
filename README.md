@@ -14,6 +14,9 @@ https://i3wm.org/
 
 # What can you achieve?
 
+![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/2015-05-03-194238_3360x1050_scrot.png)
+
+
 ![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png)
 
 
