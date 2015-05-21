@@ -139,6 +139,10 @@ I wrote an installation document "read_me_installation_antergos_ base_vx" to cov
 Please check that out if you want to install i3 on an antergos base installation.
 
 
+<a target="_blank" href="https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing">
+<img style="max-width:100%;" data-canonical-src="https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing" alt="alt tag" src="https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing">
+</a>
+
 ![Screenshots](https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing)
 
 
