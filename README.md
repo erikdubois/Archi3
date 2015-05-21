@@ -121,6 +121,9 @@ The smb script is to install samba or the way to share folders and files between
 
 
 
+![Screenshots](https://lh4.googleusercontent.com/-6P8-60JQnRc/VVzy1GF7mMI/AAAAAAAAGIw/NouPWkdtV3o/w1357-h424-no/2015-05-14-102114_3360x1050_scrot.png)
+
+
 
 # A N T E R G O S
 ------------------
