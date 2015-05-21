@@ -155,7 +155,7 @@ http://erikdubois.be/linux/install-i3-on-linux-mint-17-1
 
 
 
-![Screenshots](https://drive.google.com/drive/folders/18vC8voHYop0N7hJsnJa2lweuC7MJRZLIG8SlRq3sd2Q/0B0R9dPe6spPCfmp0eThGeW9HcGVnam5kRVRZU1BpRWx2dUwwV21ST3hydm11UzJHQzFBZVk)
+![Screenshots](https://drive.google.com/file/d/1t0OgeOUFrFXdJfENkBChdu4dC3svCJzLxw)
 
 
 
