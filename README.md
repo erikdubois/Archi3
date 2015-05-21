@@ -120,7 +120,9 @@ The smb script is to install samba or the way to share folders and files between
 # Reboot  N  O  W
 
 
-
+<a target="_blank" href="http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png">
+<img style="max-width:100%;" data-canonical-src="http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png" alt="alt tag" src="http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png">
+</a>
 ![Screenshots](https://drive.google.com/drive/folders/18vC8voHYop0N7hJsnJa2lweuC7MJRZLIG8SlRq3sd2Q/0B0R9dPe6spPCfmp0eThGeW9HcGVnam5kRVRZU1BpRWx2dUwwV21ST3hydm11UzJHQzFBZVk)
 
 
@@ -137,7 +139,7 @@ I wrote an installation document "read_me_installation_antergos_ base_vx" to cov
 Please check that out if you want to install i3 on an antergos base installation.
 
 
-![Screenshots](https://drive.google.com/drive/folders/18vC8voHYop0N7hJsnJa2lweuC7MJRZLIG8SlRq3sd2Q/0B0R9dPe6spPCflJkamVFZVJkRzQ4ZGF4U00tRmtfeW1hc0x2dTRlLTE3dWhLaERyMEJURDg)
+![Screenshots](https://drive.google.com/file/d/1fP012gO8Qou5XAfjH9mIyfel2_J9h-dYgg/view?usp=sharing)
 
 
 
