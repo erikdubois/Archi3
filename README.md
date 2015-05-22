@@ -98,7 +98,13 @@ This will install all programs coming from the "normal" arch repositories with t
 This will install all programs coming from the AUR repositories.
 
 If you see a program, you do not want. Just press ENTER and no number and it will be skipped.
-At the bottom of the screen, I will leave a list of the programs that will be installed so you can follow it. It sometimes unclear what progam to choose.
+In the script you will see a text to know which one you need to choose.
+
+    For example
+
+    echo "################################################################"
+    echo "sane"
+    echo "################################################################"
 
 When that is done you run
 
