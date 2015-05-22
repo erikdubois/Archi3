@@ -137,10 +137,7 @@ packer numix-themes-archblue --noedit
 # gtk theme
 # http://gnome-look.org/content/show.php/Just-Dark?content=168025
 
-        # I C O N S #
-echo "################################################################"
-echo "spotify"
-echo "################################################################"
+        # C U R S O R S #
 
 #manjaro cursor theme
 
