@@ -328,7 +328,6 @@ for_window [class="Galculator"] floating enable
 for_window [class="Usb-creator-gtk"] floating enable
 for_window [instance="script-fu"] border normal
 for_window [class="Xfce4-taskmanager"] floating enable
-for_window [class="Imagewriter"] floating enable
 
 for_window [class="Hexchat"] floating disable
 
