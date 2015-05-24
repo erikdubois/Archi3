@@ -29,12 +29,10 @@
 #                               
 # Interesting Sources : 
 #
-# https://i3wm.org/docs/userguide.html
-# https://github.com/Arakis/autologin-on-boot
 #
 #======================================================================================
 
-# Made to be installed on a BASE ANTERGOS
+# Made to be installed on a BASE INSTALLATION OF ANTERGOS
 # no desktop environment, no display manager - X11 not yet installed
 # all kinds of programs are being used from different distro's but xfce4 is my preference.
 
@@ -85,10 +83,14 @@ cp -r ~/i3wmarchdark/ ~/.i3/
 
 6 installation of software
 
-~/.i3/installation/install i3_vxx.sh
 
 First part is all software in normal arch repo's.
+
+~/.i3/installation/1_install_i3_core_vxx.sh
+
 Second part is all software from aur repo's.
+
+~/.i3/installation/2_install_i3_aur_repo_vxx.sh
 
 ####################################
 
@@ -109,20 +111,26 @@ Evaluate what you think is best.
 # will not yet exist - you can not remove what is not there
 # ignore the errors
 
-~/.i3/installation/keep_all_here_vx
+~/.i3/installation/4_keep_all_here_vx.sh
 
 # .xinitrc is the most important as it says to start i3 to the xserver.
 
 
 
 My system has been build on the use of zsh.
-It will only boot into i3 if you set zsh as a replacement to Bash.
+It will only use the zsh files if you set zsh as a replacement to Bash.
+I changed the files so that even if you keep bash you will boot up i3.
 
 
+~/.i3/installation/5_zsh_vxx.sh
 sudo chsh erik -s /bin/zsh
 
 Type in your password.
 
+
+If you need smb or sharing folders via the network. There is one more file.
+
+~/.i3/installation/6_smb_vxx.sh
 
 
 #======================================================================================
@@ -147,7 +155,7 @@ change to your liking
 
 9 Font 
 
-move the font to its right directory
+move the font to its right directory - workspace 8 has the file manager
 
 mkdir ~/.fonts    #if necessary make directory First
 cp ~/.i3/installation/fonts/fontawesome-webfont.ttf ~/.fonts/
@@ -162,7 +170,7 @@ these are not essential to the installation
 
 11 Change the look for qt4 applications
 
-mod1+d and look for the program "qt4-configqt4"
+mod1+d and look for the program "qtconfig-qt4"
 programs like spotify will change their submenu's to the qtk theme
 choose same font as rest or a different one.
 
@@ -171,6 +179,8 @@ choose same font as rest or a different one.
 
 a ticket has been filed at github regarding this matter
 ticket is closed now. will soon be available.
+
+!!!It is solved in the meantime.
 
 easy fix 
 

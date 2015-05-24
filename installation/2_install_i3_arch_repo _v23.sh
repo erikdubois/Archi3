@@ -113,33 +113,43 @@ sudo pacman -S qt4
 
         # S Y S T E M  T O O L S # 
 
+# all kind of tools to get system information
+
 sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glances 
 sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
 numlockx on
+
 # if not already installed - xrandr - only for dual-screens to know how the screens are named
 # and set them the right way
+
 sudo pacman -S xorg-xrandr
+
 # monitor the GB/TB of your harddisk
 # sudo pacman -S baobab
 
-#Monitor the partitions and format them
+# Monitor the partitions and format them
 # sudo pacman -S gparted
 
 # download statistics
+
 sudo pacman -S vnstat 
 systemctl enable vnstat
 systemctl start vnstat
 
 # taskmanager if htop and glances is not for you
+
 sudo pacman -S xfce4-taskmanager
 
 # download and burn iso
 sudo pacman -S unetbootin
 
         # S O U N D #
+
 sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
 sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  gstreamer0.10-ffmpeg
+
 # for kazam
+
 sudo pacman -S libsrtp
 sudo pacman -S volumeicon
 
@@ -148,8 +158,10 @@ sudo pacman -S volumeicon
 
 # sudo pacman -S spacefm
 sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman
+
 # if you want  a wastbasket in thunar you better install this
-sudo pacman -S gvfs  # or thunar-vfs
+# or thunar-vfs
+sudo pacman -S gvfs  
 
 # installed via brasero
 # sudo pacman -S gvfs
@@ -165,6 +177,7 @@ sudo pacman -S catfish findutils mlocate tracker strigi pinot
 sudo pacman -S ttf-google-fonts
 
         # U T I L I T I E S #
+
 sudo pacman -S gnome-disk-utility
 
         # P R I N T E R #
@@ -178,7 +191,9 @@ systemctl start org.cups.cupsd.service
 
 # if you want a networkmanager and applet mostly for laptop/wireless as
 # lan just works and gives no added value
+
 sudo pacman -S networkmanager
+
 # set nm-applet to run at boot in the config file
 
 

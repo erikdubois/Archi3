@@ -42,13 +42,14 @@
 
 ######## A C C E S S O R I E S #########
 
-#PDF reader
+# PDF reader
 # activate multilib in the /etc/pacman.conf
 # packer foxitreader --noedit
 # packer acroread --noedit
+# using evince
 
 
-#calculator
+# calculator
 # sudo pacman -S gnome-calculator
 
 echo "################################################################"
@@ -63,7 +64,9 @@ packer galculator-gtk2 --noedit
 echo "################################################################"
 echo "sublime-text-dev"
 echo "################################################################"
+
 #packer sublime-edit --noedit
+
 packer sublime-text-dev --noedit
 
 ######## E D U C A T I O N     #########
@@ -129,23 +132,30 @@ packer masterpdfeditor --noedit
         # I C O N S #
 
 #packer ultra-flat-icons --noedit
-packer evopop-icon-theme-git  --noedit
+#packer evopop-icon-theme-git  --noedit
 packer numix-circle-icon-theme  --noedit
-git clone https://github.com/KotusWorks/Ardis-icon-theme.git ~/.themes/Ardis-icon-theme
-git clone https://github.com/horst3180/Vertex-Icons ~/.icons/Vertex-Icons
+#git clone https://github.com/KotusWorks/Ardis-icon-theme.git ~/.themes/Ardis-icon-theme
+#git clone https://github.com/horst3180/Vertex-Icons ~/.icons/Vertex-Icons
 
         # T H E M E S #
 
-packer evopop-gtk-theme  --noedit
+#packer evopop-gtk-theme  --noedit
 #packer zukitwo-themes  --noedit
 #packer omg-suite --noedit
-packer vertex-themes-git --noedit
+#packer vertex-themes-git --noedit
 packer numix-themes-archblue --noedit
 #packer ceti-3.14-theme --noedit
 #packer zoncolor-themes-pack --no-edit
 
 # gtk theme
 # http://gnome-look.org/content/show.php/Just-Dark?content=168025
+
+echo "################################################################"
+echo "################################################################"
+echo "I will use the following github to get A L L the themes and icons"
+echo "https://github.com/erikdubois/themes-icons-pack"
+echo "################################################################"
+echo "################################################################"
 
         # C U R S O R S #
 
@@ -282,27 +292,30 @@ packer simple-scan
 #
 ###############################################################
 
+
         # D U A L  S C R E E N #
 
-#Dualscreen - this changes just type xrandr and change the numbers
+# Dualscreen - this changes just type xrandr and change the numbers
 # xrandr --output DVI-I-0 --auto --left-of DVI-I-3
 
         # K E Y B O A R D #  
 
-#if keyboard not azerty put in config file
+# if keyboard not azerty put in config file
 # exec setxkbmap be 
 
         # X P R O P #
 
-#with xprop you can find out what the class name is of a program
-#to set it floating for example
+# with xprop you can find out what the class name is of a program
+# to set it floating for example
 
         # A U T O  L O G I N #
 
-#if you want to autologin - aka at home no danger
+# if you want to autologin - aka at home no danger
 # https://github.com/Arakis/autologin-on-boot
-#packer autologin-on boot --noedit
-#/bin/autologin-on-boot
+# packer autologin-on boot --noedit
+# /bin/autologin-on-boot
+# sudo systemctl enable autologin-on-boot
+# sudo systemctl start autologin-on-boot
 
 
         # S P E E D T E S T #
@@ -316,18 +329,18 @@ packer simple-scan
         
         # S M A R T G I T #
         
-#packer smartgit
+# packer smartgit
 
 
         # B U R N   I S O  T O   U S B #
 
-#sudo fdisk -l
-#sudo dd bs=4M if=/path/to/xxxxx.iso of=/dev/sdc && sync
+# sudo fdisk -l
+# sudo dd bs=4M if=/path/to/xxxxx.iso of=/dev/sdc && sync
 
 
         # U P D A T E #
 
-#update notifier
+# update notifier
 
 # i3blocks has a little script that says how many updates there are
 # just run at your convenience sudo pacman -Syu
@@ -353,6 +366,7 @@ packer simple-scan
 ##########   A   P   P   L   E    ############
 ##########     MacBookPro 5.4     ############
 ##############################################
+#
 # macbookpro fan control for manjaro 0.8.12 Ascella
 # packer macfanctld-git --noedit
 # WHEN kernel update possibly missing not sure if I need it

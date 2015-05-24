@@ -47,7 +47,9 @@
 ########################################
 ########  AFTER  BARE  INSTALL #########
 ########################################
+
 # No desktop environment or display manager  nor is it needed
+
 echo "################################################################"
 echo "installing xorg server"
 echo "################################################################"
@@ -56,6 +58,9 @@ sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 
 
 # if you know what graphic driver to include you can do it here
+# but again not needed for many of us since the latest
+# linux kernels seem to support many graphicacl hardware.
+# Test out and if neede install any proprietary drivers from nvidia or ati.
 
 # sudo pacman -S nvidia-340xx
 
@@ -65,6 +70,7 @@ sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 
 
 #Core stuff i3
+
 echo "################################################################"
 echo "i 3  improved tiling core files"
 echo "################################################################"
@@ -80,7 +86,7 @@ sudo pacman -S i3-wm i3lock i3status
         # A U R   H E L P E R #
 
 # downloading yaourt to get packer (comes from archlinux.fr)
-# add these lines to the end of /etc/pacman.conf and update 
+# add these lines to the end of /etc/pacman.conf and update with sudo pacman -Syu
 # https://wiki.archlinux.org/index.php/Pacman
 # once I have yaourt I comment these lines out
 
@@ -91,6 +97,7 @@ sudo pacman -S i3-wm i3lock i3status
 ########################################
 
 # downloading yaourt to get packer (comes from archlinux.fr)
+
 echo "################################################################"
 echo "yaourt"
 echo "################################################################"
@@ -98,6 +105,7 @@ echo "################################################################"
 sudo pacman -S yaourt
 
 # now we are downloading the aur helper I like
+
 echo "################################################################"
 echo "packer"
 echo "################################################################"
@@ -134,18 +142,23 @@ echo "Choose your Y and N wisely !!!"
 echo "################################################################"
 
 # alternative menu faster and only desktop apps
+
 echo "################################################################"
 echo "j4-dmenu-desktop"   
 echo "################################################################"
+
 packer j4-dmenu-desktop   --noedit
 
 # alternative menu for i3 with larger fonts and font choice 
+
 echo "################################################################"
-echo "dmenu-xft - Remove dmenu -- yes"
+echo "dmenu-xft for bigger fonts - Remove dmenu -- yes"
 echo "################################################################"
+
 packer dmenu-xft --noedit
 
-# alternative bar
+# alternative information bar
+
 echo "################################################################"
 echo "i3 blocks"
 echo "################################################################"
@@ -159,6 +172,7 @@ echo "i 3 with gaps next git - Remove i3wm -- yes"
 echo "################################################################"
 
 # i3 with gaps between windows
+
 packer i3-gaps-next-git --noedit
 
 

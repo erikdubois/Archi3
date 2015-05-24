@@ -34,9 +34,6 @@
 #                               
 # Interesting Sources : 
 #
-# https://i3wm.org/docs/userguide.html
-# https://github.com/Arakis/autologin-on-boot
-# http://www.linuxveda.com/2013/04/02/how-to-install-and-configure-hp-printer-in-arch-linux/
 #
 #======================================================================================
 
@@ -56,12 +53,13 @@
 
 			# I 3  B L O C K S #
 
-#use of i3blocks for bar 
+# use of i3blocks for bar 
+
 ln -s ~/.i3/.i3blocks.conf ~/.i3blocks.conf
 
 			# L X  A P P E A R A N C E #
 
-#lxappearance will change two files - back these up to have them for later
+# lxappearance will change two files - back these up to have them for later
 # these files can be found in the installation folder
 # making links does not seem to work - they are overwritten when changing the look
 
