@@ -60,7 +60,7 @@ sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 # if you know what graphic driver to include you can do it here
 # but again not needed for many of us since the latest
 # linux kernels seem to support many graphicacl hardware.
-# Test out and if neede install any proprietary drivers from nvidia or ati.
+# Test out and if needed install any proprietary drivers from nvidia or ati.
 
 # sudo pacman -S nvidia-340xx
 
