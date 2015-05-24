@@ -44,6 +44,11 @@
 # no desktop environment, no display manager - directly on X11
 # all kinds of programs are being used from different distro's but xfce4 is my preference.
 
+# fstab for ssd 
+# defaults,noatime,discard
+# https://wiki.archlinux.org/index.php/Solid_State_Drives#Enable_TRIM_by_Mount_Flags
+# sudo fstrim -v / and /home
+
 ########################################
 ########  AFTER  BARE  INSTALL #########
 ########################################
