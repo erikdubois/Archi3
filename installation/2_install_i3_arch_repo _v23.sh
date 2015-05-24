@@ -141,7 +141,11 @@ systemctl start vnstat
 sudo pacman -S xfce4-taskmanager
 
 # download and burn iso
-sudo pacman -S unetbootin
+sudo pacman -S 
+
+# sudo fdisk -l
+# sudo ddrescue -d -D --force your iso.iso /dev/sdx
+sudo pacman -S ddrescue
 
         # S O U N D #
 
