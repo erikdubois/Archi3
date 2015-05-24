@@ -181,11 +181,11 @@ shift + win + d = j4dmenu
 
 ctrl + alt + a = xfce-appfinder
 
-ctrl + shift + e = exit i3
+win + shift + e = exit i3
 
-ctrl + shift + r = reload config file
+win + shift + r = reload config file
 
-win + shift +q = closes any window
+win + shift + q = closes any window
 
 win + pause/break = let you suspend,hibernate, reboot and quit
 
