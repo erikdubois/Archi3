@@ -56,6 +56,10 @@ sudo pacman -S gvfs-afp
 # sudo systemctl restart ... if you run into trouble
 # testparm will check the conf file for errors
 
+# red hat samba sharing config 
+packer system-config-samba
+
+
 echo "########################################"
-echo "########    T H E   E N D      #########"
+echo "######## T H E   E N D  + R E B O O T ##"
 echo "########################################"
