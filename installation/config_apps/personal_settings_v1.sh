@@ -71,6 +71,7 @@ echo "################################################################"
 echo "terminator"
 echo "################################################################"
 
+[ -d "~/.config/terminator" ] || mkdir -p $HOME/".config/terminator"
 sudo cp terminator/config ~/.config/terminator/
 cp thunar/configure_custom_actions/uca.xml ~/.config/Thunar/
 
