@@ -149,7 +149,7 @@ bindsym $mod+e layout toggle split
 
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+space floating toggle
 
 # focus the parent container
 bindsym $mod+q focus parent
@@ -362,8 +362,6 @@ popup_during_fullscreen smart
 #Filemanagers
 bindsym $mod+Shift+Return exec thunar
 
-
-
 #mod1 = ALT
 bindsym control+mod1+f exec firefox 
 bindsym control+mod1+g exec geary
@@ -432,8 +430,8 @@ bindsym $mod+t border normal
 bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 
-new_window 1pixel
-new_float 1pixel
+#new_window 1pixel
+#new_float 1pixel
 
 
 #####COLORS#####
