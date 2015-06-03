@@ -267,6 +267,15 @@ packer isousb --noedit
 # packer grub-customizer
 
 
+
+        # N E T W O R K 
+
+
+packer  slurm --noedit
+
+
+
+
        
         # S C A N N E R #
 

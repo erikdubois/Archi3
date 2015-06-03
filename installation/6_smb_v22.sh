@@ -57,7 +57,7 @@ sudo pacman -S gvfs-afp
 # testparm will check the conf file for errors
 
 # red hat samba sharing config 
-packer system-config-samba
+packer system-config-samba --noedit
 echo "Run system-config-samba to set up shares"
 
 
