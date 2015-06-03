@@ -51,13 +51,28 @@ wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - 
 
 
 # You have to type this again - the password prompt is gone too fast
-
 echo "################################################################"
+echo "################################################################"
+echo "################################################################"
+echo "################################################################"
+echo "################################################################"
+echo 
 echo "oh-my-zsh"
+echo 
 echo "You might need to type this again. Use your own name"
+echo 
 echo "sudo chsh your_username -s /bin/zsh"
+echo 
 echo "all the symbolic links from keep_all_here_vx.sh point to zsh files"
+echo 
 echo "################################################################"
+echo "################################################################"
+echo "################################################################"
+echo "################################################################"
+
+
+
+
 
 
 echo "################################################################"

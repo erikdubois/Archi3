@@ -149,10 +149,10 @@ echo "################################################################"
 # alternative menu faster and only desktop apps
 
 echo "################################################################"
-echo "j4-dmenu-desktop"   
+echo "j4-dmenu-desktop-git"   
 echo "################################################################"
 
-packer j4-dmenu-desktop   --noedit
+packer j4-dmenu-desktop-git   --noedit
 
 # alternative menu for i3 with larger fonts and font choice 
 
