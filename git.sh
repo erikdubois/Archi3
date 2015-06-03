@@ -1,6 +1,6 @@
 #!/bin/sh
 # Below command will backup everything inside the project folder
-git add .
+git add --all .
 
 # Committing to the local repository with a message containing the time details
 curtime=$(date)
