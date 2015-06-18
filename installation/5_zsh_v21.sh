@@ -49,26 +49,27 @@ echo "################################################################"
 
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
+# changing the theme to random so you can enjoy tons of themes.
+
+sudo sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"random\"/g' ~/.zshrc
+
+# If above line did not work somehow. This is what you should do to enjoy the many themes.
+# go find the hidden .zshrc file and look for ZSH_THEME="robbyrussell" (CTRL+H to find hidden files)
+# change this to ZSH_THEME="random
 
 # You have to type this again - the password prompt is gone too fast
+
 echo "################################################################"
-echo "################################################################"
-echo "################################################################"
-echo "################################################################"
-echo "################################################################"
-echo 
 echo "oh-my-zsh"
-echo 
 echo "You might need to type this again. Use your own name"
-echo 
-echo "sudo chsh your_username -s /bin/zsh"
-echo 
-echo "all the symbolic links from keep_all_here_vx.sh point to zsh files"
-echo 
+echo "sudo chsh username -s /bin/zsh"
 echo "################################################################"
+
+
 echo "################################################################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"
-echo "################################################################"
+
 
 
 
