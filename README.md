@@ -185,7 +185,7 @@ https://github.com/erikdubois/mintyi3wm
 
 http://erikdubois.be/linux/install-i3-on-linux-mint-17-1
 
-![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/2015-05-10-080202_3360x1050_scrot.png)
+![Screenshots](http://i.imgur.com/XKpWcSD.jpg)
 
 
 
