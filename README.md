@@ -17,7 +17,7 @@ https://i3wm.org/
 ![Screenshots](http://i.imgur.com/MRH6EiB.jpg)
 
 
-![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png)
+![Screenshots](http://i.imgur.com/2bMwqsl.jpg)
 
 
 
