@@ -14,10 +14,15 @@ https://i3wm.org/
 
 # What can you achieve?
 
-![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/2015-05-03-194238_3360x1050_scrot.png)
+![Screenshots](http://i.imgur.com/MRH6EiB.jpg)
 
 
-![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/i3onarch.png)
+![Screenshots](http://i.imgur.com/2bMwqsl.jpg)
+
+
+Yltra Flat Archlinux Blue from github
+
+![Screenshots](http://i.imgur.com/oJuMEqT.jpg)
 
 
 
@@ -169,7 +174,7 @@ I wrote an installation document "read_me_installation_antergos_ base_vx" to cov
 Please check that out if you want to install i3 on an antergos base installation.
 
 
-![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/2015-04-18-112226_3360x1050_scrot.png)
+![Screenshots](http://i.imgur.com/UUw3NUM.jpg)
 
 
 
@@ -185,7 +190,7 @@ https://github.com/erikdubois/mintyi3wm
 
 http://erikdubois.be/linux/install-i3-on-linux-mint-17-1
 
-![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/2015-05-10-080202_3360x1050_scrot.png)
+![Screenshots](http://i.imgur.com/XKpWcSD.jpg)
 
 
 
