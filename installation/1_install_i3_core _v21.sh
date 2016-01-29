@@ -73,6 +73,16 @@ sudo pacman -S xorg-server xorg-server-utils xorg-xinit xorg-twm xterm
 ########        C O R E        #########
 ########################################
 
+# at time of writing signature problem
+# package is not corrupt
+# nano /etc/pacman.conf and change 
+# change to SigLevel   = Never 
+
+
+# other solution is
+# sudo mkdir /root/.gnupg
+# sudo pacman-key --refresh-keys
+
 
 #Core stuff i3
 
