@@ -159,16 +159,16 @@ bindsym $mod+q focus parent
 
 
 # move focused container to workspace
-bindsym $mod+Shift+ampersand move container to workspace 1
-bindsym $mod+Shift+eacute move container to workspace 2
-bindsym $mod+Shift+quotedbl move container to workspace 3
-bindsym $mod+Shift+apostrophe move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+section move container to workspace 6
-bindsym $mod+Shift+egrave move container to workspace 7
-bindsym $mod+Shift+exclam move container to workspace 8
-bindsym $mod+Shift+ccedilla move container to workspace 9
-bindsym $mod+Shift+agrave move container to workspace 10
+bindsym $mod+Shift+ampersand move container to workspace 1; workspace 1
+bindsym $mod+Shift+eacute move container to workspace 2; workspace 2
+bindsym $mod+Shift+quotedbl move container to workspace 3; workspace 3
+bindsym $mod+Shift+apostrophe move container to workspace 4; workspace 4
+bindsym $mod+Shift+5 move container to workspace 5; workspace 5
+bindsym $mod+Shift+section move container to workspace 6; workspace 6
+bindsym $mod+Shift+egrave move container to workspace 7; workspace 7
+bindsym $mod+Shift+exclam move container to workspace 8; workspace 8
+bindsym $mod+Shift+ccedilla move container to workspace 9; workspace 1; workspace 9
+bindsym $mod+Shift+agrave move container to workspace 10; workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -238,11 +238,11 @@ bindsym $mod+agrave workspace 10
 
 #setting variables for later use
 
-#set $firstMonitor DVI-I-1
-#set $secondMonitor DVI-I-2
+set $firstMonitor DVI-I-1
+set $secondMonitor DVI-I-2
 
-set $firstMonitor DVI-0
-set $secondMonitor DVI-1
+#set $firstMonitor DVI-0
+#set $secondMonitor DVI-1
 
 #xrandr DVI-I-1 and 2
 workspace 1 output $firstMonitor
