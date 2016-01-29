@@ -281,7 +281,7 @@ assign [class="Subl3"]            → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="Spotify"]          → 6
-assign [class="Thunar"]           → 7
+#assign [class="Thunar"]           → 7
 assign [class="geary"]            → 8
 
 
@@ -365,15 +365,14 @@ bindsym $mod+Shift+Return exec thunar
 
 #SHORTCUTS
 #mod1 = ALT
-bindsym $mod+Shift+Return exec thunar;workspace 7
 bindsym control+mod1+f exec firefox;workspace 1
 bindsym control+mod1+s exec spotify;workspace 6
 bindsym control+mod1+w exec subl3;workspace 2
-bindsym control+mod1+a exec thunar;workspace 7
 bindsym control+mod1+b exec thunderbird;workspace 8
 bindsym control+mod1+i exec inkscape;workspace 3
 bindsym control+mod1+p exec gimp;workspace 4
 bindsym control+mod1+c exec catfish
+bindsym control+mod1+a exec thunar
 bindsym control+mod1+t exec terminator
 bindsym control+mod1+Delete exec xfce4-taskmanager
 bindsym control+Shift+Escape exec xfce4-taskmanager
