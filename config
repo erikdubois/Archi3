@@ -363,18 +363,22 @@ popup_during_fullscreen smart
 #Filemanagers
 bindsym $mod+Shift+Return exec thunar
 
+#SHORTCUTS
 #mod1 = ALT
-bindsym control+mod1+f exec firefox 
-bindsym control+mod1+g exec geary
-bindsym control+mod1+s exec spotify
-#bindsym control+mod1+t exec subl
-bindsym control+mod1+t exec subl3
-bindsym control+mod1+a exec xfce4-appfinder
-bindsym control+mod1+b exec thunar
+bindsym $mod+Shift+Return exec thunar;workspace 7
+bindsym control+mod1+f exec firefox;workspace 1
+bindsym control+mod1+s exec spotify;workspace 6
+bindsym control+mod1+w exec subl3;workspace 2
+bindsym control+mod1+a exec thunar;workspace 7
+bindsym control+mod1+b exec thunderbird;workspace 8
+bindsym control+mod1+i exec inkscape;workspace 3
+bindsym control+mod1+p exec gimp;workspace 4
 bindsym control+mod1+c exec catfish
+bindsym control+mod1+t exec terminator
 bindsym control+mod1+Delete exec xfce4-taskmanager
 bindsym control+Shift+Escape exec xfce4-taskmanager
-bindsym control+Print exec xfce4-screenshooter
+bindsym control+mod1+q exec xfce4-taskmanager
+
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
