@@ -20,10 +20,10 @@
 # want it
 # packer i3-gaps-next-git --noedit
 
-for_window [class="^.*"] border pixel 0
-gaps inner 15 
-gaps outer 2
-smart_gaps on
+for_window [class="^.*"] border pixel 5
+gaps inner 10 
+gaps outer 5
+#smart_gaps on
 smart_borders on
 
 
@@ -280,9 +280,9 @@ assign [class="sublime_text"]     → 2
 assign [class="Subl3"]            → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
-assign [class="Spotify"]          → 6
-#assign [class="Thunar"]           → 7
-assign [class="geary"]            → 8
+assign [class="Spotify"]          → 10
+#assign [class="Thunar"]           → 6
+assign [class="Geary"]            → 8
 
 
 
@@ -351,7 +351,7 @@ exec firefox
 #exec subl      # version 2
 exec subl3      # version 3
 exec geary
-#exec spotify
+exec spotify
 exec thunar
 
 #Popups during fullscreen mode
@@ -366,7 +366,7 @@ bindsym $mod+Shift+Return exec thunar
 #SHORTCUTS
 #mod1 = ALT
 bindsym control+mod1+f exec firefox;workspace 1
-bindsym control+mod1+s exec spotify;workspace 6
+bindsym control+mod1+s exec spotify;workspace 10
 bindsym control+mod1+w exec subl3;workspace 2
 bindsym control+mod1+b exec thunderbird;workspace 8
 bindsym control+mod1+i exec inkscape;workspace 3
