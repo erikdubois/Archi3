@@ -288,7 +288,7 @@ assign [class="Subl3"]            → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="Spotify"]          → 6
-assign [class="Thunar"]           → 7
+#assign [class="Thunar"]           → 7
 assign [class="Geary"]            → 8
 
 
