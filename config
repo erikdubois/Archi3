@@ -272,6 +272,13 @@ bindsym $mod+button3 floating toggle
 bindsym button9 move left
 bindsym button8 move right
 
+#workspace related applications (--no-startup-id)
+
+exec --no-startup-id firefox
+exec --no-startup-id subl3
+exec --no-startup-id spotify
+exec --no-startup-id thunar
+exec --no-startup-id geary
 
 ## Assign section
 assign [class="Firefox"]          → 1
@@ -280,8 +287,8 @@ assign [class="sublime_text"]     → 2
 assign [class="Subl3"]            → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
-assign [class="Spotify"]          → 10
-#assign [class="Thunar"]           → 6
+assign [class="Spotify"]          → 6
+assign [class="Thunar"]           → 7
 assign [class="Geary"]            → 8
 
 
@@ -340,20 +347,10 @@ for_window [class="Hexchat"] floating disable
 #start tray applications
 exec network-manager-applet
 exec dropbox start
-exec CopyAgent
 exec volumeicon
 exec variety
 #exec pamac-tray
 
-
-#workspace related applications (--no-startup-id)
-
-exec firefox
-#exec subl      # version 2
-exec subl3      # version 3
-exec geary
-exec spotify
-exec thunar
 
 #Popups during fullscreen mode
 popup_during_fullscreen smart
