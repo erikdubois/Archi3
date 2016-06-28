@@ -300,6 +300,7 @@ exec_always --no-startup-id numlockx on
 
 
 #floating enabled from some programs
+#xprop
 for_window [class="Gnome-disks"] floating enable
 for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
