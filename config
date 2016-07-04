@@ -274,26 +274,32 @@ bindsym button8 move right
 
 #workspace related applications (--no-startup-id)
 
-exec --no-startup-id firefox
-exec --no-startup-id subl3
-exec --no-startup-id spotify
-exec --no-startup-id thunar
-exec --no-startup-id geary
+
 
 ## Assign section
 assign [class="Firefox"]          → 1
-assign [class="sublime-text"]     → 2
-assign [class="sublime_text"]     → 2
 assign [class="Subl3"]            → 2
 assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
+assign [class="spotify"]          → 6
 assign [class="Spotify"]          → 6
-#assign [class="Thunar"]           → 7
+assign [class="Thunar"]           → 7
 assign [class="Geary"]            → 8
 
-
-
 for_window [class="Firefox"] focus
+for_window [class="Thunar"] focus
+
+
+exec firefox
+exec subl3
+exec --no-startup-id geary
+exec --no-startup-id spotify
+exec --no-startup-id thunar
+
+
+
+
+#exec --no-startup-id conky
 
 
 #startup applications you always use
@@ -314,7 +320,7 @@ for_window [class="^Gnome-font-viewer$"] floating enable
 #for_window [class="^Thunar$"] floating enable
 for_window [class="^Gpick$"] floating enable
 #for_window [class="^Vlc$"] floating enable
-#for_window [class="^Spotify$"] floating enable workspace 10
+#for_window [class="^Spotify$"] floating enable workspace 6
 #for_window [instance="gimp"] floating enable
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [instance="variety"] floating enable
@@ -364,7 +370,7 @@ bindsym $mod+Shift+Return exec thunar
 #SHORTCUTS
 #mod1 = ALT
 bindsym control+mod1+f exec firefox;workspace 1
-bindsym control+mod1+s exec spotify;workspace 10
+bindsym control+mod1+s exec spotify;workspace 6
 bindsym control+mod1+w exec subl3;workspace 2
 bindsym control+mod1+b exec thunderbird;workspace 8
 bindsym control+mod1+i exec inkscape;workspace 3
