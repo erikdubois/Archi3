@@ -283,7 +283,7 @@ assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="spotify"]          → 6
 assign [class="Spotify"]          → 6
-#assign [class="Thunar"]           → 7
+#assign [class="Thunar"]           → 6
 assign [class="Geary"]            → 8
 
 for_window [class="Firefox"] focus
