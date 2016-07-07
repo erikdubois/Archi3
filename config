@@ -283,18 +283,18 @@ assign [class="Inkscape"]         → 3
 assign [class="Gimp"]             → 4
 assign [class="spotify"]          → 6
 assign [class="Spotify"]          → 6
-assign [class="Thunar"]           → 7
+#assign [class="Thunar"]           → 7
 assign [class="Geary"]            → 8
 
 for_window [class="Firefox"] focus
 for_window [class="Thunar"] focus
 
 
-exec firefox
-exec subl3
-exec --no-startup-id geary
-exec --no-startup-id spotify
-exec --no-startup-id thunar
+exec firefox;workspace 1
+exec subl3;workspace 2
+exec --no-startup-id geary;workspace 8
+exec --no-startup-id spotify;workspace 6
+exec --no-startup-id thunar;workspace 7
 
 
 
@@ -370,13 +370,31 @@ bindsym $mod+Shift+Return exec thunar
 #SHORTCUTS
 #mod1 = ALT
 bindsym control+mod1+f exec firefox;workspace 1
-bindsym control+mod1+s exec spotify;workspace 6
+bindsym $mod+F1 exec firefox;workspace 1
+
 bindsym control+mod1+w exec subl3;workspace 2
-bindsym control+mod1+b exec thunderbird;workspace 8
+bindsym $mod+F2 exec subl3;workspace 2
+
+
 bindsym control+mod1+i exec inkscape;workspace 3
-bindsym control+mod1+p exec gimp;workspace 4
+bindsym $mod+F3 exec inkscape;workspace 3
+
+bindsym control+mod1+g exec gimp;workspace 4
+bindsym $mod+F4 exec gimp;workspace 3
+
+bindsym control+mod1+s exec spotify;workspace 6
+bindsym $mod+F6 exec spotify;workspace 6
+
+bindsym control+mod1+a exec thunar;workspace 7
+bindsym $mod+F7 exec thunar;workspace 7
+
+bindsym control+mod1+b exec geary;workspace 8
+bindsym $mod+F8 exec geary;workspace 8
+
 bindsym control+mod1+c exec catfish
-bindsym control+mod1+a exec thunar
+
+
+
 bindsym control+mod1+t exec terminator
 bindsym control+mod1+Delete exec xfce4-taskmanager
 bindsym control+Shift+Escape exec xfce4-taskmanager
