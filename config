@@ -69,9 +69,9 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
 #font pango:Droid Sans Mono Dotted 12
 
-#font pango:DroidSansMono 
+font pango:DroidSansMono 
 
-font pango:Sans 13
+#font pango:Sans 13
 
 
 #font pango:hermit 12
@@ -284,7 +284,7 @@ assign [class="Gimp"]             → 4
 assign [class="spotify"]          → 6
 assign [class="Spotify"]          → 6
 #assign [class="Thunar"]           → 6
-assign [class="Geary"]            → 8
+assign [class="Evolution"]            → 8
 
 for_window [class="Firefox"] focus
 for_window [class="Thunar"] focus
@@ -292,7 +292,7 @@ for_window [class="Thunar"] focus
 
 exec firefox;workspace 1
 exec subl3;workspace 2
-exec --no-startup-id geary;workspace 8
+exec --no-startup-id evolution;workspace 8
 exec --no-startup-id spotify;workspace 6
 exec --no-startup-id thunar;workspace 7
 
@@ -388,8 +388,8 @@ bindsym $mod+F6 exec spotify;workspace 6
 bindsym control+mod1+a exec thunar;workspace 7
 bindsym $mod+F7 exec thunar;workspace 7
 
-bindsym control+mod1+b exec geary;workspace 8
-bindsym $mod+F8 exec geary;workspace 8
+bindsym control+mod1+b exec evolution;workspace 8
+bindsym $mod+F8 exec evolution;workspace 8
 
 bindsym control+mod1+c exec catfish
 

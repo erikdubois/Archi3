@@ -85,7 +85,7 @@ sudo pacman -S shotwell
 ######## O F F I C E           #########
 
 sudo pacman -S geary
-
+sudo pacman -S evolution
 
 ######## S E T T I N G S       #########
 
