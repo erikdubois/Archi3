@@ -261,7 +261,9 @@ And remember if you start from this github, your learning curve will be much ste
 
 Then you take it apart and write your own code.
 
-Remember
+
+
+# Remember
 
 If you come from testing repo back to core repo run
 Pass this option twice to enable package downgrades; in this case, pacman will select sync packages whose
