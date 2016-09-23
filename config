@@ -69,7 +69,7 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
 #font pango:Droid Sans Mono Dotted 12
 
-font pango:DroidSansMono 
+font pango:DroidSansMono 13
 
 #font pango:Sans 13
 
@@ -400,6 +400,16 @@ bindsym control+mod1+Delete exec xfce4-taskmanager
 bindsym control+Shift+Escape exec xfce4-taskmanager
 bindsym control+mod1+q exec xfce4-taskmanager
 
+
+#Variety keybindings mod1 = ALT
+# trash wallpaper
+bindsym mod1+t exec variety -t
+# next wallpaper
+bindsym mod1+n exec variety -n
+# previous wallpaper
+bindsym mod1+p exec variety -p
+# favorite wallpaper
+bindsym mod1+f exec variety -f
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
