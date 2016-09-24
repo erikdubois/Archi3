@@ -356,6 +356,7 @@ exec dropbox start
 exec volumeicon
 exec variety
 #exec pamac-tray
+exec blueman-applet
 
 
 #Popups during fullscreen mode
