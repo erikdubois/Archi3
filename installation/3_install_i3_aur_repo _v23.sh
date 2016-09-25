@@ -65,7 +65,6 @@ echo "################################################################"
 echo "sublime-text-dev"
 echo "################################################################"
 
-#packer sublime-edit --noedit
 
 packer sublime-text-dev --noedit
 
@@ -79,7 +78,7 @@ echo "################################################################"
 echo "archlinux logo's"
 echo "################################################################"
 
-packer archlinux-artwork --noedit
+# packer archlinux-artwork --noedit
 
 ######## I N T E R N E T       #########
 
@@ -103,11 +102,6 @@ echo "################################################################"
 
 packer spotify  --noedit
 
-echo "################################################################"
-echo "kazam"
-echo "################################################################"
-
-packer kazam --noedit
 
 ######## O F F I C E           #########
 
@@ -133,7 +127,7 @@ packer masterpdfeditor --noedit
 
 #packer ultra-flat-icons --noedit
 #packer evopop-icon-theme-git  --noedit
-packer numix-circle-icon-theme  --noedit
+#packer numix-circle-icon-theme  --noedit
 #git clone https://github.com/KotusWorks/Ardis-icon-theme.git ~/.themes/Ardis-icon-theme
 #git clone https://github.com/horst3180/Vertex-Icons ~/.icons/Vertex-Icons
 
@@ -143,7 +137,7 @@ packer numix-circle-icon-theme  --noedit
 #packer zukitwo-themes  --noedit
 #packer omg-suite --noedit
 #packer vertex-themes-git --noedit
-packer numix-themes-archblue --noedit
+#packer numix-themes-archblue --noedit
 #packer ceti-3.14-theme --noedit
 #packer zoncolor-themes-pack --no-edit
 
@@ -191,13 +185,6 @@ echo "################################################################"
 
 packer dropbox --noedit
 
-echo "################################################################"
-echo "copy-agent"
-echo "################################################################"
-
-packer copy-agent --noedit
-
-
 
         # S Y S T E M  T O O L S # 
 
@@ -208,6 +195,15 @@ echo "playerctl"
 echo "################################################################"
 
 packer playerctl --noedit
+
+echo "################################################################"
+echo "trayicon for bluetooth headphone"
+echo "################################################################"
+
+
+packer pasystray-git --noedit
+# go to tmp file and run there
+# sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git-0.6.0.r6.ge95b564-1-x86_64.pkg.tar.xz 
 
 # screenart for hardware and software
 

@@ -41,15 +41,15 @@
 
 ######## A C C E S S O R I E S #########
 
-sudo pacman -S terminator 
+sudo pacman -S terminator --confirm
 
-sudo pacman -S unclutter ristretto
+sudo pacman -S unclutter ristretto --confirm
 
-sudo pacman -S notify-osd
+sudo pacman -S notify-osd --confirm
 
-sudo pacman -S xfce4-screenshooter xfce4-appfinder xfce4-power-manager
+sudo pacman -S nemo  --confirm
 
-sudo pacman -S evince
+sudo pacman -S evince --confirm
 
 # if you need to edit which extension goes with which program
 # sudo pacman -S mime-editor
@@ -64,47 +64,48 @@ sudo pacman -S evince
 
 ######## G R A P H I C S       #########
 
-sudo pacman -S gimp inkscape
-sudo pacman -S gnome-font-viewer
+sudo pacman -S gimp inkscape --confirm
+sudo pacman -S gnome-font-viewer --confirm
 
 ######## I N T E R N E T       #########
 
-sudo pacman -S firefox flashplugin transmission-gtk hexchat
-sudo pacman -S filezilla
+sudo pacman -S firefox flashplugin transmission-gtk hexchat --confirm
+sudo pacman -S filezilla --confirm
 
 # activate multilib in the pacman.conf
 # sudo pacman -S skype
 
 ######## M U L T I M E D I A   #########
 
-sudo pacman -S vlc 
+sudo pacman -S vlc  --confirm
 #sudo pacman -S clementine
-sudo pacman -S shotwell
+sudo pacman -S shotwell --confirm
 
+sudo pacman -S simplescreenrecorder --confirm
 
 ######## O F F I C E           #########
 
-sudo pacman -S geary
-sudo pacman -S evolution
+sudo pacman -S geary --confirm
+sudo pacman -S evolution --confirm
 
 ######## S E T T I N G S       #########
 
        # T H E M I N G #
 
 # Theme, icons, borders, cursors
-sudo pacman -S lxappearance
+sudo pacman -S lxappearance --confirm
 #sudo packer -S lxappearance2-git
-sudo pacman -S oxygen-cursors
+sudo pacman -S oxygen-cursors --confirm
 
 # application to choose a wallpaper
-sudo pacman -S nitrogen
+sudo pacman -S nitrogen --confirm
 
 # variety wallpaper changer needs feh to change the walls
 # extra changes must be made see folder installation
-sudo pacman -S feh 
+sudo pacman -S feh  --confirm
 
 # to configure qt4 X11 (spotify submenu's)
-sudo pacman -S qt4
+sudo pacman -S qt4 --confirm
 # start the program qtconfig-qt4 
 #choose gtk+
 
@@ -116,14 +117,14 @@ sudo pacman -S qt4
 
 # all kind of tools to get system information
 
-sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glances 
-sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo
+sudo pacman -S scrot screenfetch git htop wget lm_sensors sysstat glances  --confirm
+sudo pacman -S numlockx inxi dmidecode hddtemp mesa-demos net-tools archey3 mlocate hardinfo --confirm
 numlockx on
 
 # if not already installed - xrandr - only for dual-screens to know how the screens are named
 # and set them the right way
 
-sudo pacman -S xorg-xrandr
+sudo pacman -S xorg-xrandr --confirm
 
 # monitor the GB/TB of your harddisk
 # sudo pacman -S baobab
@@ -133,36 +134,26 @@ sudo pacman -S xorg-xrandr
 
 # download statistics
 
-sudo pacman -S vnstat 
+sudo pacman -S vnstat  --confirm
 systemctl enable vnstat
 systemctl start vnstat
 
 # taskmanager if htop and glances is not for you
 
-sudo pacman -S xfce4-taskmanager
+sudo pacman -S xfce4-taskmanager --confirm
 
-# download and burn iso
-sudo pacman -S 
 
 # sudo fdisk -l
 # sudo ddrescue -d -D --force your iso.iso /dev/sdx
-sudo pacman -S ddrescue
+sudo pacman -S ddrescue  --confirm
 
         # S O U N D #
 
-sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol
-sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  gstreamer0.10-ffmpeg
-
-# for kazam
-
-sudo pacman -S libsrtp
-sudo pacman -S volumeicon
+sudo pacman -S alsa-utils alsa-plugins alsa-lib alsa-firmware pulseaudio pulseaudio-alsa pavucontrol pavumeter paprefs paman  --confirm
+sudo pacman -S gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  gstreamer0.10-ffmpeg --confirm
 
 
-        # T H U N A R #
-
-# sudo pacman -S spacefm
-sudo pacman -S thunar file-roller tumbler thunar-archive-plugin thunar-volman
+sudo pacman -S  file-roller 
 
 # if you want  a wastbasket in thunar you better install this
 # or thunar-vfs
