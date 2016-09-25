@@ -332,7 +332,7 @@ exec_always --no-startup-id numlockx on
 exec volumeicon
 exec variety
 #exec pamac-tray
-exec blueman-applet
+exec --no-startup-id blueman-applet
 exec dropbox start
 
 # USER APPLICATIONS
