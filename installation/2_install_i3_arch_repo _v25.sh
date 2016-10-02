@@ -41,15 +41,20 @@
 
 ######## A C C E S S O R I E S #########
 
+sudo pacman -S clipit --confirm
+
+sudo pacman -S evince --confirm
+
+sudo pacman -S nemo  --confirm
+
+sudo pacman -S notify-osd --confirm
+
 sudo pacman -S terminator --confirm
 
 sudo pacman -S unclutter ristretto --confirm
 
-sudo pacman -S notify-osd --confirm
 
-sudo pacman -S nemo  --confirm
 
-sudo pacman -S evince --confirm
 
 # if you need to edit which extension goes with which program
 # sudo pacman -S mime-editor

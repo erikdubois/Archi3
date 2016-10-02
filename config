@@ -200,7 +200,8 @@ mode "resize" {
 # font pango:Arimo 11
 # font pango:Sans 13 
 # font pango:Noto Mono Regular 13
-font pango:DroidSansMono 14
+# font pango:DroidSansMono 14
+font pango:Noto Mono 14
 
 
 ################### TERMINAL ######################
@@ -335,6 +336,8 @@ exec variety
 #exec pamac-tray
 exec --no-startup-id blueman-applet
 exec dropbox start
+exec gnome-settings-daemon
+exec clipit
 
 # USER APPLICATIONS
 
@@ -537,7 +540,8 @@ bar {
     # you need to make a link from root to the config file in .i3 - see installation folder
     status_command i3blocks 
     #status_command i3status --config ~/.i3/i3status 
-    font pango:DroidSansMono 13
+    # font pango:DroidSansMono 13
+    font pango:Noto Sans 14
     #you can change the place via xrandr
     #output DVI-0
     
