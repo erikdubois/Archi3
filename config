@@ -185,7 +185,7 @@ mode "resize" {
 # choose your font
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # font -misc-fixed-bold-r-normal-*-15-140-75-75-c-90-iso10646-1
-# font pango:DejaVu Sans Mono 12
+font pango:DejaVu Sans Mono 12
 # font pango:DejaVu Sans Mono, Terminus Bold Semi-Condensed 11
 # font pango:Droid Sans Mono Dotted 12
 # font pango:hermit 12
@@ -201,7 +201,7 @@ mode "resize" {
 # font pango:Sans 13 
 # font pango:Noto Mono Regular 13
 # font pango:DroidSansMono 14
-font pango:Noto Mono 14
+# font pango:Noto Mono 14
 
 
 ################### TERMINAL ######################
@@ -330,7 +330,7 @@ for_window [class="Spotify"] move to workspace 10
 #exec --no-startup-id nm-applet
 exec network-manager-applet
 exec_always --no-startup-id numlockx on
-#exec volumeicon
+exec volumeicon
 exec pasystray
 exec variety
 #exec pamac-tray
@@ -347,7 +347,7 @@ for_window [class="Firefox"] focus
 exec subl3
 exec nemo --no-desktop
 for_window [class="Nemo"] focus
-exec --no-startup-id evolution
+#exec --no-startup-id evolution
 exec --no-startup-id spotify
 #exec --no-startup-id conky
 
@@ -668,5 +668,5 @@ smart_borders on
 ###########################################################################
 
 #if you want dimming on non-focused windows
-#exec_always compton -b --config ~/.i3/compton.conf
+exec_always compton -b --config ~/.i3/compton.conf
 
