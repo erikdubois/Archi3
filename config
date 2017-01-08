@@ -331,7 +331,7 @@ for_window [class="Spotify"] move to workspace 10
 exec network-manager-applet
 exec_always --no-startup-id numlockx on
 exec volumeicon
-exec pasystray
+#exec pasystray
 exec variety
 #exec pamac-tray
 #exec --no-startup-id blueman-applet
