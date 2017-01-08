@@ -334,7 +334,7 @@ exec volumeicon
 exec pasystray
 exec variety
 #exec pamac-tray
-exec --no-startup-id blueman-applet
+#exec --no-startup-id blueman-applet
 exec dropbox start
 exec gnome-settings-daemon
 exec clipit
@@ -350,6 +350,7 @@ for_window [class="Nemo"] focus
 #exec --no-startup-id evolution
 exec --no-startup-id spotify
 #exec --no-startup-id conky
+exec insync start
 
 
 ################### SHORTCUTS APPLICATIONS ######################
