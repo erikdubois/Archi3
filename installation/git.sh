@@ -22,45 +22,53 @@
 # .`                                 `/
 #
 #======================================================================================
-
+#
 #======================================================================================
-#                               I3 IMPROVED TILING
+#                               Archlinux and XFCE4
 # 
 # Author  : Erik Dubois at http://www.erikdubois.be
 # License : Distributed under the terms of GNU GPL version 2 or later
 # 
 # AS ALLWAYS, KNOW WHAT YOU ARE DOING.
 #======================================================================================
+#
+# echo "# ArchXfce4" >> README.md
+# git init
+# git add README.md
+# git commit -m "first commit"
+# git remote add origin https://github.com/erikdubois/ArchXFCE4.git
+# git push -u origin master
+#
+# git config --global user.name x
+# git config --global user.email x
+# sudo git config --system core.editor nano
+# git config --global credential.helper cache
+# git config --global credential.helper 'cache --timeout=3600'
+#
+#
+# Force git to overwrite local files on pull - no merge
+# 
+# git fetch all
+# git reset --hard orgin/master
 
 
+#======================================================================================
+#   GIT PUSH
+#======================================================================================
 
-        # S A M B A #
+# Below command will backup everything inside the project folder
+git add --all .
 
-# mkdir ~/Upload
-# http://askubuntu.com/questions/101350/software-similar-to-nautilus-share-in-thunar
-# net usershare add %n %f "" Everyone:F guest_ok=y && chmod 777 %f
+echo "####################################"
+echo "Write your commit comment!"
+echo "####################################"
 
-sudo pacman -S samba
-sudo cp  /etc/samba/smb.conf.default /etc/samba/smb.conf
-sudo systemctl enable smbd.service
-sudo systemctl start smbd.service
-sudo systemctl enable nmbd.service
-sudo systemctl start nmbd.service
-sudo smbpasswd -a erik
+read input
 
-#access samba share windows
-sudo pacman -S gvfs-smb
-#access samba share mac
-sudo pacman -S gvfs-afp
+# Committing to the local repository with a message containing the time details and commit text
+curtime=$(date)
+git commit -m "comment: $input"
 
-# sudo systemctl restart ... if you run into trouble
-# testparm will check the conf file for errors
+# Push the local snapshot to a remote destination
+git push -u origin master
 
-# red hat samba sharing config 
-packer system-config-samba --noedit
-echo "Run system-config-samba to set up shares"
-
-
-echo "########################################"
-echo "######## T H E   E N D  + R E B O O T ##"
-echo "########################################"
