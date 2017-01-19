@@ -1,0 +1,105 @@
+### Configuration file for i3status
+## http://i3wm.org/i3status/
+# Modified: 15.11.2011 : mseed : http://www.fastlinux.eu
+
+###################
+# GENERAL OPTIONS #
+###################
+
+general {
+    colors = true
+    interval = 5
+}
+
+###################
+# START AND ORDER #
+###################
+
+order += "cpu_usage"
+order += "load"
+order += "cpu_temperature 0"
+order += "run_watch VPN"
+order += "wireless wlan0"
+order += "ethernet eth0"
+order += "volume master"
+order += "battery 0"
+order += "time"
+
+#order += "ipv6"
+#order += "disk /"
+#order += "disk /home"
+#order += "run_watch DHCP"
+
+###################
+# SENSORS SETTING #
+###################
+
+## CPU sensor
+cpu_usage {
+    format = "%usage"
+}
+
+## system load sensor
+load {
+    format = "%1min"
+}
+
+## CPU temperature sensor
+cpu_temperature 0 {
+    format = "T: %degrees °C"
+}
+
+## VPN sensor
+run_watch VPN {
+    pidfile = "/var/run/vpnc/pid"
+}
+
+## wlan sensor
+wireless wlan0 {
+    format_up = "W: (%quality at %essid) %ip"
+    format_down = "W: down"
+}
+
+## ethernet sensor
+ethernet eth0 {
+    # if you use %speed, i3status requires root privileges
+    #format_up = "E: %ip (%speed)"
+    format_up = "E: %ip"
+    format_down = "E: down"
+}
+
+## battery sensor
+battery 0 {
+    format = "%status %percentage %remaining"
+    last_full_capacity = true
+}
+
+## DHCP sensor
+run_watch DHCP {
+    pidfile = "/var/run/dhclient*.pid"
+}
+
+## time format
+time {
+    format = "%d.%m.%Y %H:%M"
+}
+
+## HDD sensor
+disk "/" {
+    format = "%free"
+}
+
+## HDD sensor
+disk "/home" {
+    format = "%free"
+}
+
+## audio volume sensor
+volume master {
+    format = "♪: %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+
