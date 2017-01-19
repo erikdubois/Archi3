@@ -1,14 +1,37 @@
-#!/bin/sh
+#!/bin/bash
+#
+##################################################################################################################
+# Written to be used on 64 bits computers
+# Author 	: 	Erik Dubois
+# Website 	: 	http://www.erikdubois.be
+##################################################################################################################
+##################################################################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+##################################################################################################################
+# Remember : git push origin master --force
+# Remember : git reset --hard <old-commit-id>
+# git push -f <remote-name> <branch-name>
 # Below command will backup everything inside the project folder
-# caching your password
-# git config --global credential.helper cache
-# git config --global credential.helper 'cache --timeout=3600'
-
 git add --all .
 
-# Committing to the local repository with a message containing the time details
-curtime=$(date)
-git commit -m "Automatic Backup @ $curtime"
+# Give a comment to the commit if you want
+echo "####################################"
+echo "Write your commit comment!"
+echo "####################################"
 
-# Push the local snapshot to a remote destination
-git push origin master
+read input
+
+# Committing to the local repository with a message containing the time details and commit text
+curtime=$(date +"%T %d-%m-%Y")
+git commit -m "Comment : $input on $curtime"
+
+# Push the local files to github
+
+git push -u origin master
+
+
+echo "################################################################"
+echo "###################    Git Push Done      ######################"
+echo "################################################################"
