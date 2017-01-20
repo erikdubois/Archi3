@@ -342,20 +342,6 @@ mode "resize" {
 font pango:Noto Mono Regular 13
 
 
-################### TERMINAL ######################
-
-# only in need you can figure out hidden settings on your distro with dconf-editor
-# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/terminator
-# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/gnome-terminal
-
-bindsym $mod+Return exec gnome-terminal;focus
-#bindsym $mod+Return exec i3-sensible-terminal;focus
-#bindsym $mod+Return exec terminator;focus
-#bindsym $mod+Return exec mate-terminal;focus
-#bindsym $mod+Return exec xfce4-terminal;focus
-#bindsym $mod+Return exec terminator;focus
-
-
 ################### MENU ######################
 
 # start dmenu
@@ -459,7 +445,7 @@ assign [class="sublime-text|sublime_text|Sublime_text|subl|Subl|subl3|Subl3"]   
 assign [class="Xed|xed|Brackets|Atom|Code"]                                         → 2
 assign [class="Inkscape"]                                                           → 3
 assign [class="Gimp"]                                                               → 4
-assign [class="ristretto|Ristretto|shotwell|Shotwell"]                              → 5
+assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer"]                      → 5
 assign [class="Meld"]                                                               → 5
 assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
 assign [class="Vlc|vlc"]                                                            → 6
@@ -497,18 +483,21 @@ exec clipit
 
 # USER APPLICATIONS
 
+#distro dependent applications are at bottom of config like filemanager ...
+
+#browsers
 exec firefox
 for_window [class="Firefox"] focus
+
+#Mail clients
 #exec evolution
+
+#Music
 exec --no-startup-id spotify
 for_window [class="Spotify"] focus
-exec nemo --no-desktop
-for_window [class="Nemo"] focus
-#exec nautilus --no-desktop
-#exec caja
-#exec thunar
+
+#Conky
 #exec ~/.config/i3/start-conkys.sh
-#exec dunst -config ~/.config/i3/dunstrc
 #exec --no-startup-id evolution
 #exec --no-startup-id conky
 
@@ -579,35 +568,38 @@ for_window [urgent=latest] focus
 
 
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+#bindsym Print exec scrot '%Y-%m-%d-%H-%M-%S.jpg' -e 'mv $f ~/Pictures/' && sleep 1 && exec notify-send 'screenshot has been saved in ~/Pictures'
 bindsym Control+Print exec gnome-screenshot -i
-
+#bindsym shift+Print exec shutter
+#bindsym control+Print exec xfce4-screenshooter
 
 
 ################### FLOATING OR TILED ######################
 
 
 #floating enabled from some programs - find with xprop
-for_window [class="Gnome-disks"] floating enable
+#for_window [class="Gnome-disks"] floating enable
 for_window [class="^Skype$"] floating enable
 for_window [class="^Gnome-font-viewer$"] floating enable
-#for_window [class="^Thunar$"] floating enable
 for_window [class="^Gpick$"] floating enable
 #for_window [class="^Vlc$"] floating enable
 #for_window [class="^Spotify$"] floating enable workspace 10
 #for_window [instance="gimp"] floating enable
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [instance="variety"] floating enable
-for_window [class="Gnome-system-monitor"] floating enable
-for_window [class="Brasero"] floating enable
-for_window [class="Xfburn"] floating enable
+#for_window [class="Gnome-system-monitor"] floating enable
+#for_window [class="Mate-system-monitor"] floating enable
+#for_window [class="Xfce4-taskmanager"] floating enable
+#for_window [class="Brasero"] floating enable
+#for_window [class="Xfburn"] floating enable
 for_window [class="Xfce4-appfinder"] floating enable
-for_window [class="Wine"] floating enable
+#for_window [class="Wine"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
 for_window [title="^Terminator Preferences$"] floating enable
-for_window [class="Font-manager"] floating enable
+#for_window [class="Font-manager"] floating enable
 for_window [class="System-config-printer.py"] floating enable
 for_window [class="Nitrogen"] floating enable
 for_window [title="Copying"] floating enable  
@@ -617,11 +609,12 @@ for_window [class="Unetbootin.elf"] floating enable
 for_window [class="Galculator"] floating enable
 for_window [class="Usb-creator-gtk"] floating enable
 for_window [instance="script-fu"] border normal
-for_window [class="Xfce4-taskmanager"] floating enable
 for_window [class="Imagewriter"] floating enable
-for_window [class="MintUpdate.py"] floating enable
+#for_window [class="MintUpdate.py"] floating enable
 #for_window [class="Bleachbit"] floating enable
-for_window [class="Hexchat"] floating disable
+#for_window [class="Hexchat"] floating disable
+for_window [class="Xfce4-settings-manager"] floating disable
+for_window [class="Gnome-control-center"] floating disable
 
 #Popups during fullscreen mode
 popup_during_fullscreen smart
@@ -714,7 +707,12 @@ new_float normal
 #new_float none
 
 
+###################       KEYBOARD      ##############################
 
+
+# AZERTY KEYBOARD
+# Change this if you use qwerty
+exec setxkbmap be
 
 
 ###################       UNCLUTTER      ##############################
@@ -755,7 +753,7 @@ status_command i3status -c ~/.config/i3/i3status.conf
     # put hastag in front if not installed
 
 #status_command i3blocks
-status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
 
 # OPTION 3 : conky
@@ -942,18 +940,35 @@ exec_always compton --config ~/.config/i3/compton.conf
 ################### DISTRO DEPENDENT ######################
 ###########################################################
 
-
 #terminal
+
+# only in need you can figure out hidden settings on your distro with dconf-editor
+# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/terminator
+# gsettings set org.cinnamon.desktop.default-applications.terminal exec /usr/bin/gnome-terminal
+
+bindsym $mod+Return exec gnome-terminal;focus
+#bindsym $mod+Return exec i3-sensible-terminal;focus
+#bindsym $mod+Return exec terminator;focus
+#bindsym $mod+Return exec mate-terminal;focus
+#bindsym $mod+Return exec xfce4-terminal;focus
+
+
 bindsym control+mod1+t exec gnome-terminal; focus
 #bindsym control+mod1+t exec terminator;focus
 #bindsym control+mod1+t exec mate-terminal; focus
 #bindsym control+mod1+t exec xfce4-terminal; focus
 
+
 #System monitor
 bindsym control+Shift+Escape exec gnome-system-monitor;focus
+#bindsym control+Shift+Escape exec mate-system-monitor;focus
 #bindsym control+Shift+Escape exec xfce4-taskmanager;focus
-#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
-#bindsym control+Shift+Escape exec xfce4-taskmanager;focus
+
+#settings
+bindsym control+mod1+n exec cinnamon-settings
+#bindsym control+mod1+n exec gnome-control-center
+#bindsym control+mod1+n exec mate-control-center
+#bindsym control+mod1+n exec xfce4-settings-manager
 
 
 #workspace 2 related
@@ -968,10 +983,23 @@ bindsym $mod+F8 exec nemo --no-desktop;workspace 8;focus
 #bindsym $mod+F8 exec caja;workspace 8;focus
 #bindsym $mod+F8 exec thunar;workspace 8;focus
 
+#file managers
+
+exec nemo --no-desktop
+#exec nautilus --no-desktop
+#exec caja
+#exec thunar
+
+#filemanager focus
+for_window [class="Nemo"] focus
+for_window [class="Nautilus"] focus
+for_window [class="Caja"] focus
+for_window [class="Thunar"] focus
+
 bindsym $mod+Shift+Return exec nemo --no-desktop; workspace 8;focus
+#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 #bindsym $mod+Shift+Return exec caja; workspace 8;focus
 #bindsym $mod+Shift+Return exec thunar; workspace 8;focus
-#bindsym $mod+Shift+Return exec nautilus --no-desktop; workspace 8;focus
 
 bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec nautilus --no-desktop;workspace 8;focus
@@ -979,7 +1007,9 @@ bindsym control+mod1+b exec nemo --no-desktop;workspace 8;focus
 #bindsym control+mod1+b exec thunar;workspace 8;focus
 
 
+# USER APPLICATIONS TO START AT BOOT
 
+#sublime-text
 #exec subl
 exec subl3
 
@@ -992,21 +1022,13 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # update
+
+#Linux Mint
 #exec mintupdate-launcher
+
+# Arch
 exec pamac-tray
 
 # bluetooth
-#exec blueberry-tray
-exec --no-startup-id blueman-applet
-
-#settings
-#bindsym control+mod1+n exec cinnamon-settings
-bindsym control+mod1+n exec gnome-control-center
-
-###################       KEYBOARD      ##############################
-
-
-# AZERTY KEYBOARD
-# Change this if you use qwerty
-exec setxkbmap be
-
+exec blueberry-tray
+#exec --no-startup-id blueman-applet
