@@ -70,7 +70,7 @@ echo "################################################################"
 echo "playerctl"
 echo "################################################################"
 
-packer playerctl --noedit --noconfirm
+packer -S playerctl --noedit --noconfirm
 
 echo "################################################################"
 echo "trayicon for bluetooth headphone"
