@@ -70,11 +70,55 @@ echo "################################################################"
 echo "playerctl"
 echo "################################################################"
 
-packer -S playerctl --noedit --noconfirm
+package="playerctl"
 
-echo "################################################################"
-echo "trayicon for bluetooth headphone"
-echo "################################################################"
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+	echo "################################################################"
+	echo "################## "$package" is already installed"
+	echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi packer &> /dev/null; then
+
+		echo "Installing with packer"
+		packer -S --noconfirm --noedit  $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+		
+		echo "Installing with pacaur"
+		pacaur -S --noconfirm --noedit  $package
+		 	
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "Installing with yaourt"
+		yaourt -S --noconfirm $package
+			  	
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+	
+	echo "################################################################"
+	echo "#########  "$package" has been installed"
+	echo "################################################################"
+
+	else
+
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!  "$package" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+
 
 
 echo "################################################################"
@@ -126,15 +170,15 @@ else
 	echo "!!!!!!!!!  "$package" has NOT been installed"
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
+	echo "To install pasytray, go to tmp file and run from there"
+	echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git-0.6.0.r13.gccb5b6e-1-x86_64.pkg.tar.xz"
+	echo "Trying to run the git version"
+	sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git*  --needed --noconfirm
 	fi
 
 fi
 
-echo "To install pasytray, go to tmp file and run from there"
-echo "sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git-0.6.0.r13.gccb5b6e-1-x86_64.pkg.tar.xz"
-echo "Trying to run the git version"
 
-sudo pacman -U /tmp/packerbuild-1000/pasystray-git/pasystray-git/pasystray-git*  --needed --noconfirm
 
 
 ###############################################################
