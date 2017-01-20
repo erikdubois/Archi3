@@ -28,7 +28,7 @@ echo "################################################################"
 echo "j4-dmenu-desktop-git"   
 echo "################################################################"
 
-packer -S j4-dmenu-desktop-git --noedit --noconfirm
+packer -S j4-dmenu-desktop --noedit --noconfirm
 
 # alternative menu for i3 with larger fonts and font choice 
 
