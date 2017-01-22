@@ -115,14 +115,14 @@ conky.text = [[
       "separator_block_width": 0
     },
     {
-      "full_text": "  ${time %a, %d/%m/%y} ",
+      "full_text": "  ${time %a, %d/%m/%y }",
       "color": "\#fdf6e3",
       "background": "\#6c71c4",
       "separator": true,
       "separator_block_width": 0
     },
-        {
-      "full_text": "  ${time %H:%M:%S} ",
+    {
+      "full_text": " ${time %H:%M:%S} ",
       "color": "\#fdf6e3",
       "background": "\#6c71c4",
       "separator": true,
