@@ -965,7 +965,7 @@ bindsym control+Shift+Escape exec gnome-system-monitor;focus
 #bindsym control+Shift+Escape exec xfce4-taskmanager;focus
 
 #settings
-bindsym control+mod1+n exec cinnamon-settings
+#bindsym control+mod1+n exec cinnamon-settings
 #bindsym control+mod1+n exec gnome-control-center
 #bindsym control+mod1+n exec mate-control-center
 #bindsym control+mod1+n exec xfce4-settings-manager
@@ -1032,3 +1032,4 @@ exec pamac-tray
 # bluetooth
 exec blueberry-tray
 #exec --no-startup-id blueman-applet
+
