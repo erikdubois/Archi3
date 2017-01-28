@@ -37,14 +37,14 @@ echo "Creating all folders"
 echo "Moving files to start i3wm"
 echo "Using Sardi icons, Arc theme and noto font from previous scripts"
 
-#cp settings/.bash_profile ~/
-#cp settings/.bashrc ~/
-#cp settings/.gtkrc-2.0 ~/
-#cp settings/.xinitrc ~/
-#cp settings/.zlogin ~/
-#cp settings/.zshrc ~/
+cp settings/.bash_profile ~/
+cp settings/.bashrc ~/
+cp settings/.gtkrc-2.0 ~/
+cp settings/.xinitrc ~/
+cp settings/.zlogin ~/
+cp settings/.zshrc ~/
 cp settings/bookmarks ~/.config/gtk-3.0/
-#cp settings/settings.ini ~/.config/gtk-3.0/
+cp settings/settings.ini ~/.config/gtk-3.0/
 
 
 echo "Copy/pasting Arc Colora themes to ~/.themes"
@@ -61,7 +61,9 @@ echo "Copy/pasting gimp scripts and themes"
 cp settings/gimp/scripts/* ~/.gimp-2.8/scripts/
 cp -r settings/gimp/themes/* ~/.gimp-2.8/themes/
 
+#copying the i3 main files to the folder
 
+git clone https://github.com/erikdubois/archerik ~/.config/i3
 
 echo "################################################################"
 echo "#########       personal settings installed     ################"
@@ -69,8 +71,6 @@ echo "################################################################"
 
 echo "You can reboot and start computing"
 echo
-echo "You need to login into the correct desktop environment"
-echo "At the login screen click on the small icon (gauge) to select budgie"
 echo
 echo "Do not run script 700 yet. You need to start firefox before you do."
 echo
