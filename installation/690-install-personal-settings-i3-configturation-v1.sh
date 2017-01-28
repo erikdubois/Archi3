@@ -12,7 +12,7 @@ set -e
 ##################################################################################################################
 
 
-git clone https://github.com/erikdubois/archerik ~/.config/i3
+git clone https://github.com/erikdubois/archi3s ~/.config/i3
 
 echo "################################################################"
 echo "#########       personal settings installed     ################"
