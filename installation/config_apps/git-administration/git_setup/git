@@ -1,7 +1,0 @@
-#setting up git
-#https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config
-
-#git init
-git config --global user.name erikdubois
-git config --global user.email erik.dubois@gmail.com
-sudo git config --system core.editor nano
