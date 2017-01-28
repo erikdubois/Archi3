@@ -61,6 +61,11 @@ echo "Copy/pasting gimp scripts and themes"
 cp settings/gimp/scripts/* ~/.gimp-2.8/scripts/
 cp -r settings/gimp/themes/* ~/.gimp-2.8/themes/
 
+
+echo "Copy/pasting scripts for feh/variety to work"
+
+cp settings/variety/* ~/.config/variety/scripts/
+
 #copying the i3 main files to the folder
 
 git clone https://github.com/erikdubois/archerik ~/.config/i3
