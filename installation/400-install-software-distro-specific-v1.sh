@@ -12,7 +12,15 @@
 #
 ##################################################################################################################
 
-#fonts
+echo "################################################################"
+echo "#########   distro specific software installed  ################"
+echo "################################################################"
+
+#Fonts
+
+## sudo pacman -S ttf-ubuntu-font-family --noconfirm --needed conflicts with ttf-google-fonts
+## sudo pacman -S ttf-droid --noconfirm --noconfirm --needed  conflicts with ttf-google-fonts
+## sudo pacman -S ttf-inconsolata --noconfirm --needed        conflicts with ttf-google-fonts
 sudo pacman -S noto-fonts --noconfirm --needed
 
 #file manager
@@ -27,25 +35,20 @@ sudo pacman -S ttf-droid --noconfirm --noconfirm --needed
 sudo pacman -S ttf-inconsolata --noconfirm --needed
 
 #Utilities
-
-sudo pacman -S gnome-disk-utility  --noconfirm --needed
+sudo pacman -S pamac --noconfirm --needed 
 sudo pacman -S notify-osd  --noconfirm --needed
 sudo pacman -S lxappearance --noconfirm --needed
 sudo pacman -S feh --noconfirm --needed
+sudo pacman -S arandr --noconfirm --needed
 sudo pacman -S qt4 --confirm --needed
-sudo pacman -S xorg-xrandr --confirm --needed
-sudo pacman -S gvfs  --confirm --needed 
-#sudo pacman -S gnome-terminal  --noconfirm --needed
+sudo pacman -S xorg-xrandr --noconfirm --needed
+sudo pacman -S gvfs  --noconfirm --needed
+sudo pacman -S compton  --noconfirm --needed
+sudo pacman -S volumeicon  --noconfirm --needed
+sudo packer -S arandr  --noconfirm 
+#run with systemadm
+sudo packer -S systemd-ui  --noconfirm 
 
-
-
-echo "################################################################"
-echo "installing xbindkeys"
-echo "################################################################"
-
-sudo pacman -S xbindkeys --noconfirm --needed
-
-echo "You need to put the config file in the root of your home folder"
 
 
         # S Y S T E M  T O O L S # 
@@ -58,6 +61,7 @@ echo "################################################################"
 
 package="playerctl"
 
+#----------------------------------------------------------------------------------
 
 #checking if application is already installed or else install with aur helpers
 if pacman -Qi $package &> /dev/null; then
@@ -108,7 +112,7 @@ fi
 
 
 echo "################################################################"
-echo "trayicon for bluetooth headphone"
+echo "trayicon for sound for bluetooth headphone"
 echo "################################################################"
 
 
