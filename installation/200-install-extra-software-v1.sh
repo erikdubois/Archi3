@@ -106,7 +106,7 @@ sh install-sublime-text-v1.sh
 
 # hardcodefixer
 
-sh hardcodefixer-v1.sh
+sh hardcodefixer-v2.sh
 
 ###############################################################################################
 
