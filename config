@@ -464,8 +464,8 @@ for_window [class="Spotify"] move to workspace 10
 # num lock activated
 exec_always --no-startup-id numlockx on
 # network
-#exec --no-startup-id nm-applet
-exec network-manager-applet
+exec --no-startup-id nm-applet
+#exec network-manager-applet
 # dropbox
 exec dropbox start
 # insync
