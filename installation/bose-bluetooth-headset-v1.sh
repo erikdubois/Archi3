@@ -11,7 +11,17 @@
 #
 ##################################################################################################################
 
-sudo pacman -S --noconfirm --needed pulseaudio-alsa pulseaudio-bluetooth bluez bluez-libs bluez-utils bluez-firmware
+sudo pacman -S --noconfirm --needed pulseaudio-alsa pulseaudio-bluetooth bluez bluez-libs bluez-utils bluez-firmware blueberry pavucontrol
+
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+sudo systemctl daemon-reload
+
+
+echo "reboot your system then ..."
+echo "set with bluetooth icon in bottom right corner"
+echo "change with pavucontrol to have a2dp sink"
+
 
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"

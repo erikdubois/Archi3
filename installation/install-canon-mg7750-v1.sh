@@ -14,17 +14,17 @@
 
 program="cnijfilter2-mg7700"
 
-if which pacaur > /dev/null; then
+if which pacaur &> /dev/null; then
 
 	echo "Installing with pacaur"
 	pacaur -S --noconfirm --noedit  $program
 
-elif which packer > /dev/null; then
+elif which packer &> /dev/null; then
 
 	echo "Installing with packer"
 	packer -S --noconfirm --noedit  $program 	
 
-elif which yaourt > /dev/null; then
+elif which yaourt &> /dev/null; then
 
 	echo "Installing with yaourt"
 	yaourt -S --noconfirm  $program

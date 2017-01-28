@@ -1,83 +1,117 @@
 #!/bin/bash
-#              `.-/::/-``
-#            .-/osssssssso/.               
-#           :osyysssssssyyys+-              
-#        `.+yyyysssssssssyyyyy+.           
-#       `/syyyyyssssssssssyyyyys-`         
-#      `/yhyyyyysss++ssosyyyyhhy/`         
-#     .ohhhyyyyso++/+oso+syy+shhhho.       
-#    .shhhhysoo++//+sss+++yyy+shhhhs.      
-#   -yhhhhs+++++++ossso+++yyys+ohhddy:     
-#  -yddhhyo+++++osyyss++++yyyyooyhdddy-    
-# .yddddhso++osyyyyys+++++yyhhsoshddddy`   
-#`odddddhyosyhyyyyyy++++++yhhhyosddddddo   
-#.dmdddddhhhhhhhyyyo+++++shhhhhohddddmmh.  
-#ddmmdddddhhhhhhhso++++++yhhhhhhdddddmmdy  
-#dmmmdddddddhhhyso++++++shhhhhddddddmmmmh  
-#-dmmmdddddddhhyso++++oshhhhdddddddmmmmd- 
-# .smmmmddddddddhhhhhhhhhdddddddddmmmms. 
-#   `+ydmmmdddddddddddddddddddmmmmdy/.     
-#      `.:+ooyyddddddddddddyyso+:.`
-#======================================================================================
+#
+##################################################################################################################
+# Written to be used on 64 bits computers
+# Author 	: 	Erik Dubois
+# Website 	: 	http://www.erikdubois.be
+##################################################################################################################
+##################################################################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#
+##################################################################################################################
 
-#======================================================================================
-#       
-# Author  : Erik Dubois at http://www.erikdubois.be
-# License : Distributed under the terms of GNU GPL version 2 or later
-# 
-# AS ALLWAYS, KNOW WHAT YOU ARE DOING.
-#======================================================================================
 
-# Installation of zsh
-
+package="zsh"
 command="zsh"
 
-sudo pacman -S --noconfirm zsh
+#----------------------------------------------------------------------------------
 
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
 
-if which $command > /dev/null; then
+	echo "################################################################"
+	echo "################## "$package" is already installed"
+	echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi packer &> /dev/null; then
+
+		echo "Installing with packer"
+		packer -S --noconfirm --noedit  $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+		
+		echo "Installing with pacaur"
+		pacaur -S --noconfirm --noedit  $package
+		 	
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "Installing with yaourt"
+		yaourt -S --noconfirm $package
+			  	
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
 	
 	echo "################################################################"
-	echo "################################## "$command" has been installed"
+	echo "#########  "$package" has been installed"
 	echo "################################################################"
 
 	else
 
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "$command" has NOT been installed"
+	echo "!!!!!!!!!  "$package" has NOT been installed"
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
+	fi
+
 fi
 
+####################################################################################""
 
 
-#zsh enhancements
+package="zsh-completions"
 
-program="zsh-completions"
-command="zsh-completions"
 
-if which pacaur > /dev/null; then
+#----------------------------------------------------------------------------------
 
-	echo "Installing with pacaur"
-	pacaur -S --noconfirm --noedit  $program
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
 
-elif which packer > /dev/null; then
+	echo "################################################################"
+	echo "################## "$package" is already installed"
+	echo "################################################################"
 
-	echo "Installing with packer"
-	packer -S --noconfirm --noedit  $program 	
+else
 
-elif which yaourt > /dev/null; then
+	#checking which helper is installed
+	if pacman -Qi packer &> /dev/null; then
 
-	echo "Installing with yaourt"
-	yaourt -S --noconfirm $program
-		  	
-fi
+		echo "Installing with packer"
+		packer -S --noconfirm --noedit  $package
 
+	elif pacman -Qi pacaur &> /dev/null; then
+		
+		echo "Installing with pacaur"
+		pacaur -S --noconfirm --noedit  $package
+		 	
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "Installing with yaourt"
+		yaourt -S --noconfirm $package
+			  	
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
 	
-echo "################################################################"
-echo "################################## "$command" has been installed"
-echo "################################################################"
+	echo "################################################################"
+	echo "#########  "$package" has been installed"
+	echo "################################################################"
 
+	else
+
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!  "$package" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
 
 
 
@@ -96,6 +130,113 @@ sudo sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"random\"/g' ~/.zshrc
 # If above line did not work somehow. This is what you should do to enjoy the many themes.
 # go find the hidden .zshrc file and look for ZSH_THEME="robbyrussell" (CTRL+H to find hidden files)
 # change this to ZSH_THEME="random"
+
+
+package="zsh-syntax-highlighting"
+
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+	echo "################################################################"
+	echo "################## "$package" is already installed"
+	echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi packer &> /dev/null; then
+
+		echo "Installing with packer"
+		packer -S --noconfirm --noedit  $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+		
+		echo "Installing with pacaur"
+		pacaur -S --noconfirm --noedit  $package
+		 	
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "Installing with yaourt"
+		yaourt -S --noconfirm $package
+			  	
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+	
+	echo "################################################################"
+	echo "#########  "$package" has been installed"
+	echo "################################################################"
+
+	else
+
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!  "$package" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+
+
+
+package="command-not-found"
+
+
+#----------------------------------------------------------------------------------
+
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
+
+	echo "################################################################"
+	echo "################## "$package" is already installed"
+	echo "################################################################"
+
+else
+
+	#checking which helper is installed
+	if pacman -Qi packer &> /dev/null; then
+
+		echo "Installing with packer"
+		packer -S --noconfirm --noedit  $package
+
+	elif pacman -Qi pacaur &> /dev/null; then
+		
+		echo "Installing with pacaur"
+		pacaur -S --noconfirm --noedit  $package
+		 	
+	elif pacman -Qi yaourt &> /dev/null; then
+
+		echo "Installing with yaourt"
+		yaourt -S --noconfirm $package
+			  	
+	fi
+
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
+	
+	echo "################################################################"
+	echo "#########  "$package" has been installed"
+	echo "################################################################"
+
+	else
+
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!  "$package" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
+
+fi
+
+
+
+
 
 
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"

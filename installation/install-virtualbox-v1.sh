@@ -12,39 +12,51 @@
 ##################################################################################################################
 
 
-program="virtualbox"
+package="virtualbox"
 command="virtualbox"
 
+#----------------------------------------------------------------------------------
 
-if which pacaur > /dev/null; then
+#checking if application is already installed or else install with aur helpers
+if pacman -Qi $package &> /dev/null; then
 
-	echo "Installing with pacaur"
-	pacaur -S --noconfirm --noedit  $program
+	echo "################################################################"
+	echo "################## "$package" is already installed"
+	echo "################################################################"
 
-elif which packer > /dev/null; then
+else
 
-	echo "Installing with packer"
-	packer -S --noconfirm --noedit  $program 	
+	#checking which helper is installed
+	if pacman -Qi packer &> /dev/null; then
 
-elif which yaourt > /dev/null; then
+		echo "Installing with packer"
+		packer -S --noconfirm --noedit  $package
 
-	echo "Installing with yaourt"
-	yaourt -S --noconfirm $program
-		  	
-fi
+	elif pacman -Qi pacaur &> /dev/null; then
+		
+		echo "Installing with pacaur"
+		pacaur -S --noconfirm --noedit  $package
+		 	
+	elif pacman -Qi yaourt &> /dev/null; then
 
+		echo "Installing with yaourt"
+		yaourt -S --noconfirm $package
+			  	
+	fi
 
-
-if which $command > /dev/null; then
+	# Just checking if installation was successful
+	if pacman -Qi $package &> /dev/null; then
 	
 	echo "################################################################"
-	echo "################################## "$command" has been installed"
+	echo "#########  "$package" has been installed"
 	echo "################################################################"
 
 	else
 
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "$command" has NOT been installed"
+	echo "!!!!!!!!!  "$package" has NOT been installed"
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+	fi
 
 fi
