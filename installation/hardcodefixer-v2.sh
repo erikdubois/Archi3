@@ -11,6 +11,7 @@
 #
 ##################################################################################################################
 
+sudo pacman -S --needed --noconfirm xdg-user-dirs
 
 # if there is already a folder, delete or else do nothing
 
