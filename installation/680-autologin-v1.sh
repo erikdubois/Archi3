@@ -67,7 +67,7 @@ echo "Setting your system to autologin the user ..."
 
 read -p "Type your login name correctly : " name
 
-sudo systemctl enable xlogin&$name
+sudo systemctl enable xlogin@$name
 
 echo "################################################################"
 echo "#########       autologin enabled     ################"
