@@ -42,7 +42,7 @@ echo "################################################################"
 echo "installing xbindkeys"
 echo "################################################################"
 
-sudo pacman -S xbindkeys ---noconfirm --needed
+sudo pacman -S xbindkeys --noconfirm --needed
 
 echo "You need to put the config file in the root of your home folder"
 
