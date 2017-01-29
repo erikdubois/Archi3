@@ -17,6 +17,10 @@ set -e
 #but does not seem to hurt installations on ssd or hd.
 sudo mount -o remount,size=4G,noatime /tmp
 
+# install awesome font for conky status bar
+
+sh install-awesome-font-v1.sh
+
 
 # Conky Aureola
 
