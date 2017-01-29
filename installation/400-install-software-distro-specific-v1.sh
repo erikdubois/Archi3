@@ -47,7 +47,7 @@ sudo pacman -S compton  --noconfirm --needed
 sudo pacman -S volumeicon  --noconfirm --needed
 sudo packer -S arandr  --noconfirm 
 #run with systemadm
-sudo packer -S systemd-ui  --noconfirm 
+sudo packer -S systemd-ui  --noconfirm --needed
 
 
 
