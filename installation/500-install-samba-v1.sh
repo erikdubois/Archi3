@@ -94,9 +94,3 @@ echo "Run system-config-samba to set up shares"
 echo "################################################################"
 echo "#########   samba  software installed           ################"
 echo "################################################################"
-
-echo "You can install my personal settings to your system or "
-
-echo "You can reboot and start computing"
-echo "Type in the terminal the following code to reboot"
-echo "sudo reboot"
