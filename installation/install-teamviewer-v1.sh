@@ -56,7 +56,12 @@ else
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 	echo "!!!!!!!!!  "$package" has NOT been installed"
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-
+	echo "Teamviewer needs 32 bits applications"
+	echo "Go to /etc/pacman.conf and edit these lines"
+	echo "[multilib]"
+	echo "Include = /etc/pacman.d/mirrorlist"
+	echo "Include this mirrorlist as well"
+	sleep 2
 	fi
 
 fi

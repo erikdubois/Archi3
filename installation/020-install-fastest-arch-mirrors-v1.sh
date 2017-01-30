@@ -18,7 +18,7 @@ sudo pacman -S --noconfirm --needed reflector
 
 
 echo "################################################################"
-echo "####   finding fastest servers be patient in BE NL FR DE GB  ###"
+echo "####   finding fastest servers be patient for the world      ###"
 echo "################################################################"
 
 # finding the fastest archlinux servers
