@@ -45,9 +45,9 @@ sudo pacman -S xorg-xrandr --noconfirm --needed
 sudo pacman -S gvfs  --noconfirm --needed
 sudo pacman -S compton  --noconfirm --needed
 sudo pacman -S volumeicon  --noconfirm --needed
-sudo packer -S arandr  --noconfirm --needed
+#sudo packer -S arandr  --noconfirm
 #run with systemadm
-sudo packer -S systemd-ui  --noconfirm --needed
+#sudo packer -S systemd-ui  --noconfirm
 
 
 
