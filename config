@@ -449,6 +449,7 @@ assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer"]                  
 assign [class="Meld"]                                                               → 5
 assign [class="feh|gthumb|Gthumb|eog|Eog|Pinta|pixeluvo|Pixeluvo"]                  → 5
 assign [class="Vlc|vlc"]                                                            → 6
+assign [class="Vmplayer|VirtualBox"]                                                → 7
 assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
 assign [class="Geary|Evolution"]                                                    → 9
 assign [class="Spotify|spotify"]                                                    → 10
@@ -463,9 +464,6 @@ for_window [class="Spotify"] move to workspace 10
 
 # num lock activated
 exec_always --no-startup-id numlockx on
-# network
-exec --no-startup-id nm-applet
-#exec network-manager-applet
 # dropbox
 exec dropbox start
 # insync
@@ -586,7 +584,7 @@ for_window [class="^Gpick$"] floating enable
 #for_window [class="^Spotify$"] floating enable workspace 10
 #for_window [instance="gimp"] floating enable
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
-for_window [instance="variety"] floating enable
+#for_window [instance="variety"] floating enable
 #for_window [class="Gnome-system-monitor"] floating enable
 #for_window [class="Mate-system-monitor"] floating enable
 #for_window [class="Xfce4-taskmanager"] floating enable
@@ -615,6 +613,7 @@ for_window [class="Imagewriter"] floating enable
 #for_window [class="Hexchat"] floating disable
 for_window [class="Xfce4-settings-manager"] floating disable
 for_window [class="Gnome-control-center"] floating disable
+for_window [class="Gnome-terminal"] focus
 
 #Popups during fullscreen mode
 popup_during_fullscreen smart
@@ -742,18 +741,19 @@ bar {
     # this is the standard statusbar with my personal settings
 
 #status_command i3status
-status_command i3status -c ~/.config/i3/i3status.conf
+#status_command i3status -c ~/.config/i3/i3status.conf
 
 
 # OPTION 2 : i3blocks
 
     # https://github.com/vivien/i3blocks
     # another way to provide text in the statusbar
-    # step 10 of https://github.com/erikdubois/i3-on-Linux-Mint-18-Cinnamon/tree/master/installation
     # put hastag in front if not installed
 
 #status_command i3blocks
-#status_command i3blocks -c ~/.config/i3/i3blocks.conf
+status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#status_command i3blocks -c ~/.config/i3/i3blocks-original.conf
+#status_command i3blocks -c ~/.config/i3/i3blocks-awesome.conf
 
 
 # OPTION 3 : conky
@@ -1033,3 +1033,9 @@ exec pamac-tray
 exec blueberry-tray
 #exec --no-startup-id blueman-applet
 
+# network
+#antergos
+exec --no-startup-id nm-applet
+
+#install this program for applet
+#exec network-manager-applet
