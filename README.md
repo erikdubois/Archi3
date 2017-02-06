@@ -63,23 +63,14 @@ I3 installation on Arch Linux can be found on this article
 
 
 
-#Remember
-
-
-##Setting nano instead of vi
-
-	export VISUAL=nano
-
-	export EDITOR=nano
-
-
-
-
 #Youtube sources
 
-Arch i3 playlist
+https://www.youtube.com/playlist?list=PLlloYVGq5pS5D_jCTKTqRdCu1RA1C6t1J
 
-to add later
+
+Showing all sardi and surfn icons.
+
+https://www.youtube.com/watch?v=EHjCRJ3FdG0
 
 
 
