@@ -59,7 +59,7 @@ http://erikdubois.be/how-to-install-arch-linux/
 
 I3 installation on Arch Linux can be found on this article
 
-.... to follow
+http://erikdubois.be/how-to-install-i3wm-on-arch-linux/
 
 
 
