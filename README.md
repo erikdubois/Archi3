@@ -74,11 +74,6 @@ https://www.youtube.com/watch?v=EHjCRJ3FdG0
 
 
 
-
-
-
-
-
 # F  A  Q
 --------------------
 
